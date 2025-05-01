@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <LayoutMain>
+    <ServiceHome00Breadcrumb />
+    <ServiceHome01Hero />
+    <ServiceHome02List />
+  </LayoutMain>
 </template>
-
-<script lang="ts" setup></script>

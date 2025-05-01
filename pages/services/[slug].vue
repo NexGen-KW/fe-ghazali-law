@@ -1,5 +1,6 @@
 <template>
-  <div></div>
+  <LayoutMain>
+    <ServiceInfo00Breadcrumb />
+    <ServiceInfo01List />
+  </LayoutMain>
 </template>
-
-<script lang="ts" setup></script>
