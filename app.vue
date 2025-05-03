@@ -1,3 +1,5 @@
 <template>
-  <UiTest />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
