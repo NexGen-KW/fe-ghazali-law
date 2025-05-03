@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  ssr: false,
   modules: [
     '@nuxtjs/i18n',
     'nuxt-swiper',
@@ -14,5 +15,8 @@ export default defineNuxtConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+  },
+  imports: {
+    dirs: ['types', 'static'],
   },
 });

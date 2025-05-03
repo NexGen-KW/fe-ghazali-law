@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2.5">fsdaasdffdsfsd</div>
+  <li class="aspect-[12/5]"></li>
 </template>
 
 <script lang="ts" setup></script>

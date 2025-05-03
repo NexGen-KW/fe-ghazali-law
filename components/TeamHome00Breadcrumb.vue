@@ -1,5 +1,16 @@
 <template>
-  <div></div>
+  <UiBreadcrumb :breadcrumb />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const breadcrumb: IBreadcrumb = [
+  {
+    label: 'home',
+    url: '/',
+  },
+  {
+    label: 'team',
+    url: '/team',
+  },
+];
+</script>
