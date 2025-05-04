@@ -1,1 +1,6 @@
-a: a
+breadcrumb:
+  home: الرئيسية
+  about: حول
+  services: خدمات
+  team: فريق
+  contact: اتصال

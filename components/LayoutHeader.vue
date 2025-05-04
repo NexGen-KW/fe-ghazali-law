@@ -10,7 +10,7 @@
             class="font-medium capitalize"
             :class="{ 'text-gold-700': $route.path === item.url }"
           >
-            {{ item.label }}
+            {{ $t(`breadcrumb.${item.label}`) }}
           </NuxtLink>
         </li>
       </template>

@@ -13,7 +13,7 @@
                   index < breadcrumb.length - 1,
               }"
             >
-              {{ item.label }}
+              {{ $t(`breadcrumb.${item.label}`) }}
             </NuxtLink>
 
             <span v-if="index < breadcrumb.length - 1" class="text-gold-300"

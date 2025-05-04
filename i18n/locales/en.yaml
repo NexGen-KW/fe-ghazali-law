@@ -1,1 +1,6 @@
-a: a
+breadcrumb:
+  home: Home
+  about: About
+  services: Services
+  team: Team
+  contact: Contact

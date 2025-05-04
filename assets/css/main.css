@@ -28,4 +28,12 @@
   [role='button']:not(:disabled) {
     cursor: pointer;
   }
+
+  html[dir='ltr'] {
+    @apply font-montserrat;
+  }
+
+  html[dir='rtl'] {
+    @apply font-ar-ibm;
+  }
 }
