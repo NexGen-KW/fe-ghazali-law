@@ -12,11 +12,31 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     'reka-ui/nuxt',
+    '@vueuse/nuxt',
   ],
   vite: {
     plugins: [tailwindcss()],
   },
   imports: {
     dirs: ['types', 'static'],
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        files: ['en.yaml'],
+        dir: 'ltr',
+        symbol: 'EN',
+      },
+      {
+        code: 'ar',
+        name: 'Arabic',
+        files: ['ar.yaml'],
+        dir: 'rtl',
+        symbol: 'ع',
+      },
+    ],
+    strategy: 'no_prefix',
   },
 });
