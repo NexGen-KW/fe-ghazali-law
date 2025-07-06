@@ -1,25 +1,28 @@
 <template>
   <section
-    class="border-gold-200 flex w-full flex-col items-center justify-center border-b py-12"
+    class="border-gold-200 flex h-[400px] w-full flex-col items-center justify-center border-b py-12"
   >
     <div class="mb-4 flex items-center justify-center">
-      <span v-for="n in 5" :key="n" class="mx-0.5 text-[22px] text-[#C2B16D]"
+      <span
+        v-for="n in 5"
+        :key="n"
+        class="mx-0.5 text-[22px] text-[var(--color-gold-500)]"
         >★</span
       >
     </div>
-    <div class="mx-auto flex w-full max-w-[1100px] items-center">
+    <div class="mx-auto flex w-full max-w-[1100px] flex-1 items-center">
       <button
         @click="prev"
-        class="text-gold-500 hover:text-gold-700 px-4 text-3xl focus:outline-none"
+        class="text-gold-500 hover:text-gold-700 w-16 flex-shrink-0 px-4 text-3xl focus:outline-none"
       >
         &#60;
       </button>
-      <p class="flex-1 text-center text-lg font-normal">
+      <p class="flex-1 px-4 text-center text-lg font-normal">
         {{ testimonials[current].text }}
       </p>
       <button
         @click="next"
-        class="text-gold-500 hover:text-gold-700 px-4 text-3xl focus:outline-none"
+        class="text-gold-500 hover:text-gold-700 w-16 flex-shrink-0 px-4 text-3xl focus:outline-none"
       >
         &#62;
       </button>
