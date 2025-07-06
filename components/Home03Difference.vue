@@ -7,7 +7,7 @@
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
-      <h2 class="py-5 text-[36px]">
+      <h2 class="">
         {{ $t('differenceHeading') }}
       </h2>
       <p class="text-[18px] leading-[34px]">

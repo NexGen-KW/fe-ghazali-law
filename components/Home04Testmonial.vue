@@ -75,4 +75,28 @@ const testimonials = [
 .testimonial-swiper {
   height: 100%;
 }
+
+/* Custom navigation button styles to make them smaller */
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+}
+
+.testimonial-swiper .swiper-button-prev::after,
+.testimonial-swiper .swiper-button-next::after {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+/* Hover effects */
+.testimonial-swiper .swiper-button-prev:hover,
+.testimonial-swiper .swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
 </style>

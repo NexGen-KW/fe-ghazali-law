@@ -6,7 +6,7 @@
       <h1 class="font-marcellusSC text-[32px]">
         {{ $t('carouselHeading') }}
       </h1>
-      <p class="text-shadow-custom">
+      <p class="text-shadow-custom text-white">
         {{ $t('carouselParagraph') }}
       </p>
     </div>

@@ -23,6 +23,8 @@
   --font-ar-ibm: 'IBM Plex Sans Arabic';
   --font-marcellusSC: 'Marcellus SC', serif;
   --font-marcellus: 'Marcellus', serif;
+
+  --paragraphColor: var(--slate-700, #314158);
 }
 
 @layer base {
@@ -31,8 +33,17 @@
     cursor: pointer;
   }
 
+  h2 {
+    @apply font-marcellus mb-10 py-5 text-[36px] ltr:text-left rtl:text-right;
+  }
+
+  h3 {
+    @apply mb-2 text-[18px] font-medium ltr:text-left rtl:text-right;
+  }
+
   p {
-    line-height: 34px !important;
+    color: var(--paragraphColor);
+    @apply text-[18px] leading-[34px];
   }
 
   .border-gold-200 {
