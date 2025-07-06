@@ -1,6 +1,5 @@
 <template>
   <LayoutMain>
-    <Home00Breadcrumb />
     <Home01Carousel />
     <Home02Statement />
     <Home03Difference />

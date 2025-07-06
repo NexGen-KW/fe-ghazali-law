@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         name: 'Arabic',
         files: ['ar.yaml'],
         dir: 'rtl',
-        symbol: 'ع',
+        symbol: 'Arabic',
       },
     ],
     strategy: 'no_prefix',

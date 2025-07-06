@@ -1,9 +1,22 @@
 <template>
   <section
-    class="relative aspect-[12/5] bg-[url(/judge.webp)] bg-cover bg-center"
+    class="relative mt-[-111px] flex h-[100vh] bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat pt-[170px]"
   >
-    <div class="absolute inset-0 bg-[#312A1199]" />
+    <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
+      <h1 class="font-marcellusSC text-[32px]">
+        {{ $t('carouselHeading') }}
+      </h1>
+      <p class="text-shadow-custom">
+        {{ $t('carouselParagraph') }}
+      </p>
+    </div>
+    <!-- <div class="absolute inset-0" /> -->
   </section>
 </template>
 
 <script lang="ts" setup></script>
+<style>
+.text-shadow-custom {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+</style>

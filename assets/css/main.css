@@ -21,6 +21,8 @@
   --font-markazi: 'Markazi Text';
   --font-montserrat: 'Montserrat';
   --font-ar-ibm: 'IBM Plex Sans Arabic';
+  --font-marcellusSC: 'Marcellus SC', serif;
+  --font-marcellus: 'Marcellus', serif;
 }
 
 @layer base {
