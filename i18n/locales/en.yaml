@@ -4,6 +4,7 @@ breadcrumb:
   services: OurServices
   team: Our Team
   contact: Contact Us
+  switchLanguage: English
 
 # Page -> Home
 carouselHeading: Justice. Expertise. Results.
@@ -12,3 +13,6 @@ statementHeading: Where Professionalism Meets Purpose
 statementParagraph: Our legal strategy is built on meticulous preparation, thoughtful analysis, and unwavering advocacy. At every stage, we prioritize transparency, professionalism, and outcomes that truly serve our clients' best interests. With a commitment to ethical excellence and forward-thinking counsel, we ensure every case receives the attention and strategy it deserves
 heroCTA: Know more about us
 heroDifference: What Makes Us Different
+contactCTA: Contact Us
+differenceHeading: Your Advantage in National and Cross-Border Law
+differenceParagraph: What sets us apart is our legal expertise and understanding of Kuwait’s legal landscape. We offer tailored counsel that bridges local insight with global strategy, helping businesses navigate challenges with confidence.

@@ -1,18 +1,33 @@
 <template>
-  <section class="container grid grid-cols-2 gap-4 py-32">
-    <div class="flex flex-col">
+  <section
+    class="grid grid-cols-1 justify-center gap-4 py-50 text-center lg:grid-cols-2 lg:text-left xl:pl-[155px]"
+  >
+    <div class="justify-content-center flex flex-col pl-10">
       <UiHeaderScale t="heroDifference" />
       <h2 class="py-5 text-[36px]">
-        Your Advantage in National and Cross-Border Law
+        {{ $t('differenceHeading') }}
       </h2>
-      <p class="text-[18px]">
-        What sets us apart is our legal expertise and understanding of Kuwait’s
-        legal landscape. We offer tailored counsel that bridges local insight
-        with global strategy, helping businesses navigate challenges with
-        confidence.
+      <p class="text-[18px] leading-[34px]">
+        {{ $t('differenceParagraph') }}
       </p>
+      <div class="flex justify-center lg:justify-start">
+        <BaseButton>
+          {{ $t('contactCTA') }}
+        </BaseButton>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <img
+        src="/public/Mid-Group-Photo.jpg"
+        alt="difference"
+        class="h-auto w-full object-cover"
+      />
     </div>
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import BaseButton from '~/components/ui/BaseButton.vue';
+import { useI18n } from 'vue-i18n';
+const { localeProperties } = useI18n();
+</script>

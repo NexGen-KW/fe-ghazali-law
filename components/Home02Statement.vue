@@ -9,13 +9,13 @@
       {{ $t('statementParagraph') }}
     </p>
     <div class="flex justify-center">
-      <button
-        class="border-gold-900 text-gold-900 hover:bg-gold-900 hover:text-gold-100 border px-5 py-3 text-lg font-medium transition-colors duration-300 ease-in-out"
-      >
+      <BaseButton>
         {{ $t('heroCTA') }}
-      </button>
+      </BaseButton>
     </div>
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import BaseButton from '~/components/ui/BaseButton.vue';
+</script>
