@@ -21,6 +21,7 @@
     </div>
     <div class="flex flex-col">
       <img
+        loading="lazy"
         src="/public/Mid-Group-Photo.jpg"
         alt="difference"
         class="h-auto w-full object-cover"

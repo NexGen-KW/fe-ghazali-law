@@ -13,6 +13,7 @@
         class="mx-auto flex min-h-[552px] w-full max-w-[367px] flex-col rounded-md border border-gray-100 bg-white shadow-md"
       >
         <img
+          loading="lazy"
           :src="item.image"
           :alt="item.title"
           class="mb-4 h-[242px] w-full rounded-t-md object-cover"
