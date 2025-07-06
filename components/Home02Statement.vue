@@ -5,7 +5,9 @@
     >
       {{ $t('statementHeading') }}
     </h2>
-    <p class="border-gold-200 container border-y py-8 text-center text-2xl">
+    <p
+      class="border-gold-200 container max-w-[1024px] border-y py-8 text-center text-2xl"
+    >
       {{ $t('statementParagraph') }}
     </p>
     <div class="flex justify-center">

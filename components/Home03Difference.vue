@@ -1,6 +1,9 @@
 <template>
   <section
-    class="grid grid-cols-1 justify-center gap-4 py-50 text-center lg:grid-cols-2 lg:text-left xl:pl-[155px]"
+    :class="[
+      'border-gold-200 grid grid-cols-1 justify-center gap-4 text-center lg:grid-cols-2 lg:text-left',
+      localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',
+    ]"
   >
     <div class="justify-content-center flex flex-col pl-10">
       <UiHeaderScale t="heroDifference" />
