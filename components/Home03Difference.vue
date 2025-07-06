@@ -5,7 +5,7 @@
       localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',
     ]"
   >
-    <div class="justify-content-center flex flex-col pl-10">
+    <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
       <h2 class="py-5 text-[36px]">
         {{ $t('differenceHeading') }}

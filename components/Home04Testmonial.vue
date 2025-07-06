@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="border-gold-200 flex h-[400px] w-full flex-col items-center justify-center border-b py-12"
-  >
+  <section class="flex w-full flex-col items-center justify-center py-12">
     <div class="mb-4 flex items-center justify-center">
       <span
         v-for="n in 5"
@@ -10,25 +8,35 @@
         >★</span
       >
     </div>
-    <div class="mx-auto flex w-full max-w-[1100px] flex-1 items-center">
-      <button
-        @click="prev"
-        class="text-gold-500 hover:text-gold-700 w-16 flex-shrink-0 px-4 text-3xl focus:outline-none"
+    <div class="mx-auto w-full max-w-[1100px] flex-1">
+      <Swiper
+        :modules="[SwiperNavigation, SwiperPagination]"
+        :slides-per-view="1"
+        :space-between="30"
+        :loop="true"
+        :navigation="{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }"
+        class="testimonial-swiper"
       >
-        &#60;
-      </button>
-      <p class="flex-1 px-4 text-center text-lg font-normal">
-        {{ testimonials[current].text }}
-      </p>
-      <button
-        @click="next"
-        class="text-gold-500 hover:text-gold-700 w-16 flex-shrink-0 px-4 text-3xl focus:outline-none"
-      >
-        &#62;
-      </button>
-    </div>
-    <div class="mt-4 text-center text-[#7A869A] italic">
-      {{ testimonials[current].author }}
+        <SwiperSlide
+          v-for="testimonial in testimonials"
+          :key="testimonial.author"
+        >
+          <div class="flex h-full flex-col items-center justify-center px-16">
+            <p class="text-center text-lg font-normal">
+              {{ testimonial.text }}
+            </p>
+            <div class="mt-4 text-center text-[#7A869A] italic">
+              {{ testimonial.author }}
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <div class="swiper-button-prev !text-gold-500 !absolute !left-4"></div>
+        <div class="swiper-button-next !text-gold-500 !absolute !right-4"></div>
+      </Swiper>
     </div>
     <BaseButton>
       {{ $t('contactCTA') }}
@@ -38,7 +46,14 @@
 
 <script lang="ts" setup>
 import BaseButton from '~/components/ui/BaseButton.vue';
-import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import {
+  Navigation as SwiperNavigation,
+  Pagination as SwiperPagination,
+} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const testimonials = [
   {
@@ -54,14 +69,10 @@ const testimonials = [
     author: 'Mohamed, CEO of Techno Co.',
   },
 ];
-
-const current = ref(0);
-
-function prev() {
-  current.value =
-    (current.value - 1 + testimonials.length) % testimonials.length;
-}
-function next() {
-  current.value = (current.value + 1) % testimonials.length;
-}
 </script>
+
+<style scoped>
+.testimonial-swiper {
+  height: 100%;
+}
+</style>
