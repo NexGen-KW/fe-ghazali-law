@@ -1,22 +1,30 @@
-// tailwind.config.js
+const { green, grass, mauve } = require('@radix-ui/colors');
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ['./**/*.vue'],
   theme: {
     extend: {
       colors: {
-        gold: {
-          50: 'oklch(0.96 0.0177 92.68)',
-          100: 'oklch(0.96 0.0177 92.68)',
-          200: 'oklch(0.91 0.038 93.85)',
-          300: 'oklch(0.88 0.0569 93.99)',
-          400: 'oklch(0.84 0.0738 94.67)',
-          500: 'oklch(0.79 0.0915 93.8)',
-          600: 'oklch(0.72 0.1161 93.66)',
-          700: 'oklch(0.59 0.0945 93.74)',
-          800: 'oklch(0.44 0.0685 94.24)',
-          900: 'oklch(0.29 0.0409 94.02)',
-          950: 'oklch(0.19 0.0215 90.42)',
+        ...mauve,
+        ...green,
+        ...grass,
+      },
+      keyframes: {
+        slideDown: {
+          from: { height: 0 },
+          to: { height: 'var(--reka-accordion-content-height)' },
         },
+        slideUp: {
+          from: { height: 'var(--reka-accordion-content-height)' },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       },
     },
   },
+  plugins: [],
 };

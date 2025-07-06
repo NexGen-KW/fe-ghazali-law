@@ -1,51 +1,61 @@
 <template>
-  <section
-    class="flex w-full flex-col items-center justify-center bg-white py-16 lg:flex-row"
-  >
-    <!-- Left: Header and Button -->
-    <div
-      class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
+  <div class="border-gold-200">
+    <section
+      class="justify-space-between container flex w-full flex-col items-center bg-white lg:flex-row"
     >
-      <HeaderScale t="heroDiscover" />
-      <h2 class="font-marcellus mb-8 text-center text-5xl">Our Services</h2>
-      <button
-        class="rounded-md border border-gray-400 px-8 py-3 text-lg transition hover:bg-[var(--color-gold-50)]"
-      >
-        Discover All Our Services
-      </button>
-    </div>
-    <!-- Right: Accordion -->
-    <div class="flex w-full flex-col gap-2 px-4 lg:w-1/2">
+      <!-- Left: Header and Button -->
       <div
-        v-for="(item, idx) in services"
-        :key="item.title"
-        class="border-b border-[var(--color-gold-200)] py-6"
+        class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
       >
-        <div
-          class="text-gold-900 flex cursor-pointer items-center text-[22px] font-medium select-none"
-          @click="openIdx = openIdx === idx ? null : idx"
+        <HeaderScale t="heroDiscover" />
+        <h2 class="font-marcellus mb-8 text-center text-5xl">Our Services</h2>
+        <button
+          class="rounded-md border border-gray-400 px-8 py-3 text-lg transition hover:bg-[var(--color-gold-50)]"
         >
-          <span class="mr-6 text-2xl">
-            <span v-if="openIdx === idx">&#8722;</span>
-            <span v-else>&#43;</span>
-          </span>
-          {{ item.title }}
-        </div>
-        <transition name="fade">
-          <div
-            v-if="openIdx === idx"
-            class="text-gold-900 pt-3 pl-10 text-[17px]"
-          >
-            {{ item.description }}
-          </div>
-        </transition>
+          Discover All Our Services
+        </button>
       </div>
-    </div>
-  </section>
+      <!-- Right: Accordion -->
+      <AccordionRoot class="max-w-[660px]" type="single" :collapsible="true">
+        <template v-for="item in services" :key="item.title">
+          <AccordionItem
+            class="border-b border-[var(--color-gold-200)] py-6"
+            :value="item.title"
+            v-slot="{ open }"
+          >
+            <AccordionHeader class="flex">
+              <AccordionTrigger
+                class="text-gold-900 font-marcellus flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
+              >
+                <span class="mr-6 text-2xl font-bold">
+                  <Icon :icon="open ? 'ic:round-remove' : 'ic:round-add'" />
+                </span>
+                {{ item.title }}
+              </AccordionTrigger>
+            </AccordionHeader>
+            <AccordionContent
+              class="AccordionContent text-gold-900 pt-3 pl-10 font-sans text-[17px] font-normal"
+            >
+              <div>{{ item.description }}</div>
+            </AccordionContent>
+          </AccordionItem>
+        </template>
+      </AccordionRoot>
+    </section>
+  </div>
 </template>
 
 <script setup lang="ts">
 import HeaderScale from '~/components/ui/HeaderScale.vue';
+import { Icon } from '@iconify/vue';
+import {
+  AccordionContent,
+  AccordionHeader,
+  AccordionItem,
+  AccordionRoot,
+  AccordionTrigger,
+} from 'reka-ui';
+
 import { ref } from 'vue';
 
 const services = [
@@ -66,16 +76,35 @@ const services = [
   },
 ];
 
-const openIdx = ref<number | null>(1); // 1 is open by default (like screenshot)
+const openIdx = ref<number | null>(1);
 </script>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
+<style>
+.AccordionContent {
+  overflow: hidden;
 }
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--reka-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--reka-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
 }
 </style>
