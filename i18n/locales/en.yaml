@@ -23,7 +23,20 @@ testimonials:
   - text: "Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals"
     author: 'Mohamed, CEO of Techno Co.'
 # News
-heroDiscover: What We Do In RMG
+discover: What We Do In RMG
+discoverCTA: Discover All Our Services
+
+# Services Accordion
+services:
+  contracting:
+    title: Contracting & Real-Estate Field
+    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
+  intellectualProperty:
+    title: Intellectual Property Field
+    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
+  arbitration:
+    title: Arbitration Field
+    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
 
 # Global
 heroCTA: Know more about us

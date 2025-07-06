@@ -27,6 +27,43 @@
   --paragraphColor: var(--slate-700, #314158);
 }
 
+@layer utilities {
+  /* Gold Color Utilities */
+  .text-gold-50 {
+    color: var(--color-gold-50);
+  }
+  .text-gold-100 {
+    color: var(--color-gold-100);
+  }
+  .text-gold-200 {
+    color: var(--color-gold-200);
+  }
+  .text-gold-300 {
+    color: var(--color-gold-300);
+  }
+  .text-gold-400 {
+    color: var(--color-gold-400);
+  }
+  .text-gold-500 {
+    color: var(--color-gold-500);
+  }
+  .text-gold-600 {
+    color: var(--color-gold-600);
+  }
+  .text-gold-700 {
+    color: var(--color-gold-700);
+  }
+  .text-gold-800 {
+    color: var(--color-gold-800);
+  }
+  .text-gold-900 {
+    color: var(--color-gold-900);
+  }
+  .text-gold-950 {
+    color: var(--color-gold-950);
+  }
+}
+
 @layer base {
   button:not(:disabled),
   [role='button']:not(:disabled) {

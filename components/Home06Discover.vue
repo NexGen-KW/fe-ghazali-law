@@ -7,13 +7,11 @@
       <div
         class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
       >
-        <HeaderScale t="heroDiscover" />
+        <HeaderScale t="discover" />
         <h2 class="font-marcellus mb-8 text-center text-5xl">Our Services</h2>
-        <button
-          class="rounded-md border border-gray-400 px-8 py-3 text-lg transition hover:bg-[var(--color-gold-50)]"
-        >
-          Discover All Our Services
-        </button>
+        <BaseButton>
+          {{ $t('discoverCTA') }}
+        </BaseButton>
       </div>
       <!-- Right: Accordion -->
       <AccordionRoot class="max-w-[660px]" type="single" :collapsible="true">
@@ -25,9 +23,11 @@
           >
             <AccordionHeader class="flex">
               <AccordionTrigger
-                class="text-gold-900 font-marcellus flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
+                class="text-gold-900 font-montserrat flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
               >
-                <span class="mr-6 text-2xl font-bold">
+                <span
+                  class="mx-3 flex h-8 w-8 items-center justify-center text-2xl font-bold"
+                >
                   <Icon :icon="open ? 'ic:round-remove' : 'ic:round-add'" />
                 </span>
                 {{ item.title }}
@@ -36,7 +36,9 @@
             <AccordionContent
               class="AccordionContent text-gold-900 pt-3 pl-10 font-sans text-[17px] font-normal"
             >
-              <div>{{ item.description }}</div>
+              <div class="text-gold-800">
+                {{ item.description }}
+              </div>
             </AccordionContent>
           </AccordionItem>
         </template>
@@ -46,6 +48,7 @@
 </template>
 
 <script setup lang="ts">
+import BaseButton from '~/components/ui/BaseButton.vue';
 import HeaderScale from '~/components/ui/HeaderScale.vue';
 import { Icon } from '@iconify/vue';
 import {
@@ -56,25 +59,24 @@ import {
   AccordionTrigger,
 } from 'reka-ui';
 
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
-const services = [
+const { t } = useI18n();
+
+const services = computed(() => [
   {
-    title: 'Contracting & Real-Estate Field',
-    description:
-      'Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.',
+    title: t('services.contracting.title'),
+    description: t('services.contracting.description'),
   },
   {
-    title: 'Intellectual Property Field',
-    description:
-      'Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.',
+    title: t('services.intellectualProperty.title'),
+    description: t('services.intellectualProperty.description'),
   },
   {
-    title: 'Arbitration Field',
-    description:
-      'Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.',
+    title: t('services.arbitration.title'),
+    description: t('services.arbitration.description'),
   },
-];
+]);
 
 const openIdx = ref<number | null>(1);
 </script>
