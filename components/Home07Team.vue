@@ -24,7 +24,11 @@
         </div>
       </div>
     </div>
-    <BaseButton> Meet All The Team </BaseButton>
+    <BaseButton>
+      <NuxtLink to="/team">
+        {{ $t('Meet All The Team') }}
+      </NuxtLink></BaseButton
+    >
   </section>
 </template>
 
@@ -39,15 +43,15 @@ const members = [
   },
   {
     name: 'Bader Mishari Al-Ghazali',
-    img: '/member2.jpg',
+    img: '/5.jpg',
   },
   {
     name: 'Nada Bourahmah',
-    img: '/member3.jpg',
+    img: '/4.jpg',
   },
   {
     name: 'Saoud Al Jasem',
-    img: '/member4.jpg',
+    img: '/9.jpg',
   },
 ];
 </script>

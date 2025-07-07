@@ -10,7 +10,9 @@
         <HeaderScale t="discover" />
         <h2 class="font-marcellus mb-8 text-center text-5xl">Our Services</h2>
         <BaseButton>
-          {{ $t('discoverCTA') }}
+          <NuxtLink to="/services">
+            {{ $t('discoverCTA') }}
+          </NuxtLink>
         </BaseButton>
       </div>
       <!-- Right: Accordion -->

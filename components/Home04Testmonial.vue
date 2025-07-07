@@ -39,7 +39,9 @@
       </Swiper>
     </div>
     <BaseButton>
-      {{ $t('contactCTA') }}
+      <NuxtLink to="/contact">
+        {{ $t('contactCTA') }}
+      </NuxtLink>
     </BaseButton>
   </section>
 </template>

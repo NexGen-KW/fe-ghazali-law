@@ -15,7 +15,9 @@
       </p>
       <div class="flex justify-center lg:justify-start">
         <BaseButton class="mt-[32px]">
-          {{ $t('contactCTA') }}
+          <NuxtLink to="/contact">
+            {{ $t('contactCTA') }}
+          </NuxtLink>
         </BaseButton>
       </div>
     </div>

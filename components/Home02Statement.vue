@@ -12,7 +12,9 @@
     </p>
     <div class="flex justify-center">
       <BaseButton>
-        {{ $t('heroCTA') }}
+        <NuxtLink to="/team">
+          {{ $t('heroCTA') }}
+        </NuxtLink>
       </BaseButton>
     </div>
   </section>
