@@ -1,7 +1,7 @@
 <template>
   <LayoutMain>
     <TeamHome01Hero />
-    <TeamHome02Meet id="meet" />
+    <TeamHome02Meet />
     <TeamHome03International />
     <TeamHome04Local />
     <TeamHome05Senior />
