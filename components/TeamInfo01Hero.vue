@@ -1,16 +1,19 @@
 <script setup lang="ts">
+import ScrollDownButton from '~/components/ui/ScrollDownButton.vue';
+
 defineProps<{
   member?: {
     name?: string;
     role?: string;
     biography?: string;
+    image?: string;
   };
 }>();
 </script>
 
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center overflow-hidden"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <!-- Hero Section Background Image -->
     <div class="absolute inset-0 z-0 h-full w-full">
@@ -24,7 +27,7 @@ defineProps<{
     </div>
     <!-- Overlay text container near the bottom, above the button -->
     <div
-      class="absolute bottom-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
+      class="absolute bottom-40 left-1/2 z-10 flex -translate-x-1/2 justify-center"
     >
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
@@ -39,10 +42,8 @@ defineProps<{
     </div>
     <!-- Reusable Scroll Down Button -->
     <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
-      <ScrollDownButton target="meet" />
+      <ScrollDownButton target="bio" />
     </div>
-    <!-- <ContentRenderer v-if="home" :value="home" />
-    <div v-else>Home not found</div> -->
   </section>
 </template>
 
