@@ -62,6 +62,10 @@
   .text-gold-950 {
     color: var(--color-gold-950);
   }
+
+  .section-padding {
+    @apply py-[100px] lg:py-[150px];
+  }
 }
 
 @layer base {
@@ -71,7 +75,7 @@
   }
 
   h2 {
-    @apply font-marcellus mb-10 py-5 text-[36px] ltr:text-left rtl:text-right;
+    @apply font-marcellus py-[16px] text-[36px] sm:items-center lg:ltr:text-left lg:rtl:text-right;
   }
 
   h3 {

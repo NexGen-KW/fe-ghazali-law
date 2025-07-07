@@ -7,14 +7,14 @@
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
-      <h2 class="">
+      <h2>
         {{ $t('differenceHeading') }}
       </h2>
       <p class="text-[18px] leading-[34px]">
         {{ $t('differenceParagraph') }}
       </p>
       <div class="flex justify-center lg:justify-start">
-        <BaseButton>
+        <BaseButton class="mt-[32px]">
           {{ $t('contactCTA') }}
         </BaseButton>
       </div>

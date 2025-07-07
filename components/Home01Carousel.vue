@@ -1,20 +1,28 @@
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat pt-[170px]"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
   >
-    <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
-      <h1 class="font-marcellusSC text-[32px]">
-        {{ $t('carouselHeading') }}
-      </h1>
-      <p class="text-shadow-custom text-white">
-        {{ $t('carouselParagraph') }}
-      </p>
+    <div class="hero-text mt-[-40%]">
+      <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
+        <h1 class="font-marcellusSC text-[32px]">
+          {{ $t('carouselHeading') }}
+        </h1>
+        <p class="text-shadow-custom text-white">
+          {{ $t('carouselParagraph') }}
+        </p>
+      </div>
     </div>
-    <!-- <div class="absolute inset-0" /> -->
+    <!-- Reusable Scroll Down Button -->
+    <div class="absolute bottom-20 left-1/2 -translate-x-1/2">
+      <ScrollDownButton target="statement" />
+    </div>
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import ScrollDownButton from './ui/ScrollDownButton.vue';
+</script>
+
 <style>
 .text-shadow-custom {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

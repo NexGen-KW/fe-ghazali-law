@@ -68,10 +68,7 @@ const faqs = [
 ];
 </script>
 
-<style scoped>
-.AccordionContent {
-  overflow: hidden;
-}
+<style sco>
 .AccordionContent[data-state='open'] {
   animation: slideDown 300ms ease-out;
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="grid gap-8 bg-[#F6F2E566] pt-24">
+  <section class="grid gap-8 bg-[#F6F2E566] pt-24" id="statement">
     <h2
       class="text-gold-900 font-marcellus text-center text-[40px] font-medium"
     >

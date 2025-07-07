@@ -1,10 +1,10 @@
 <template>
   <LayoutMain>
-    <TeamHome00Breadcrumb />
-    <TeamHome01Meet />
-    <TeamHome02International />
-    <TeamHome03Local />
-    <TeamHome04Senior />
-    <TeamHome05Admin />
+    <TeamHome01Hero />
+    <TeamHome02Meet />
+    <TeamHome03International />
+    <TeamHome04Local />
+    <TeamHome05Senior />
+    <TeamHome06Admin />
   </LayoutMain>
 </template>

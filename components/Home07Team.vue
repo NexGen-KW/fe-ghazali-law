@@ -10,7 +10,7 @@
       <div
         v-for="member in members"
         :key="member.name"
-        class="relative flex h-[373px] max-h-[373px] w-[273px] flex-col items-center justify-end overflow-hidden rounded shadow-lg"
+        class="relative flex h-[373px] max-h-[373px] w-[273px] flex-col items-center justify-end overflow-hidden shadow-lg"
       >
         <img
           :src="member.img"

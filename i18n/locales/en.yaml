@@ -40,10 +40,40 @@ services:
 
 # Team
 team:
-  title: Meet Our Experts
-  subtitle: Our Experts
+  title: Our Members
+  subtitle: Meet Our Experts
 
 # Global
 heroCTA: Know more about us
 contactCTA: Contact Us
 readMore: Read More
+
+# Home Form
+homeForm:
+  header: Keep In Touch With Us
+  title: Secure Your Appointment Now
+  titleHighlight: Appointment
+  name: Name*
+  email: Email*
+  phone: Phone*
+  subject: Subject*
+  message: How Can We Help You?*
+  submit: Submit Your Message
+
+# Home FAQ
+homeFaq:
+  header: We care about you
+  title: How Can We Help You?
+  faqs:
+    - q: 'Do you provide legal support for international companies entering Kuwait?'
+      a: 'Yes, we offer comprehensive legal support for international companies looking to establish or expand their business in Kuwait.'
+    - q: 'Does your firm handle cross-border legal matters?'
+      a: 'Absolutely. Our team is experienced in handling cross-border transactions and disputes.'
+    - q: 'What legal services does RMG Law Firm offer?'
+      a: 'We offer a wide range of legal services including corporate, commercial, arbitration, and intellectual property law.'
+    - q: 'Who are some of your notable clients?'
+      a: 'We have represented a variety of notable clients across different industries. Please contact us for more details.'
+
+# About - page
+aboutHeroHeading: ABOUT US
+aboutHeroParagraph: With a deep-rooted dedication to legal excellence, we proudly serve clients in Kuwait and beyond, combining local insight with global standards to deliver impactful legal solutions

@@ -1,13 +1,13 @@
 <template>
   <LayoutMain>
-    <Home01Carousel class="py-[100px]" />
-    <Home02Statement class="py-[100px]" />
-    <Home03Difference class="py-[100px]" />
-    <Home04Testmonial class="py-[100px]" />
-    <Home05News class="py-[100px]" />
-    <Home06Discover class="py-[100px]" />
-    <Home07Team class="py-[100px]" />
-    <Home08FAQ class="py-[100px]" />
-    <Home09Form class="py-[100px]" />
+    <Home01Carousel class="section-padding" />
+    <Home02Statement class="section-padding" />
+    <Home03Difference class="section-padding" />
+    <Home04Testmonial class="section-padding" />
+    <Home05News class="section-padding" />
+    <Home06Discover class="section-padding" />
+    <Home07Team class="section-padding" />
+    <Home08FAQ class="section-padding" />
+    <Home09Form class="section-padding" />
   </LayoutMain>
 </template>
