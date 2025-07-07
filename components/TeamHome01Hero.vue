@@ -30,7 +30,7 @@
     </div>
     <!-- Reusable Scroll Down Button -->
     <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
-      <ScrollDownButton target="statement" />
+      <ScrollDownButton target="meet" />
     </div>
   </section>
 </template>
