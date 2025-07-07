@@ -1,7 +1,8 @@
 ---
 name: John Doe
 role: Senior Lawyer
-bio: Experienced in corporate law...
+biography: >
+  John Doe is a senior lawyer...
 academic:
   - LLB, Harvard Law School
   - LLM, Oxford University

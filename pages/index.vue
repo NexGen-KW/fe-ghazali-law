@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <LayoutMain>
     <Home01Carousel />

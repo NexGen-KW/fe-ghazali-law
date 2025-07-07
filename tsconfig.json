@@ -2,10 +2,17 @@
   "extends": "./.nuxt/tsconfig.json",
   "include": [
     "nuxt.config.ts",
-    "types",
-    "content",
-    "components",
-    "pages",
-    "layouts"
-  ]
+    "types/**/*",
+    "content/**/*",
+    "components/**/*",
+    "pages/**/*",
+    "layouts/**/*",
+    "composables/**/*", // Recommended
+    "utils/**/*", // Recommended
+    "**/*.vue" // Optional (for Vue SFCs)
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "types": ["@nuxt/content", "@nuxtjs/i18n"] // Removed "@nuxt/schema"
+  }
 }

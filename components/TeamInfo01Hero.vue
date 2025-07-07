@@ -1,11 +1,22 @@
+<script setup lang="ts">
+defineProps<{
+  member?: {
+    name?: string;
+    role?: string;
+    biography?: string;
+  };
+}>();
+</script>
+
 <template>
   <section
     class="relative mt-[-111px] flex h-[100vh] items-center justify-center overflow-hidden"
   >
-    <!-- Crossfade background images -->
+    <!-- Hero Section Background Image -->
     <div class="absolute inset-0 z-0 h-full w-full">
       <transition-group name="fade-cross" tag="div">
         <div
+          key="background"
           class="absolute inset-0 h-full w-full bg-cover bg-center"
           :style="{ backgroundImage: `` }"
         ></div>
@@ -19,10 +30,10 @@
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
       >
         <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
-          {{ $t('Meet Our Team') }}
+          {{ member?.name || $t('Meet Our Team') }}
         </h1>
         <p class="text-shadow-custom text-white">
-          {{ $t('carouselParagraph') }}
+          {{ member?.role || $t('carouselParagraph') }}
         </p>
       </div>
     </div>
@@ -30,6 +41,8 @@
     <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
       <ScrollDownButton target="meet" />
     </div>
+    <!-- <ContentRenderer v-if="home" :value="home" />
+    <div v-else>Home not found</div> -->
   </section>
 </template>
 

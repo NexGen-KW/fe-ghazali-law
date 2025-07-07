@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     preset: 'static', // THIS enables SSG
   },
   app: {
-    baseURL: '/fe-ghazali-law/',
+    baseURL: '/',
   },
   modules: [
     '@nuxt/content',
@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     'reka-ui/nuxt',
     '@vueuse/nuxt',
   ],
+
   vite: {
     plugins: [tailwindcss()],
   },
