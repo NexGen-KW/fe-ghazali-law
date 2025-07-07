@@ -2,7 +2,7 @@
   <section
     class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
   >
-    <div class="hero-text mt-[-40%]">
+    <div class="hero-text">
       <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
         <h1 class="font-marcellusSC text-[32px]">
           {{ $t('carouselHeading') }}
@@ -23,7 +23,11 @@
 import ScrollDownButton from './ui/ScrollDownButton.vue';
 </script>
 
-<style>
+<style scoped>
+section {
+  align-items: start;
+  padding-top: 120px;
+}
 .text-shadow-custom {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
