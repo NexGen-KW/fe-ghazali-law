@@ -25,7 +25,9 @@
           advising institutions such as the World Bank and IMF on key national
           laws.
         </p>
-        <BaseButton>Know More</BaseButton>
+        <NuxtLink to="/team/rawan-mishari-al-ghazali">
+          <BaseButton>Know More</BaseButton>
+        </NuxtLink>
       </div>
     </div>
   </div>

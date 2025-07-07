@@ -1,3 +1,4 @@
+import { defineNuxtConfig } from 'nuxt/config';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -13,7 +14,29 @@ export default defineNuxtConfig({
     baseURL: '/fe-ghazali-law/',
   },
   modules: [
-    '@nuxtjs/i18n',
+    '@nuxt/content',
+    [
+      '@nuxtjs/i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            name: 'English',
+            files: ['en.yaml'],
+            dir: 'ltr',
+            symbol: 'EN',
+          },
+          {
+            code: 'ar',
+            name: 'Arabic',
+            files: ['ar.yaml'],
+            dir: 'rtl',
+            symbol: 'Arabic',
+          },
+        ],
+        strategy: 'no_prefix',
+      },
+    ],
     'nuxt-swiper',
     '@nuxt/fonts',
     '@nuxt/icon',
@@ -25,24 +48,5 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['types', 'static'],
-  },
-  i18n: {
-    locales: [
-      {
-        code: 'en',
-        name: 'English',
-        files: ['en.yaml'],
-        dir: 'ltr',
-        symbol: 'EN',
-      },
-      {
-        code: 'ar',
-        name: 'Arabic',
-        files: ['ar.yaml'],
-        dir: 'rtl',
-        symbol: 'Arabic',
-      },
-    ],
-    strategy: 'no_prefix',
   },
 });

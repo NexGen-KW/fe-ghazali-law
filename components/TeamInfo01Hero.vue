@@ -1,5 +1,52 @@
 <template>
-  <div></div>
+  <section
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center overflow-hidden"
+  >
+    <!-- Crossfade background images -->
+    <div class="absolute inset-0 z-0 h-full w-full">
+      <transition-group name="fade-cross" tag="div">
+        <div
+          class="absolute inset-0 h-full w-full bg-cover bg-center"
+          :style="{ backgroundImage: `` }"
+        ></div>
+      </transition-group>
+    </div>
+    <!-- Overlay text container near the bottom, above the button -->
+    <div
+      class="absolute bottom-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
+    >
+      <div
+        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
+      >
+        <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
+          {{ $t('Meet Our Team') }}
+        </h1>
+        <p class="text-shadow-custom text-white">
+          {{ $t('carouselParagraph') }}
+        </p>
+      </div>
+    </div>
+    <!-- Reusable Scroll Down Button -->
+    <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
+      <ScrollDownButton target="meet" />
+    </div>
+  </section>
 </template>
 
-<script lang="ts" setup></script>
+<style>
+.text-shadow-custom {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.overlay-blur {
+  background: rgba(77, 77, 77, 0.37);
+  backdrop-filter: blur(7.5px);
+}
+.fade-cross-enter-active,
+.fade-cross-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-cross-enter-from,
+.fade-cross-leave-to {
+  opacity: 0;
+}
+</style>

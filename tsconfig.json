@@ -1,0 +1,11 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "include": [
+    "nuxt.config.ts",
+    "types",
+    "content",
+    "components",
+    "pages",
+    "layouts"
+  ]
+}

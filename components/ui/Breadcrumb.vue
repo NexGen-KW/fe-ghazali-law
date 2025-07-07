@@ -27,9 +27,7 @@
 </template>
 
 <script lang="ts" setup>
-interface Props {
-  breadcrumb: IBreadcrumb;
-}
+import { navigation } from '../../static/navigation';
 
-defineProps<Props>();
+const breadcrumb = navigation;
 </script>

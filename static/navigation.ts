@@ -1,3 +1,5 @@
+import type { IBreadcrumb } from '../types/IBreadcrumb';
+
 export const navigation: IBreadcrumb = [
   {
     label: 'home',

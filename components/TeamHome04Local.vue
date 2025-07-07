@@ -20,11 +20,13 @@
         :key="member.name"
         class="relative flex flex-col items-center"
       >
-        <img
-          :src="member.img"
-          :alt="member.name"
-          class="h-[420px] w-[350px] object-cover"
-        />
+        <NuxtLink :to="`/team/${member.slug}`">
+          <img
+            :src="member.img"
+            :alt="member.name"
+            class="h-[420px] w-[350px] object-cover"
+          />
+        </NuxtLink>
         <div
           class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-4 text-center"
         >
@@ -40,10 +42,12 @@ const members = [
   {
     name: 'Maha Al Rashidi',
     img: '7.jpg',
+    slug: 'maha-al-rashidi',
   },
   {
     name: 'Saoud Al Jasem',
     img: '9.jpg',
+    slug: 'saoud-al-jasem',
   },
 ];
 </script>
