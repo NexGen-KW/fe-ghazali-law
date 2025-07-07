@@ -2,6 +2,7 @@ const { green, grass, mauve } = require('@radix-ui/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  safelist: ['mt-[-40%]'],
   content: ['./**/*.vue'],
   theme: {
     extend: {

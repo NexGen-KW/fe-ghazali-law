@@ -1,5 +1,6 @@
 <template>
   <section
+    id="about"
     class="relative mt-[-111px] flex h-[35vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[170px]"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">

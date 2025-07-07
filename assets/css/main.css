@@ -62,13 +62,13 @@
   .text-gold-950 {
     color: var(--color-gold-950);
   }
-
-  .section-padding {
-    @apply py-[100px] lg:py-[150px];
-  }
 }
 
 @layer base {
+  section {
+    @apply py-[100px] lg:py-[150px];
+  }
+
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
