@@ -9,7 +9,7 @@
           v-for="(img, idx) in visibleImages"
           :key="img.key"
           class="absolute inset-0 h-full w-full bg-cover bg-center"
-          :style="{ backgroundImage: `url(/${img.src})`, opacity: img.opacity }"
+          :style="{ backgroundImage: `url(${img.src})`, opacity: img.opacity }"
         ></div>
       </transition-group>
     </div>
