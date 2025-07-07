@@ -39,19 +39,19 @@ import BaseButton from './ui/BaseButton.vue';
 const members = [
   {
     name: 'Rawan Mishari Al-Ghazali',
-    img: '/member1.jpg',
+    img: 'member1.jpg',
   },
   {
     name: 'Bader Mishari Al-Ghazali',
-    img: '/5.jpg',
+    img: '5.jpg',
   },
   {
     name: 'Nada Bourahmah',
-    img: '/4.jpg',
+    img: '4.jpg',
   },
   {
     name: 'Saoud Al Jasem',
-    img: '/9.jpg',
+    img: '9.jpg',
   },
 ];
 </script>
