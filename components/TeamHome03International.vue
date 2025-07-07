@@ -4,7 +4,7 @@
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
         <h2
-          class="font-marcellusSC px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
+          class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
           International Department
         </h2>
@@ -22,7 +22,7 @@
         <img
           :src="member.img"
           :alt="member.name"
-          class="h-[420px] w-[350px] rounded-md object-cover"
+          class="h-[420px] w-[350px] object-cover"
         />
         <div
           class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-4 text-center"
@@ -50,12 +50,3 @@ const members = [
   },
 ];
 </script>
-
-<style scoped>
-.border-gold-200 {
-  border-color: #d6cba1;
-}
-.font-marcellusSC {
-  font-family: 'Marcellus SC', serif;
-}
-</style>
