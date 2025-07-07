@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     preset: 'static', // THIS enables SSG
   },
   app: {
-    baseURL: '/',
+    baseURL: '/fe-ghazali-law/',
   },
   modules: [
     '@nuxt/content',
