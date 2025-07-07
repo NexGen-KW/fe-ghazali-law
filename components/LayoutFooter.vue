@@ -89,11 +89,7 @@
               >Team
             </Nuxt-Link>
           </li>
-          <li>
-            <Nuxt-Link to="/clients" class="text-gold-50 hover:underline"
-              >Clients
-            </Nuxt-Link>
-          </li>
+          <li></li>
           <li>
             <Nuxt-Link to="/contact" class="text-gold-50 hover:underline"
               >Contact Us
