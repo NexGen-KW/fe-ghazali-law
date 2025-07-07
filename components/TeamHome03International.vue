@@ -6,13 +6,14 @@
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          International Department
+          Local Department
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
     </div>
     <div
-      class="mx-auto grid w-full max-w-5xl grid-cols-1 justify-center gap-8 md:grid-cols-2 lg:grid-cols-3"
+      class="mx-auto grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2"
+      style="justify-items: center"
     >
       <div
         v-for="member in members"
@@ -46,7 +47,7 @@ const members = [
   },
   {
     name: 'Khadija Riyad Hakim',
-    img: '6.jpg', // Adjust filename if needed
+    img: '6.jpg',
   },
 ];
 </script>
