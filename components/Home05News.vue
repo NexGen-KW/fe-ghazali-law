@@ -3,7 +3,7 @@
     class="flex w-full flex-col items-center justify-center bg-[#f7f7f7] py-16"
   >
     <UiHeaderScale t="heroDifference" />
-    <h2 class="text-center text-4xl">Our Latest News</h2>
+    <h2>Our Latest News</h2>
     <div
       class="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
     >

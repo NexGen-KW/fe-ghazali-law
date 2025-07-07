@@ -38,6 +38,11 @@ services:
     title: Arbitration Field
     description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
 
+# Team
+team:
+  title: Meet Our Experts
+  subtitle: Our Experts
+
 # Global
 heroCTA: Know more about us
 contactCTA: Contact Us
