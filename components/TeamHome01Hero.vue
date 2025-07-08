@@ -9,15 +9,15 @@
   >
     <!-- Overlay text container near the bottom, above the button -->
     <div
-      class="absolute bottom-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
+      class="absolute top-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
     >
       <div
-        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
+        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-4 text-center"
       >
-        <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
+        <h1 class="font-marcellus mb-4 text-[24px] text-white sm:text-[32px]">
           {{ $t('Meet Our Team') }}
         </h1>
-        <p class="text-shadow-custom text-white">
+        <p class="text-shadow-custom hidden text-white lg:block">
           {{ $t('carouselParagraph') }}
         </p>
       </div>
