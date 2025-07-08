@@ -12,7 +12,7 @@
         <img
           src="/sloganandlogo.svg"
           alt="RMG Law Logo and Slogan"
-          class="h-auto w-[300px] sm:w-[300px] lg:w-[500px]"
+          class="hide-on-short h-auto w-[300px] sm:w-[300px] lg:w-[500px]"
         />
       </div>
       <!-- Vertical Separator -->
@@ -162,6 +162,11 @@ section {
     width: 100%;
     padding-left: 0 !important;
     margin-top: 16px;
+  }
+}
+@media (max-height: 860px) {
+  .hide-on-short {
+    display: none !important;
   }
 }
 </style>
