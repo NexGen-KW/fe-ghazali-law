@@ -69,6 +69,7 @@
         <ul class="text-gold-50 space-y-2 text-lg">
           <li>
             <Nuxt-Link
+              to="/"
               @click="scrollToTop"
               class="text-gold-50 cursor-pointer hover:underline"
               >Home</Nuxt-Link
