@@ -17,7 +17,7 @@
 
         <NuxtLink
           :to="`/services/${slugify(service.title)}`"
-          class="slide-overlay-btn relative mt-2 inline-block w-[116px] overflow-hidden rounded px-[8px] py-2 font-semibold text-[#a08c5b] transition"
+          class="slide-overlay-btn relative mt-2 inline-block w-[116px] overflow-hidden px-[8px] py-2 font-semibold text-[#a08c5b] transition"
         >
           <span>Read More</span>
         </NuxtLink>
