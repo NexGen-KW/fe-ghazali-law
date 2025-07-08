@@ -55,9 +55,7 @@
           <span class="text-gold-50 font-bold">Email :</span>
           Al-Ghazaly@gmail.com
         </p>
-        <a href="#" class="text-gold-50 mt-2 font-bold underline"
-          >GET DIRECTIONS</a
-        >
+   
       </div>
       <!-- Right: Browse Links -->
       <div
