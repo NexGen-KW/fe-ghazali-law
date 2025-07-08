@@ -1,7 +1,7 @@
 <template>
   <section
     id="services"
-    class="relative mt-[-111px] flex h-[45vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[130px] sm:pt-[150px] md:pt-[170px]"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[130px] sm:h-[45vh] sm:pt-[150px] md:pt-[170px]"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
       <h1 class="font-marcellusSC text-[32px]">
