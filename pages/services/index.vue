@@ -2,6 +2,7 @@
   <LayoutMain>
     <ServiceHome00Breadcrumb />
     <ServiceHome01Hero />
-    <ServiceHome02List />
+    <ServiceHome02Statement />
+    <ServiceHome03List />
   </LayoutMain>
 </template>

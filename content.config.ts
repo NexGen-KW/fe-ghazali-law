@@ -15,5 +15,15 @@ export default defineContentConfig({
         participations: z.array(z.string()),
       }),
     }),
+    services: defineCollection({
+      type: 'page',
+      source: 'services/*.md',
+      schema: z.object({
+        title: z.string(),
+        slug: z.string(),
+        description: z.string(),
+        details: z.array(z.string()),
+      }),
+    }),
   },
 });
