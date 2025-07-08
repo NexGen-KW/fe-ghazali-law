@@ -9,10 +9,14 @@
     <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
       <h2>
-        {{ $t('differenceHeading') }}
+        {{ $t('Decades of Excellence, Built on Trust') }}
       </h2>
       <p class="text-[18px] leading-[34px]">
-        {{ $t('differenceParagraph') }}
+        {{
+          $t(
+            'With over 30 years of dedication to legal excellence, Rawan Mishari Al-Ghazali Law Firm (RMG) stands as a trusted partner for local and global clients. Our legacy is defined by strategic vision, cross-border expertise, and a commitment to client success in Kuwait and beyond.',
+          )
+        }}
       </p>
       <div class="flex justify-center lg:justify-start">
         <BaseButton class="mt-[32px]">

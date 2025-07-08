@@ -104,17 +104,17 @@ const milestones = [
   {
     year: 2006,
     description:
-      'Significant expansion and new practice areas introduced. (Replace with real milestone)',
+      'Rawan Al-Ghazali joined the firm as an associate. Her entry marked the beginning of a new era, as she steadily advanced within the firm, bringing a progressive and internationally focused legal perspective.',
   },
   {
     year: 2012,
     description:
-      'Major international recognition and awards. (Replace with real milestone)',
+      'Rawan Al-Ghazali became the first named partner, and the firm was rebranded as Mishari Al-Ghazali and Rawan Mishari Al-Ghazali Law Firm, recognizing her leadership and rising prominence in Kuwait’s legal sector.',
   },
   {
     year: 2015,
     description:
-      'Rebranding and new partnerships established. (Replace with real milestone)',
+      'Mishari Al-Ghazali stepped down, appointing Rawan as Managing Director. The firm was renamed Rawan Mishari Al-Ghazali Law Firm, solidifying its identity under her leadership and setting the course for its growth as a full-service, internationally oriented Kuwaiti law firm.',
   },
 ];
 
