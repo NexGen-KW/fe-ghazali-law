@@ -1,6 +1,6 @@
 <template>
   <section
-    class="py-[90px]"
+    class="container py-[90px]"
     :class="[
       'border-gold-200 grid grid-cols-1 justify-between gap-4 py-[24px] text-center lg:grid-cols-2 lg:text-left',
       localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',

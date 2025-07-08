@@ -6,19 +6,21 @@
     ]"
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
-      <UiHeaderScale t="heroDifference" />
-      <h2>
-        {{ $t('differenceHeading') }}
-      </h2>
-      <p class="text-[18px] leading-[34px]">
-        {{ $t('differenceParagraph') }}
-      </p>
-      <div class="flex justify-center lg:justify-start">
-        <BaseButton class="mt-[32px]">
-          <NuxtLink to="/contact">
-            {{ $t('contactCTA') }}
-          </NuxtLink>
-        </BaseButton>
+      <div class="px-10">
+        <UiHeaderScale t="heroDifference" />
+        <h2>
+          {{ $t('differenceHeading') }}
+        </h2>
+        <p class="text-[18px] leading-[34px]">
+          {{ $t('differenceParagraph') }}
+        </p>
+        <div class="flex justify-center lg:justify-start">
+          <BaseButton class="mt-[32px]">
+            <NuxtLink to="/contact">
+              {{ $t('contactCTA') }}
+            </NuxtLink>
+          </BaseButton>
+        </div>
       </div>
     </div>
     <div class="flex flex-col">
