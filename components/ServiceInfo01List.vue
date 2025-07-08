@@ -16,7 +16,7 @@
       <aside class="w-full flex-shrink-0 md:w-64">
         <div class="flex flex-col gap-2">
           <button
-            v-for="svc in services"
+            v-for="svc in [...services].reverse()"
             :key="svc.slug"
             @click="selectService(svc.slug)"
             :class="[
@@ -37,14 +37,14 @@
           <h1 class="font-marcellus mb-4 text-[32px] text-[#3a2e13]">
             {{ service.title }}
           </h1>
-          <p class="mb-[24px] text-lg text-[#3a2e13]">
+          <p class="mb-[24px] text-[20px] text-[#3a2e13]">
             {{ service.description }}
           </p>
           <div class="space-y-4">
             <p
               v-for="(detail, idx) in service.details"
               :key="idx"
-              class="mb-[24px] text-[#3a2e13]"
+              class="mb-[24px] text-[20px] text-[#3a2e13]"
             >
               {{ detail }}
             </p>

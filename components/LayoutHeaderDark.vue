@@ -11,7 +11,7 @@
         <li>
           <NuxtLink
             :to="item.url"
-            class="hover:text-gold-500 font-medium text-white capitalize transition-colors"
+            class="hover:text-gold-900 font-medium capitalize transition-colors"
             :style="{
               color: route.path === item.url ? 'var(--color-gold-500)' : '',
             }"
@@ -26,7 +26,7 @@
     <button
       type="button"
       @click="handleLocaleChange"
-      class="hidden items-center gap-2 text-white lg:flex"
+      class="text-gold-900 hidden items-center gap-2 lg:flex"
     >
       <span>{{ alternateLocale.symbol }}</span>
       <Icon name="ic:outline-language" size="24px" />
@@ -87,7 +87,7 @@
                 <NuxtLink
                   :to="item.url"
                   @click="closeMobileMenu"
-                  class="hover:text-gold-500 block rounded-lg text-gray-800 px-4 py-3 font-medium capitalize transition-colors"
+                  class="hover:text-gold-500 block rounded-lg px-4 py-3 font-medium text-gray-800 capitalize transition-colors"
                   :class="{
                     'bg-gold-500 text-white': route.path === item.url,
                     'hover:bg-gray-100': route.path !== item.url,

@@ -2,6 +2,17 @@
 import { useRoute } from 'vue-router';
 import { useAsyncData } from '#app';
 import { queryCollection } from '#imports';
+import { useHead } from '#imports';
+
+definePageMeta({
+  layout: 'white-background',
+});
+
+useHead({
+  bodyAttrs: {
+    class: 'service-detail-body',
+  },
+});
 
 const slug = useRoute().params.slug;
 const { data: post } = await useAsyncData(`services-${slug}`, () => {
@@ -14,11 +25,13 @@ const { data: services } = await useAsyncData('services', () =>
 </script>
 
 <template>
-  <LayoutMain>
-    <ServiceInfo01List
-      :service="post"
-      :services="services"
-      :currentSlug="slug"
-    />
-  </LayoutMain>
+  <div>
+    <LayoutMain>
+      <ServiceInfo01List
+        :service="post"
+        :services="services"
+        :currentSlug="slug"
+      />
+    </LayoutMain>
+  </div>
 </template>
