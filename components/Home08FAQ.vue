@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container flex w-full flex-col items-center justify-center py-12"
+    class="container flex w-full flex-col items-center justify-center px-4 py-12"
   >
     <HeaderScale t="We care about you" class="mb-4" />
     <h2 class="text-gold-900 mb-8">How Can We Help You?</h2>

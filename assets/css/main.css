@@ -65,6 +65,9 @@
 }
 
 @layer base {
+  body {
+    @apply max-w-[100vw] overflow-x-hidden;
+  }
   section {
     @apply py-[100px] lg:py-[150px];
   }
