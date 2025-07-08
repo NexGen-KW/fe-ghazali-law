@@ -7,12 +7,12 @@
     >
       <!-- Logo/Slogan on the left -->
       <div
-        class="mb-4 flex w-[500px] flex-col items-center justify-center pr-8 md:mb-0"
+        class="mb-4 flex w-[500px] flex-col items-center justify-center pr-8 sm:mb-0 sm:p-0"
       >
         <img
           src="/sloganandlogo.svg"
           alt="RMG Law Logo and Slogan"
-          class="h-full w-full"
+          class="h-auto w-[300px] sm:w-[300px] lg:w-[500px]"
         />
       </div>
       <!-- Vertical Separator -->

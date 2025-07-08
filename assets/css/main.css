@@ -69,7 +69,7 @@
     @apply max-w-[100vw] overflow-x-hidden;
   }
   section {
-    @apply py-[100px] lg:py-[150px];
+    @apply px-4 py-[100px] lg:py-[150px];
   }
 
   button:not(:disabled),
@@ -100,5 +100,10 @@
 
   html[dir='rtl'] {
     @apply font-ar-ibm;
+  }
+
+  body,
+  section {
+    overflow-x: hidden;
   }
 }

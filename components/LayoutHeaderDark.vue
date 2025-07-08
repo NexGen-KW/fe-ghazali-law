@@ -36,7 +36,7 @@
     <button
       type="button"
       @click="toggleMobileMenu"
-      class="flex items-center gap-2 text-white lg:hidden"
+      class="text-gold-500 flex items-center gap-2 lg:hidden"
     >
       <Icon
         :name="isMobileMenuOpen ? 'ic:outline-close' : 'ic:outline-menu'"
