@@ -1,7 +1,7 @@
 <template>
   <header
     class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-4 px-[81px] lg:px-[81px]"
-    style="border-bottom: 1px solid #797879"
+    style="border-bottom: 1px solid #bebebe"
   >
     <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
 
