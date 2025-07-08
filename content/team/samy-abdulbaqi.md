@@ -1,6 +1,7 @@
 ---
 name: Mr. Samy Abdulbaqi
 image: 10.jpg
+department: senior
 role: Senior Counselor
 biography: |
   Mr. Samy Abdulbaqi is a seasoned Egyptian attorney with over 40 years of experience in legal practice. He is licensed before the Court of Cassation, the Supreme Constitutional Court, and the Supreme Administrative Court in Egypt. He holds a Master's degree in Law and multiple postgraduate diplomas in Criminal Sciences, Public Law, and Private Law from Cairo University (Class of 1982).

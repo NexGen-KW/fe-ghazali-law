@@ -13,6 +13,7 @@ export default defineContentConfig({
         academic: z.array(z.string()),
         experience: z.array(z.string()),
         participations: z.array(z.string()),
+        department: z.string(),
       }),
     }),
     services: defineCollection({

@@ -2,6 +2,7 @@
 name: Bader Mishari Al Ghazali
 image: 5.jpg
 role: Legal Consultant and Lawyer
+department: international
 biography: |
   Bader is a bilingual Kuwaiti lawyer in the International Department at Rawan Mishari Al-Ghazali Law Firm, where he is developing a dynamic cross-border practice in financial services, corporate law, and commercial transactions. He holds an LL.B. (Hons) from Manchester Metropolitan University and gained international exposure during a secondment at Simmons & Simmons in London, contributing to matters involving private funds, financial services, and energy investments.
 

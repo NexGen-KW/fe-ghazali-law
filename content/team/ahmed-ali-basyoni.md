@@ -2,6 +2,7 @@
 name: Mr. Ahmed Ali Basyoni
 image: 6.jpg
 role: Senior Counselor
+department: senior
 biography: |
   Mr. Ahmed Ali Basyoni is a seasoned legal consultant with over two decades of legal advisory experience in Kuwait and Egypt. He currently serves as a senior legal advisor at Rawan Mishari Al-Ghazali Law Firm, where he specializes in reviewing and drafting contracts in Arabic, offering precise legal analysis and support across corporate, commercial, and investment matters.
 

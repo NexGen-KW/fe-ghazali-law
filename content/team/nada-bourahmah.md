@@ -2,6 +2,7 @@
 name: Nada Bourahmah
 image: 4.jpg
 role: Senior Legal Consultant and Lawyer
+department: international
 biography: |
   Nada is a highly experienced legal professional currently serving as Legal Counsel in the International Department at Rawan Mishari Al-Ghazali Law Firm. She specializes in cross-border transactions, commercial litigation, and international contract advisory, and is known for her strategic thinking and precision in legal drafting within both Kuwaiti and international legal frameworks.
 

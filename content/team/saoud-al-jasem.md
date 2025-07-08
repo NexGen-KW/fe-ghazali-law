@@ -1,6 +1,7 @@
 ---
 name: Saoud Al Jasem
 image: 9.jpg
+department: local
 role: Lawyer
 biography: |
   Mr. Saoud Al Jasem is a Kuwaiti attorney with over a decade of courtroom experience, specializing in commercial and corporate litigation. He is registered with the Kuwait Bar Association and certified in key legal areas including electronic transactions, administrative investigations, and contract execution. Mr. Al Jasem maintains a strong daily presence in the Kuwaiti courts and expert panel hearings, where he represents clients across a wide spectrum of disputes.

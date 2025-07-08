@@ -1,6 +1,7 @@
 ---
 name: Khadija Riyad Hakim
 image: 13.jpg
+department: international
 role: Senior Legal Consultant
 biography: |
   Khadija is a highly respected legal consultant with almost two decades of experience advising clients throughout Lebanon, Kuwait, and the wider GCC. As a key member of the International Department at Rawan Mishari Al-Ghazali Law Firm, she handles complex cross-border matters in commercial, corporate, administrative, and international law, drawing on deep knowledge of both civil- and common-law systems.
