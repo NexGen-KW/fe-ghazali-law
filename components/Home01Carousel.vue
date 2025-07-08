@@ -20,7 +20,7 @@
       <!-- Hero Text Carousel -->
       <div class="hero-text flex flex-1 flex-col items-center justify-center">
         <div
-          class="hero-msg mx-auto min-h-[140px] max-w-[600px] text-center text-white"
+          class="hero-msg mx-auto min-h-[200px] max-w-[600px] text-center text-white"
         >
           <transition name="slide-left" mode="out-in">
             <h1
@@ -38,19 +38,19 @@
               {{ slides[currentSlide].paragraph }}
             </p>
           </transition>
-          <!-- Navigation Dots (moved inside hero-msg and left-aligned) -->
-          <div class="mt-6 flex w-full justify-start space-x-2">
-            <button
-              v-for="(slide, idx) in slides"
-              :key="idx"
-              :class="[
-                'h-3 rounded-full transition-all duration-300',
-                idx === currentSlide ? 'bg-gold-400 w-8' : 'w-3 bg-white/50',
-              ]"
-              @click="goToSlide(idx)"
-              aria-label="Go to slide"
-            ></button>
-          </div>
+        </div>
+        <!-- Navigation Dots (moved outside hero-msg) -->
+        <div class="mt-6 flex w-full max-w-[600px] justify-start space-x-2">
+          <button
+            v-for="(slide, idx) in slides"
+            :key="idx"
+            :class="[
+              'h-3 rounded-full transition-all duration-300',
+              idx === currentSlide ? 'bg-gold-400 w-8' : 'w-3 bg-white/50',
+            ]"
+            @click="goToSlide(idx)"
+            aria-label="Go to slide"
+          ></button>
         </div>
       </div>
     </div>
