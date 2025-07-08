@@ -13,18 +13,9 @@ defineProps<{
 
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-cover bg-center bg-no-repeat"
+    :style="{ backgroundImage: `url(/${member?.image})` }"
   >
-    <!-- Hero Section Background Image -->
-    <div class="absolute inset-0 z-0 h-full w-full">
-      <transition-group name="fade-cross" tag="div">
-        <div
-          key="background"
-          class="absolute inset-0 h-full w-full bg-cover bg-center"
-          :style="{ backgroundImage: `` }"
-        ></div>
-      </transition-group>
-    </div>
     <!-- Overlay text container near the bottom, above the button -->
     <div
       class="absolute bottom-40 left-1/2 z-10 flex -translate-x-1/2 justify-center"

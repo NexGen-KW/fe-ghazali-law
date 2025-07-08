@@ -7,6 +7,7 @@ export default defineContentConfig({
       source: 'team/*.md',
       schema: z.object({
         name: z.string(),
+        image: z.string(),
         role: z.string(),
         biography: z.string(),
         academic: z.array(z.string()),
