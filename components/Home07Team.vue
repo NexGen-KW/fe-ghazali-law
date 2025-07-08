@@ -51,22 +51,22 @@ function slugify(text: string) {
 const members = [
   {
     name: 'Rawan Mishari Al-Ghazali',
-    img: 'member1.jpg',
+    img: '/member1.jpg',
     slug: slugify('Rawan Mishari Al-Ghazali'),
   },
   {
     name: 'Bader Mishari Al-Ghazali',
-    img: '5.jpg',
+    img: '/5.jpg',
     slug: slugify('Bader Mishari Al-Ghazali'),
   },
   {
     name: 'Nada Bourahmah',
-    img: '4.jpg',
+    img: '/4.jpg',
     slug: slugify('Nada Bourahmah'),
   },
   {
     name: 'Saoud Al Jasem',
-    img: '9.jpg',
+    img: '/9.jpg',
     slug: slugify('Saoud Al Jasem'),
   },
 ];
