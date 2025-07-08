@@ -51,7 +51,7 @@ const members = [
   },
   {
     name: 'Khadija Riyad Hakim',
-    img: '6.jpg',
+    img: '13.jpg',
     slug: 'khadija-riyad-hakim',
   },
 ];

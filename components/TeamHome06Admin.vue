@@ -60,12 +60,12 @@ const members = [
   },
   {
     name: 'Mr. Ahmed  Al Tanahi',
-    img: '6.jpg',
+    img: '11.jpg',
     slug: 'ahmed-al-tanahi',
   },
   {
     name: 'Mr. Ahmed Abul-Wafa',
-    img: '6.jpg',
+    img: '12.jpg',
     slug: 'ahmed-abul-wafa',
   },
 ];
