@@ -17,7 +17,7 @@
           class="block h-full w-full"
         >
           <img
-            :src="`/${member.img}`"
+            :src="`/fe-ghazali-law/5.jpg`"
             :alt="member.name"
             class="h-full w-full object-cover object-top"
           />
