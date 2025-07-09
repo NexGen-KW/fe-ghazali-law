@@ -76,6 +76,7 @@
 <script lang="ts" setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import ScrollDownButton from './ui/ScrollDownButton.vue';
+import { useI18n } from '#imports';
 const { t, locale } = useI18n();
 
 // Get slides from translations

@@ -4,9 +4,9 @@
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
         <h2
-          class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
+          class="ltr:font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Local Department
+          {{ $t('teamPage.localDepartment') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
@@ -38,16 +38,20 @@
 </template>
 
 <script lang="ts" setup>
-const members = [
+import { useI18n } from '#imports';
+import { computed } from 'vue';
+const { t } = useI18n();
+
+const members = computed(() => [
   {
-    name: 'Maha Al Rashidi',
-    img: '7.jpg',
-    slug: 'maha-al-rashidi',
+    name: t('teamPage.localMembers.0.name'),
+    img: t('teamPage.localMembers.0.img'),
+    slug: t('teamPage.localMembers.0.slug'),
   },
   {
-    name: 'Saoud Al Jasem',
-    img: '9.jpg',
-    slug: 'saoud-al-jasem',
+    name: t('teamPage.localMembers.1.name'),
+    img: t('teamPage.localMembers.1.img'),
+    slug: t('teamPage.localMembers.1.slug'),
   },
-];
+]);
 </script>

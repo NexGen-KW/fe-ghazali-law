@@ -4,11 +4,11 @@
     class="relative mt-[-111px] flex h-[100vh] items-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
-      <h1 class="font-marcellusSC text-[32px]">
-        {{ $t('CONTACT US') }}
+      <h1>
+        {{ $t('contactPage.title') }}
       </h1>
       <p class="text-shadow-custom text-white">
-        {{ $t('Our team looks forward to hearing from you!') }}
+        {{ $t('contactPage.subtitle') }}
       </p>
     </div>
     <!-- Reusable Scroll Down Button -->

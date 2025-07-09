@@ -3,8 +3,10 @@
     <div
       class="flex w-full max-w-6xl flex-col items-center rounded-xl px-4 py-12"
     >
-      <h2 class="font-marcellusSC mb-10 text-center text-3xl text-neutral-900">
-        Our Contact Information
+      <h2
+        class="ltr:font-marcellusSC mb-10 text-center text-3xl text-neutral-900"
+      >
+        {{ $t('contactPage.contactInfo') }}
       </h2>
       <div
         class="flex w-full flex-col items-center justify-center gap-8 md:flex-row"
@@ -24,23 +26,28 @@
 </template>
 
 <script lang="ts" setup>
-const contactInfo = [
+import { useI18n } from '#imports';
+import { computed } from 'vue';
+
+const { t } = useI18n();
+
+const contactInfo = computed(() => [
   {
     icon: 'mdi:email-outline',
-    label: 'Email Address',
+    label: t('contactPage.emailLabel'),
     value: 'Al-Ghazaly@gmail.com',
   },
   {
     icon: 'mdi:phone-outline',
-    label: 'Phone Number',
-    value: '009651802234',
+    label: t('contactPage.phoneLabel'),
+    value: t('contactPage.phone'),
   },
   {
     icon: 'mdi:map-marker-outline',
-    label: 'Location',
-    value: 'Al-Shohdaa St, Kuwait',
+    label: t('contactPage.addressLabel'),
+    value: t('contactPage.address'),
   },
-];
+]);
 </script>
 
 <style scoped>

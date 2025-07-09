@@ -26,5 +26,15 @@ export default defineContentConfig({
         details: z.array(z.string()),
       }),
     }),
+    servicesAr: defineCollection({
+      type: 'page',
+      source: 'services.ar/*.md',
+      schema: z.object({
+        title: z.string(),
+        slug: z.string(),
+        description: z.string(),
+        details: z.array(z.string()),
+      }),
+    }),
   },
 });

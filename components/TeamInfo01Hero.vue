@@ -24,10 +24,12 @@ defineProps<{
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
       >
-        <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
+        <h1
+          class="ltr:font-marcellusSC mb-4 text-[20px] text-white md:text-[32px]"
+        >
           {{ member?.name || $t('Meet Our Team') }}
         </h1>
-        <p class="text-shadow-custom text-white">
+        <p class="text-shadow-custom text-[16px] text-white md:text-[24px]">
           {{ member?.role || $t('carouselParagraph') }}
         </p>
       </div>

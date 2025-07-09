@@ -40,7 +40,7 @@
       <div
         class="border-gold-900 md:items-left flex min-w-[260px] flex-1 flex-col items-start border-r border-l px-[50px]"
       >
-        <h3 class="text-gold-50 mb-4 font-serif text-2xl font-bold">
+        <h3 class="text-gold-50 mb-4 text-2xl font-bold">
           {{ $t('footer.contactInfo') }}
         </h3>
         <p class="text-gold-50 mb-2">
@@ -63,7 +63,7 @@
       <div
         class="md:items-left flex min-w-[200px] flex-1 flex-col items-start px-[50px]"
       >
-        <h3 class="text-gold-50 mb-4 font-serif text-2xl font-bold">
+        <h3 class="text-gold-50 mb-4 text-2xl font-bold">
           {{ $t('footer.browseLinks') }}
         </h3>
         <ul class="text-gold-50 space-y-2 text-lg">

@@ -4,9 +4,9 @@
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
         <h2
-          class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
+          class="ltr:font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Follow The Following
+          {{ $t('contactPage.stepsTitle') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
@@ -17,17 +17,23 @@
         :key="step.title"
         class="custom-card relative flex min-h-[180px] items-start bg-white p-8"
       >
-        <div class="mr-6 flex h-full flex-col items-center justify-center">
+        <div
+          class="flex h-full flex-col items-center justify-center ltr:mr-6 rtl:ml-6"
+        >
           <Icon :name="step.icon" size="40" class="text-[#3A3321]" />
         </div>
-        <div class="flex-1 border-l pl-6">
-          <div class="text-gold-700 mb-1 text-lg font-medium">
-            Step {{ step.number }}
+        <div class="flex-1 ltr:border-l ltr:pl-6 rtl:border-r rtl:pr-6">
+          <div class="text-gold-700 mb-1 text-start text-lg font-medium">
+            {{ $t('Step') }} {{ step.number }}
           </div>
-          <div class="font-marcellus mb-1 text-2xl text-[#3A3321]">
+          <div
+            class="ltr:font-marcellus mb-1 text-start text-2xl text-[#3A3321]"
+          >
             {{ step.title }}
           </div>
-          <div class="text-base text-neutral-700">{{ step.description }}</div>
+          <div class="text-start text-base text-neutral-700">
+            {{ step.description }}
+          </div>
         </div>
       </div>
     </div>
@@ -35,34 +41,37 @@
 </template>
 
 <script lang="ts" setup>
-const steps = [
+import { useI18n } from '#imports';
+import { computed } from 'vue';
+
+const { t } = useI18n();
+
+const steps = computed(() => [
   {
     number: 1,
     icon: 'mdi:calendar-outline',
-    title: 'Schedule an Appointment',
-    description: 'Choose a convenient time to meet with our legal team',
+    title: t('contactPage.steps.0.title'),
+    description: t('contactPage.steps.0.description'),
   },
   {
     number: 2,
     icon: 'mdi:account-question-outline',
-    title: 'Initial Consultation',
-    description:
-      'Discuss your case and get a clear understanding of your options',
+    title: t('contactPage.steps.1.title'),
+    description: t('contactPage.steps.1.description'),
   },
   {
     number: 3,
     icon: 'mdi:gavel',
-    title: 'Legal Strategy',
-    description: 'We develop a tailored plan to address your legal needs',
+    title: t('contactPage.steps.2.title'),
+    description: t('contactPage.steps.2.description'),
   },
   {
     number: 4,
     icon: 'mdi:check-circle-outline',
-    title: 'Case Resolution',
-    description:
-      'Our team works to resolve your case efficiently and effectively',
+    title: t('contactPage.steps.3.title'),
+    description: t('contactPage.steps.3.description'),
   },
-];
+]);
 </script>
 
 <style scoped>

@@ -150,12 +150,92 @@ aboutClients:
 # Service Hero
 serviceHeroTitle: خدماتنا
 serviceHeroParagraph: نقدم خدمات قانونية تجارية وشركات مخصصة، نجمع بين المعرفة العميقة بالنظام القانوني الكويتي والرؤية العالمية لدعم أعمالك في كل مرحلة.
+# Service Statement
+serviceStatement:
+  servicesPresented: ماذا نقدم لكم؟
+  paragraph: نقدم خدمات قانونية تجارية وشركات مخصصة، نجمع بين المعرفة العميقة بالنظام القانوني الكويتي والرؤية العالمية لدعم أعمالك في كل مرحلة.
+# Service Info
+backToServices: عودة إلى خدماتنا
 
+# Team page
+teamPage:
+  subtitle: المتخصصون في القانون
+  paragraph: نقدم خدمات قانونية تجارية وشركات مخصصة، نجمع بين المعرفة العميقة بالنظام القانوني الكويتي والرؤية العالمية لدعم أعمالك في كل مرحلة.
+  meetCTA: اعرف المزيد عن الفريق
+  memberName: روان مشاري الغزالي
+  memberRole: مؤسسة ومدير تنفيذي
+  memberBiography: مع أكثر من 19 عامًا من الخبرة في مجال القانون الكويتي، تمثل روان مشاري الغزالي شريكًا موثوقًا للعملاء المحليين والدوليين. تعتبر حصتنا من التميّز مبنية على الثقة والخبرة الدولية والتزامنا بنجاح عملائنا في الكويت وخارجها.
+  knowMore: اعرف المزيد
+  internationalDepartment: القسم الدولي
+  internationalMembers:
+    - name: بدر مشاري الغزالي
+      img: 5.jpg
+      slug: بدر-مشاري-الغزالي
+    - name: ندى بورحمة
+      img: 4.jpg
+      slug: ندى-بورحمة
+    - name: خديجة رياض حكيم
+      img: 13.jpg
+      slug: خديجة لياد حكيم
+  localDepartment: القسم المحلي
+  localMembers:
+    - name: مها الرشيدي
+      img: 7.jpg
+      slug: مها-الرشيدي
+    - name: سعود الجاسم
+      img: 9.jpg
+      slug: سعود-الجاسم
+  seniorCounselors: المحاميون المتقدمون
+  seniorCounselorsMembers:
+    - name: سامي عبد الباقي
+      img: 10.jpg
+      slug: سامي-عبد-الباقي
+    - name: أحمد علي باسيوني
+      img: 6.jpg
+      slug: أحمد-علي-باسيوني
+  administrativeTeam: فريق الإدارة
+  administrativeTeamMembers:
+    - name: محمد منصور
+      img: 3.jpg
+      slug: محمد-منصور
+    - name: زهيدة حسن
+      img: 2.jpg
+      slug: زهيدة-حسن
+    - name: امير المدبولي
+      img: 8.jpg
+      slug: عمر-المدبولي
+    - name: أحمد علي التناهي
+      img: 11.jpg
+      slug: أحمد-علي-التناهي
+    - name: أحمد أبو الوفا
+      img: 12.jpg
+      slug: أحمد-أبو-الوفا
 # Team member page
 Biography: السيرة الذاتية
 Academic Qualifications: المؤهلات العلمية
 Professional Experience: الخبرة المهنية
 Legislative and Academic Participations: الأنشطة التشريعية والعلمية
+
+# Contact Page
+contactPage:
+  title: تواصل معنا
+  subtitle: ينتظر فريقنا مقابلتكم
+  contactInfo: معلومات التواصل
+  addressLabel: الموقع
+  address: شارع الشهداء، الكويت
+  phoneLabel: 'هاتف'
+  phone: '2143522452'
+  emailLabel: 'البريد الإلكتروني'
+  stepsTitle: اتبع الخطوات التالية
+  steps:
+    - title: حجز موعد
+      description: اختر الوقت المناسب لمقابلة فريقنا القانوني
+    - title: الاستشارة الأولية
+      description: ناقش قضيتك واحصل على فهم واضح لخياراتك
+    - title: وضع الاستراتيجية القانونية
+      description: نضع خطة قانونية مخصصة لتلبية احتياجاتك
+    - title: حل القضية
+      description: يعمل فريقنا على حل قضيتك بكفاءة وفعالية
 
 # Footer
 footer:
@@ -166,7 +246,7 @@ footer:
   contactInfo: معلومات التواصل
   address: شارع الشهداء، مبنى رقم 3، قسم رقم 2
   phoneLabel: 'هاتف :'
-  phone: 2143522452
+  phone: '2143522452'
   emailLabel: 'البريد الإلكتروني :'
   browseLinks: روابط التصفح
   home: الرئيسية

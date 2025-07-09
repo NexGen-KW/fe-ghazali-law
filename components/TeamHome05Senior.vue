@@ -4,9 +4,9 @@
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
         <h2
-          class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
+          class="ltr:font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Senior Counselors
+          {{ $t('teamPage.seniorCounselors') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
@@ -38,16 +38,21 @@
 </template>
 
 <script lang="ts" setup>
-const members = [
+import { useI18n } from '#imports';
+import { computed } from 'vue';
+
+const { t } = useI18n();
+
+const members = computed(() => [
   {
-    name: 'Mr. Samy Abdulbaqi',
-    img: '10.jpg',
-    slug: 'samy-abdulbaqi',
+    name: t('teamPage.seniorCounselorsMembers.0.name'),
+    img: t('teamPage.seniorCounselorsMembers.0.img'),
+    slug: t('teamPage.seniorCounselorsMembers.0.slug'),
   },
   {
-    name: 'Mr. Ahmed Ali Basyoni',
-    img: '6.jpg',
-    slug: 'ahmed-ali-basyoni',
+    name: t('teamPage.seniorCounselorsMembers.1.name'),
+    img: t('teamPage.seniorCounselorsMembers.1.img'),
+    slug: t('teamPage.seniorCounselorsMembers.1.slug'),
   },
-];
+]);
 </script>

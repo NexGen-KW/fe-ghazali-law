@@ -9,16 +9,18 @@
   >
     <!-- Overlay text container near the bottom, above the button -->
     <div
-      class="absolute top-40 left-1/2 z-10 flex -translate-x-1/2 justify-center"
+      class="absolute top-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
     >
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-[30px] py-4 text-center"
       >
-        <h1 class="font-marcellus mb-4 text-[24px] text-white sm:text-[32px]">
-          {{ $t('Meet Our Team') }}
+        <h1
+          class="ltr:font-marcellus mb-4 text-[24px] text-white sm:text-[32px]"
+        >
+          {{ $t('teamPage.subtitle') }}
         </h1>
         <p class="text-shadow-custom hidden text-white lg:block">
-          {{ $t('carouselParagraph') }}
+          {{ $t('teamPage.paragraph') }}
         </p>
       </div>
     </div>

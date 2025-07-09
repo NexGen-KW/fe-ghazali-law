@@ -149,12 +149,92 @@ aboutClients:
 # Service Hero
 serviceHeroTitle: OUR SERVICES
 serviceHeroParagraph: We offer tailored corporate and commercial legal services, combining in-depth knowledge of Kuwait's legal system with a global perspective to support your business at every stage.
+# Service Statement
+serviceStatement:
+  servicesPresented: Services Presented
+  paragraph: We offer a range of corporate and commercial legal services for local and international clients. Our team combines legal expertise with strategic insight to deliver solutions that protect your interests and support your business objectives. Whether launching a new venture or navigating regulatory challenges, we are here to guide you.
+# Service Info
+backToServices: Back To Services
 
-# Team member page
+# Team page
+teamPage:
+  subtitle: Meet Our Experts
+  paragraph: Providing trusted legal guidance with integrity and dedication. Whether you're facing a dispute, planning for the future, or seeking counsel—our team is here to protect your rights
+  meetCTA: Meet RMG Experts
+  memberName: Rawan Mishari Al-Ghazali
+  memberRole: Founder and Managing Director
+  memberBiography: With nearly two decades of experience, Ms. Rawan Al-Ghazali is a leading force in Kuwait’s legal sector, known for her work in legislative reform, legal consultancy, and arbitration, and for advising institutions such as the World Bank and IMF on key national laws.
+  knowMore: Know More
+  internationalDepartment: International Department
+  internationalMembers:
+    - name: Bader Mishari Al-Ghazali
+      img: 5.jpg
+      slug: bader-mishari-al-ghazali
+    - name: Nada Bourahmah
+      img: 4.jpg
+      slug: nada-bourahmah
+    - name: Khadija Riyad Hakim
+      img: 13.jpg
+      slug: khadija-riyad-hakim
+  localDepartment: Local Department
+  localMembers:
+    - name: Maha Al Rashidi
+      img: 7.jpg
+      slug: maha-al-rashidi
+    - name: Saoud Al Jasem
+      img: 9.jpg
+      slug: saoud-al-jasem
+  seniorCounselors: Senior Counselors
+  seniorCounselorsMembers:
+    - name: Samy Abdulbaqi
+      img: 10.jpg
+      slug: samy-abdulbaqi
+    - name: Ahmed Ali Basyoni
+      img: 6.jpg
+      slug: ahmed-ali-basyoni
+  administrativeTeam: Administrative Team
+  administrativeTeamMembers:
+    - name: Mr. Mahmoud Mansour
+      img: 3.jpg
+      slug: mahmoud-mansour
+    - name: Ms. Zahida Hassan
+      img: 2.jpg
+      slug: zahida-hassan
+    - name: Mr. Amir Elmadboli
+      img: 8.jpg
+      slug: amir-elmadboli
+    - name: Mr. Ahmed Al Tanahi
+      img: 11.jpg
+      slug: ahmed-al-tanahi
+    - name: Mr. Ahmed Abul-Wafa
+      img: 12.jpg
+      slug: ahmed-abul-wafa
+  # Team member page
 Biography: Biography
 Academic Qualifications: Academic Qualifications
 Professional Experience: Professional Experience
 Legislative and Academic Participations: Legislative and Academic Participations
+
+# Contact Page
+contactPage:
+  title: Contact Us
+  subtitle: Our Team Looks Forward to Hearing from You!
+  contactInfo: Contact Information
+  addressLabel: Location
+  address: Al-Shohadaa St, Kuwait
+  phoneLabel: 'Phone'
+  phone: '2143522452'
+  emailLabel: 'Email'
+  stepsTitle: Follow The Following
+  steps:
+    - title: Schedule an Appointment
+      description: Choose a convenient time to meet with our legal team
+    - title: Initial Consultation
+      description: Discuss your case and get a clear understanding of your options
+    - title: Legal Strategy
+      description: We develop a tailored plan to address your legal needs
+    - title: Case Resolution
+      description: Our team works to resolve your case efficiently and effectively
 
 # Footer
 footer:
@@ -165,7 +245,7 @@ footer:
   contactInfo: Contact Info
   address: Al-Shohadaa st, Building No.3, Department No.2
   phoneLabel: 'Phone :'
-  phone: 2143522452
+  phone: '2143522452'
   emailLabel: 'Email :'
   browseLinks: Browse Links
   home: Home

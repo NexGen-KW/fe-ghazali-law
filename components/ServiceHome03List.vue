@@ -16,10 +16,10 @@
         </div>
 
         <NuxtLink
-          :to="`/services/${slugify(service.title)}`"
+          :to="`/services/${service.slug}`"
           class="slide-overlay-btn relative mt-2 inline-block w-[116px] overflow-hidden px-[8px] py-2 font-semibold text-[#a08c5b] transition"
         >
-          <span>Read More</span>
+          <span>{{ $t('readMore') }}</span>
         </NuxtLink>
       </div>
     </div>
@@ -27,58 +27,9 @@
 </template>
 
 <script lang="ts" setup>
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)+/g, '');
-}
+import { useServices } from '~/composables/useServices';
 
-const services = [
-  {
-    title: 'Trade - Commercial Field',
-    description:
-      'Legal support for trade agreements and cross-border transactions.',
-  },
-  {
-    title: 'Corprate Field',
-    description:
-      'We provide legal support for company formation and governance.',
-  },
-  {
-    title: 'Banking Field',
-    description: 'Advising on banking regulations and compliance in Kuwait.',
-  },
-  {
-    title: 'Investment Field',
-    description:
-      'Legal guidance for secure and strategic investments in Kuwait',
-  },
-  {
-    title: 'Intellectual Property Field',
-    description:
-      'Safeguarding your trademarks and copyrights with legal expertise.',
-  },
-  {
-    title: 'Contracting & Real-Estate Field',
-    description:
-      'Legal support for real estate, construction, and development.',
-  },
-  {
-    title: 'Arbitration Field',
-    description:
-      'Resolving disputes efficiently through expert-led arbitration proceedings',
-  },
-  {
-    title: 'Energy Field',
-    description:
-      "Support for energy projects and investment in Kuwait's energy sector.",
-  },
-  {
-    title: 'Taxation',
-    description: 'Advising on tax compliance to optimize your operations.',
-  },
-];
+const { services } = useServices();
 </script>
 
 <style scoped>

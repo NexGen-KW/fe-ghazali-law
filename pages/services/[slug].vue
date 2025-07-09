@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { useAsyncData } from '#app';
-import { queryCollection } from '#imports';
-import { useHead } from '#imports';
+import { computed, useAsyncData, useHead } from '#imports';
+import { useServices } from '~/composables/useServices';
 
 definePageMeta({
   layout: 'white-background',
@@ -14,24 +13,20 @@ useHead({
   },
 });
 
-const slug = useRoute().params.slug;
-const { data: post } = await useAsyncData(`services-${slug}`, () => {
-  return queryCollection('services').path(`/services/${slug}`).first();
-});
+const route = useRoute();
+const slug = computed(() => route.params.slug as string);
+const { services, getServiceBySlug } = useServices();
+const service = computed(() => getServiceBySlug(slug.value));
 
-const { data: services } = await useAsyncData('services', () =>
-  queryCollection('services').all(),
-);
+// Debug logging
+console.log('Page: Current slug:', slug.value);
+console.log('Page: Service data:', service.value);
 </script>
 
 <template>
   <div>
     <LayoutMain>
-      <ServiceInfo01List
-        :service="post"
-        :services="services"
-        :currentSlug="slug"
-      />
+      <ServiceInfo01List :service="service" :currentSlug="slug" />
     </LayoutMain>
   </div>
 </template>
