@@ -3,36 +3,48 @@
     class="relative mt-[-111px] flex h-[100vh] w-full items-center justify-center bg-[url(/homepage-bg.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <div
-      class="centered-hero-content mx-auto flex w-full max-w-7xl items-center justify-center px-4 pt-20"
+      class="centered-hero-content mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 pt-20 md:flex-row md:gap-0 md:pt-20"
     >
       <!-- Logo/Slogan on the left -->
       <div
-        class="mb-4 flex w-[500px] flex-col items-center justify-center pr-8 sm:mb-0 sm:p-0"
+        class="mb-4 flex w-full max-w-[300px] flex-col items-center justify-center md:mb-0 md:max-w-[500px] md:pe-8"
       >
         <img
           src="/sloganandlogo.svg"
           alt="RMG Law Logo and Slogan"
-          class="hide-on-short h-auto w-[300px] sm:w-[300px] lg:w-[500px]"
+          class="hide-on-short h-auto w-[300px] sm:w-[300px] md:w-[500px]"
         />
       </div>
-      <!-- Vertical Separator -->
-      <div class="bg-gold-400 mx-6 hidden h-[180px] w-px md:block"></div>
+
+      <!-- Vertical Separator (hidden on mobile) -->
+      <div
+        class="bg-gold-200 mx-0 hidden h-[120px] w-px md:mx-6 md:block md:h-[180px]"
+      ></div>
+
       <!-- Hero Text Carousel -->
-      <div class="hero-text flex flex-1 flex-col items-center justify-center">
+      <div
+        class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
+      >
         <div
-          class="hero-msg mx-auto min-h-[200px] max-w-[600px] text-center text-white"
+          class="hero-msg mx-auto min-h-[180px] max-w-[600px] text-center text-white"
         >
-          <transition name="slide-left" mode="out-in">
+          <transition
+            :name="isRTL ? 'slide-right' : 'slide-left'"
+            mode="out-in"
+          >
             <h1
-              class="font-markazi text-left text-[48px] transition-all duration-500"
+              class="carousel-heading text-start"
               :key="slides[currentSlide].heading"
             >
               {{ slides[currentSlide].heading }}
             </h1>
           </transition>
-          <transition name="slide-left" mode="out-in">
+          <transition
+            :name="isRTL ? 'slide-right' : 'slide-left'"
+            mode="out-in"
+          >
             <p
-              class="text-shadow-custom text-left text-[24px] text-white transition-all duration-500"
+              class="carousel-paragraph text-shadow-custom mt-4 text-start text-white"
               :key="slides[currentSlide].paragraph"
             >
               {{ slides[currentSlide].paragraph }}
@@ -55,14 +67,14 @@
       </div>
     </div>
     <!-- Reusable Scroll Down Button -->
-    <div class="absolute bottom-20 left-1/2 -translate-x-1/2">
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
       <ScrollDownButton target="statement" />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 // Get slides from translations
 const slides = computed(() => [
@@ -79,6 +91,9 @@ const slides = computed(() => [
     paragraph: t('carousel.slides.2.paragraph'),
   },
 ]);
+
+// Only keep isRTL for transition direction
+const isRTL = computed(() => locale.value === 'ar');
 
 const currentSlide = ref(0);
 let intervalId: ReturnType<typeof setInterval> | null = null;
@@ -120,24 +135,13 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-section {
-  align-items: center;
-  justify-content: center;
-}
-.centered-hero-content {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .text-shadow-custom {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.bg-gold-400 {
-  background-color: #e0b354;
-}
 .slide-left-enter-active,
-.slide-left-leave-active {
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .slide-left-enter-from {
@@ -148,24 +152,12 @@ section {
   opacity: 0;
   transform: translateX(-40px);
 }
-@media (max-width: 900px) {
-  .centered-hero-content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .hero-text {
-    width: 100%;
-    padding-left: 0 !important;
-    margin-top: 16px;
-  }
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translateX(-40px);
 }
-@media (max-height: 860px) {
-  .hide-on-short {
-    display: none !important;
-  }
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(40px);
 }
 </style>

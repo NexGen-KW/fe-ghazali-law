@@ -7,10 +7,13 @@
 <script setup lang="ts">
 const { localeProperties } = useI18n();
 
+const htmlLang = computed(() => localeProperties.value.code);
+const htmlDir = computed(() => localeProperties.value.dir);
+
 useHead({
   htmlAttrs: {
-    lang: () => localeProperties.value.code,
-    dir: () => localeProperties.value.dir,
+    lang: htmlLang,
+    dir: htmlDir,
   },
 });
 </script>

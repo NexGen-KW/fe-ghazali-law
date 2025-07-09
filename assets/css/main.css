@@ -77,6 +77,10 @@
     cursor: pointer;
   }
 
+  h1 {
+    @apply font-markazi text-[36px] leading-tight lg:text-[48px];
+  }
+
   h2 {
     @apply font-marcellus py-[16px] text-[36px] sm:items-center lg:ltr:text-left lg:rtl:text-right;
   }

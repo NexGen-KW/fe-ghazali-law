@@ -10,13 +10,16 @@
     </div>
     <div class="mx-auto w-full max-w-[1100px] flex-1">
       <Swiper
+        v-if="localeReady"
+        :key="locale.value"
         :modules="[SwiperNavigation, SwiperPagination]"
         :slides-per-view="1"
         :space-between="30"
         :loop="true"
+        :dir="locale.value === 'ar' ? 'rtl' : 'ltr'"
         :navigation="{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-prev',
+          prevEl: '.swiper-button-next',
         }"
         class="testimonial-swiper"
       >
@@ -24,18 +27,27 @@
           v-for="testimonial in testimonials"
           :key="testimonial.author"
         >
-          <div class="flex h-full flex-col items-center justify-center px-16">
-            <p class="text-center text-lg font-normal">
+          <div
+            class="flex h-full flex-col items-center justify-center px-8 md:px-16"
+          >
+            <p
+              class="max-w-4xl text-center text-base leading-relaxed font-normal md:text-start md:text-lg"
+            >
               {{ testimonial.text }}
             </p>
-            <div class="mt-4 text-center text-[#7A869A] italic">
+            <div
+              class="mt-4 text-center text-sm text-[#7A869A] italic md:text-start md:text-base"
+            >
               {{ testimonial.author }}
             </div>
           </div>
         </SwiperSlide>
-
-        <div class="swiper-button-prev !text-gold-500 !absolute !left-4"></div>
-        <div class="swiper-button-next !text-gold-500 !absolute !right-4"></div>
+        <div
+          class="swiper-button-prev !text-gold-500 !absolute !top-1/2 !ms-4 !-translate-y-1/2"
+        ></div>
+        <div
+          class="swiper-button-next !text-gold-500 !absolute !top-1/2 !me-4 !-translate-y-1/2"
+        ></div>
       </Swiper>
     </div>
     <BaseButton>
@@ -57,28 +69,27 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const testimonials = [
-  {
-    text: "Partnering with this firm has been a game-changer for our business. Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals",
-    author: 'Moataz Salah, CEO of Techno Co.',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-    author: 'Ahmed, CEO of Techno Co.',
-  },
-  {
-    text: "Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals",
-    author: 'Mohamed, CEO of Techno Co.',
-  },
-];
+const { locale, t } = useI18n();
+
+const localeReady = ref(true);
+watch(locale, () => {
+  localeReady.value = false;
+  nextTick(() => {
+    localeReady.value = true;
+  });
+});
+
+const testimonials = computed(() => [
+  { text: t('testimonials.0.text'), author: t('testimonials.0.author') },
+  { text: t('testimonials.1.text'), author: t('testimonials.1.author') },
+  { text: t('testimonials.2.text'), author: t('testimonials.2.author') },
+]);
 </script>
 
 <style scoped>
 .testimonial-swiper {
   height: 100%;
 }
-
-/* Custom navigation button styles to make them smaller */
 .testimonial-swiper .swiper-button-prev,
 .testimonial-swiper .swiper-button-next {
   width: 40px !important;
@@ -88,17 +99,28 @@ const testimonials = [
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease;
 }
-
 .testimonial-swiper .swiper-button-prev::after,
 .testimonial-swiper .swiper-button-next::after {
   font-size: 16px !important;
   font-weight: bold !important;
 }
-
-/* Hover effects */
 .testimonial-swiper .swiper-button-prev:hover,
 .testimonial-swiper .swiper-button-next:hover {
   background-color: rgba(255, 255, 255, 1) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+/* Ensure stable layout during language transitions */
+.testimonial-swiper .swiper-slide {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-swiper .swiper-slide > div {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>
