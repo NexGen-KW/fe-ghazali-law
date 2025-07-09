@@ -7,7 +7,7 @@
     >
       <!-- Logo/Slogan on the left/above -->
       <div
-        class="mb-4 flex w-full max-w-full flex-col items-center md:mb-0 md:max-w-[400px]"
+        class="mb-4 flex hidden w-full max-w-full flex-col items-center md:mb-0 md:flex md:max-w-[400px]"
       >
         <img
           src="/sloganandlogo.svg"
