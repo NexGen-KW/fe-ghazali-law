@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative m-auto flex h-[100vh] max-w-[1440px] flex-col pt-[40px]"
+    class="relative m-auto flex h-[100dvh] max-w-[1440px] flex-col pt-[40px]"
   >
     <!-- Back Button -->
     <button

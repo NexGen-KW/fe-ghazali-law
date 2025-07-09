@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center overflow-hidden"
+    class="relative mt-[-111px] flex h-[100dvh] items-center justify-center overflow-hidden"
     style="
       background-image: url('/fe-ghazali-law/Big-Group-Photo-2.jpg');
       background-size: cover;
