@@ -62,25 +62,23 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import ScrollDownButton from './ui/ScrollDownButton.vue';
+const { t } = useI18n();
 
-const slides = [
+// Get slides from translations
+const slides = computed(() => [
   {
-    heading: 'Justice. Expertise. Results.',
-    paragraph: `Providing trusted legal guidance with integrity and dedication. Whether you're facing a dispute, planning for the future, or seeking counsel—our team is here to protect your rights`,
+    heading: t('carousel.slides.0.heading'),
+    paragraph: t('carousel.slides.0.paragraph'),
   },
   {
-    heading: 'Your Rights, Our Priority.',
-    paragraph:
-      'We are committed to defending your interests and delivering results with professionalism and care.',
+    heading: t('carousel.slides.1.heading'),
+    paragraph: t('carousel.slides.1.paragraph'),
   },
   {
-    heading: 'Experience You Can Trust.',
-    paragraph:
-      'Our team brings years of expertise in a wide range of legal fields, ensuring you receive the best possible advice.',
+    heading: t('carousel.slides.2.heading'),
+    paragraph: t('carousel.slides.2.paragraph'),
   },
-];
+]);
 
 const currentSlide = ref(0);
 let intervalId: ReturnType<typeof setInterval> | null = null;
@@ -91,18 +89,19 @@ function goToSlide(idx: number) {
 }
 
 function nextSlide() {
-  currentSlide.value = (currentSlide.value + 1) % slides.length;
+  currentSlide.value = (currentSlide.value + 1) % slides.value.length;
   resetAutoplay();
 }
 
 function prevSlide() {
-  currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length;
+  currentSlide.value =
+    (currentSlide.value - 1 + slides.value.length) % slides.value.length;
   resetAutoplay();
 }
 
 function startAutoplay() {
   intervalId = setInterval(() => {
-    currentSlide.value = (currentSlide.value + 1) % slides.length;
+    currentSlide.value = (currentSlide.value + 1) % slides.value.length;
   }, 5000);
 }
 
