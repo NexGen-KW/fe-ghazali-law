@@ -2,7 +2,6 @@
   <section
     :class="[
       'border-gold-200 grid grid-cols-1 justify-center gap-4 text-center lg:grid-cols-2 lg:text-left',
-      localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',
     ]"
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
@@ -11,7 +10,7 @@
         <h2>
           {{ $t('differenceHeading') }}
         </h2>
-        <p class="text-[18px] leading-[34px]">
+        <p class="text-start text-[18px] leading-[34px]">
           {{ $t('differenceParagraph') }}
         </p>
         <div class="flex justify-center lg:justify-start">

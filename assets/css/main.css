@@ -69,7 +69,7 @@
     @apply max-w-[100vw] overflow-x-hidden;
   }
   section {
-    @apply px-4 py-[100px] lg:py-[150px];
+    @apply py-[100px] lg:py-[150px];
   }
 
   button:not(:disabled),
@@ -91,7 +91,7 @@
 
   p {
     color: var(--paragraphColor);
-    @apply text-[18px] leading-[34px];
+    @apply text-[16px] leading-[34px] lg:text-[18px];
   }
 
   .border-gold-200 {

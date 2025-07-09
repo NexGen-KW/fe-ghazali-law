@@ -12,34 +12,34 @@
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
-          :placeholder="$t('Enter your name')"
+          :placeholder="$t('homeForm.name')"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="email"
-          :placeholder="$t('Enter your email')"
+          :placeholder="$t('homeForm.email')"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
-          :placeholder="$t('Enter your phone')"
+          :placeholder="$t('homeForm.phone')"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="text"
-          :placeholder="$t('Enter your subject')"
+          :placeholder="$t('homeForm.subject')"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
       <textarea
         rows="4"
-        :placeholder="$t('Enter your message')"
+        :placeholder="$t('homeForm.message')"
         class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
       ></textarea>
       <div class="flex justify-center">
-        <BaseButton type="submit">{{ $t('Submit') }}</BaseButton>
+        <BaseButton type="submit">{{ $t('homeForm.submit') }}</BaseButton>
       </div>
     </form>
   </section>

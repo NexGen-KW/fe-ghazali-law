@@ -5,7 +5,6 @@ defineProps<{
   member?: {
     name?: string;
     role?: string;
-    biography?: string;
     image?: string;
   };
 }>();

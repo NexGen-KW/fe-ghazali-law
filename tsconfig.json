@@ -7,12 +7,12 @@
     "components/**/*",
     "pages/**/*",
     "layouts/**/*",
-    "composables/**/*", // Recommended
-    "utils/**/*", // Recommended
-    "**/*.vue" // Optional (for Vue SFCs)
+    "composables/**/*",
+    "utils/**/*",
+    "**/*.vue"
   ],
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "types": ["@nuxt/content", "@nuxtjs/i18n"] // Removed "@nuxt/schema"
+    "types": ["@nuxt/content", "@nuxtjs/i18n"]
   }
 }

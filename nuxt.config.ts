@@ -34,9 +34,13 @@ export default defineNuxtConfig({
             symbol: 'Arabic',
           },
         ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'locales/',
         strategy: 'no_prefix',
       },
     ],
+
     'nuxt-swiper',
     '@nuxt/fonts',
     '@nuxt/icon',

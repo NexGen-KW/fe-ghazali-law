@@ -3,23 +3,21 @@
     class="relative mt-[-111px] flex h-[100vh] w-full items-center justify-center bg-[url(/homepage-bg.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <div
-      class="centered-hero-content mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-8 px-4 pt-20 md:flex-row md:gap-0 md:pt-20"
+      class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 pt-20"
     >
-      <!-- Logo/Slogan on the left -->
+      <!-- Logo/Slogan on the left/above -->
       <div
-        class="mb-4 flex w-full max-w-[300px] flex-col items-center justify-center md:mb-0 md:max-w-[500px] md:pe-8"
+        class="mb-4 flex w-full max-w-full flex-col items-center md:mb-0 md:max-w-[400px]"
       >
         <img
           src="/sloganandlogo.svg"
           alt="RMG Law Logo and Slogan"
-          class="hide-on-short h-auto w-[300px] sm:w-[300px] md:w-[500px]"
+          class="hide-on-short h-auto w-full max-w-[200px] sm:max-w-[240px] md:max-w-[300px] lg:max-w-[400px]"
         />
       </div>
 
       <!-- Vertical Separator (hidden on mobile) -->
-      <div
-        class="bg-gold-200 mx-0 hidden h-[120px] w-px md:mx-6 md:block md:h-[180px]"
-      ></div>
+      <div class="bg-gold-200 mx-6 hidden h-[180px] w-px lg:block"></div>
 
       <!-- Hero Text Carousel -->
       <div
@@ -33,7 +31,7 @@
             mode="out-in"
           >
             <h1
-              class="carousel-heading text-start"
+              class="carousel-heading text-center lg:text-start"
               :key="slides[currentSlide].heading"
             >
               {{ slides[currentSlide].heading }}
@@ -44,7 +42,7 @@
             mode="out-in"
           >
             <p
-              class="carousel-paragraph text-shadow-custom mt-4 text-start text-white"
+              class="carousel-paragraph text-shadow-custom mt-4 text-center text-white lg:text-start"
               :key="slides[currentSlide].paragraph"
             >
               {{ slides[currentSlide].paragraph }}
@@ -52,13 +50,15 @@
           </transition>
         </div>
         <!-- Navigation Dots (moved outside hero-msg) -->
-        <div class="mt-6 flex w-full max-w-[600px] justify-start space-x-2">
+        <div
+          class="mt-6 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
+        >
           <button
             v-for="(slide, idx) in slides"
             :key="idx"
             :class="[
-              'h-3 rounded-full transition-all duration-300',
-              idx === currentSlide ? 'bg-gold-400 w-8' : 'w-3 bg-white/50',
+              'h-2 rounded-full transition-all duration-300',
+              idx === currentSlide ? 'bg-gold-400 w-8' : 'w-5 bg-white/50',
             ]"
             @click="goToSlide(idx)"
             aria-label="Go to slide"
@@ -74,6 +74,8 @@
 </template>
 
 <script lang="ts" setup>
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import ScrollDownButton from './ui/ScrollDownButton.vue';
 const { t, locale } = useI18n();
 
 // Get slides from translations
@@ -89,6 +91,10 @@ const slides = computed(() => [
   {
     heading: t('carousel.slides.2.heading'),
     paragraph: t('carousel.slides.2.paragraph'),
+  },
+  {
+    heading: t('carousel.slides.3.heading'),
+    paragraph: t('carousel.slides.3.paragraph'),
   },
 ]);
 
@@ -159,5 +165,12 @@ onBeforeUnmount(() => {
 .slide-right-leave-to {
   opacity: 0;
   transform: translateX(40px);
+}
+@media (min-width: 950px) {
+  .carousel-950-row {
+    flex-direction: row !important;
+    gap: 0 !important;
+    padding-top: 5rem !important; /* pt-20 */
+  }
 }
 </style>

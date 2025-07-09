@@ -6,7 +6,7 @@
       {{ $t('statementHeading') }}
     </h2>
     <p
-      class="border-gold-200 container max-w-[1024px] border-y py-8 text-center text-2xl"
+      class="border-gold-200 container max-w-[1024px] border-y py-8 text-center"
     >
       {{ $t('statementParagraph') }}
     </p>

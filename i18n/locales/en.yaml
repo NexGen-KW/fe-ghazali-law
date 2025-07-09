@@ -1,3 +1,8 @@
+# Global
+heroCTA: Know more about us
+contactCTA: Contact Us
+readMore: Read More
+
 breadcrumb:
   home: Home
   about: About Us
@@ -16,7 +21,9 @@ carousel:
       paragraph: We are committed to defending your interests and delivering results with professionalism and care.
     - heading: Experience You Can Trust.
       paragraph: Our team brings years of expertise in a wide range of legal fields, ensuring you receive the best possible advice.
-
+    - heading: Cross-Border Legal Expertise.
+      paragraph: A dedicated International Department advising foreign entities on investments, compliance, and dispute resolution in Kuwait.
+# Statement
 statementHeading: Where Professionalism Meets Purpose
 statementParagraph: Our legal strategy is built on meticulous preparation, thoughtful analysis, and unwavering advocacy. At every stage, we prioritize transparency, professionalism, and outcomes that truly serve our clients' best interests. With a commitment to ethical excellence and forward-thinking counsel, we ensure every case receives the attention and strategy it deserves
 heroDifference: What Makes Us Different
@@ -31,9 +38,23 @@ testimonials:
   - text: "Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals"
     author: 'Mohamed, CEO of Techno Co.'
 # News
-discover: What We Do In RMG
+news:
+  - image: kuwait1.jpg
+    title: RMG Hosts Governance Seminar
+    description: Leaders gathered to explore evolving compliance standards.
+    date: 23 March, 2025
+  - image: kuwait2.jpg
+    title: Rawan Al-Ghazali joins IMF Panel.
+    description: Ms. Al-Ghazali advises on legislation for emerging markets.
+    date: 23 March, 2025
+  - image: kuwait3.jpg
+    title: Update on Investment Law
+    description: Latest changes to Kuwait’s FDI regulations explained.
+    date: 23 March, 2025
+newsSectionTitle: Our Latest News
 discoverCTA: Discover All Our Services
-
+discoverHeading: Our Services?
+discoverHeaderScale: What We Do In RMG
 # Services Accordion
 services:
   contracting:
@@ -45,17 +66,6 @@ services:
   arbitration:
     title: Arbitration Field
     description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
-
-# Team
-team:
-  title: Our Members
-  subtitle: Meet Our Experts
-
-# Global
-heroCTA: Know more about us
-contactCTA: Contact Us
-readMore: Read More
-
 # Home Form
 homeForm:
   header: Keep In Touch With Us
@@ -67,7 +77,11 @@ homeForm:
   subject: Subject*
   message: How Can We Help You?*
   submit: Submit Your Message
-
+# Team
+team:
+  title: Our Members
+  subtitle: Meet Our Experts
+  meetCTA: Meet All The Team
 # Home FAQ
 homeFaq:
   header: We care about you
@@ -85,3 +99,27 @@ homeFaq:
 # About - page
 aboutHeroHeading: ABOUT US
 aboutHeroParagraph: With a deep-rooted dedication to legal excellence, we proudly serve clients in Kuwait and beyond, combining local insight with global standards to deliver impactful legal solutions
+
+# Team member page
+Biography: Biography
+Academic Qualifications: Academic Qualifications
+Professional Experience: Professional Experience
+Legislative and Academic Participations: Legislative and Academic Participations
+
+# Footer
+footer:
+  description: |
+    Delivering trusted legal solutions
+    with global standards and local
+    expertise since 1992.
+  contactInfo: Contact Info
+  address: Al-Shohadaa st, Building No.3, Department No.2
+  phoneLabel: 'Phone :'
+  phone: 2143522452
+  emailLabel: 'Email :'
+  browseLinks: Browse Links
+  home: Home
+  about: About Us
+  services: Services
+  team: Team
+  contact: Contact Us

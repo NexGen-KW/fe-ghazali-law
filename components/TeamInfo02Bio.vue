@@ -1,5 +1,6 @@
 <script setup lang="ts">
 defineProps<{ member?: { biography?: string } }>();
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -10,7 +11,7 @@ defineProps<{ member?: { biography?: string } }>();
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Biography
+          {{ $t('Biography') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>

@@ -3,7 +3,7 @@
     class="flex w-full flex-col items-center justify-center bg-[#f7f7f7] py-16"
   >
     <UiHeaderScale t="heroDifference" />
-    <h2>Our Latest News</h2>
+    <h2>{{ t('newsSectionTitle') }}</h2>
     <div
       class="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
     >
@@ -14,7 +14,7 @@
       >
         <img
           loading="lazy"
-          :src="item.image"
+          :src="`/fe-ghazali-law/${item.image}`"
           :alt="item.title"
           class="mb-4 h-[242px] w-full rounded-t-md object-cover"
         />
@@ -35,24 +35,26 @@
 
 <script lang="ts" setup>
 import BaseButton from '~/components/ui/BaseButton.vue';
-const news = [
+const { t } = useI18n();
+
+const news = computed(() => [
   {
-    image: 'kuwait1.jpg',
-    title: 'RMG Hosts Governance Seminar',
-    description: 'Leaders gathered to explore evolving compliance standards.',
-    date: '23 Mars, 2025',
+    image: t('news.0.image'),
+    title: t('news.0.title'),
+    description: t('news.0.description'),
+    date: t('news.0.date'),
   },
   {
-    image: 'kuwait2.jpg',
-    title: 'Rawan Al-Ghazali joins IMF Panel.',
-    description: 'Ms. Al-Ghazali advises on legislation for emerging markets.',
-    date: '23 Mars, 2025',
+    image: t('news.1.image'),
+    title: t('news.1.title'),
+    description: t('news.0.description'),
+    date: t('news.1.date'),
   },
   {
-    image: 'kuwait3.jpg',
-    title: 'Update on Investment Law',
-    description: 'Latest changes to Kuwait’s FDI regulations explained.',
-    date: '23 Mars, 2025',
+    image: t('news.2.image'),
+    title: t('news.2.title'),
+    description: t('news.0.description'),
+    date: t('news.2.date'),
   },
-];
+]);
 </script>

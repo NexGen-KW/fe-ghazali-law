@@ -13,7 +13,7 @@ defineProps<{ member?: { participations?: string } }>();
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Legislative and Academic Participations
+          {{ $t('Legislative and Academic Participations') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
