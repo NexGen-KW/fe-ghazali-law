@@ -3,7 +3,7 @@
     class="container flex w-full flex-col items-center justify-center py-12"
   >
     <HeaderScale :t="$t('homeForm.header')" class="mb-4" />
-    <h2 class="text-gold-900 mb-8 text-center font-serif text-3xl">
+    <h2 class="text-gold-900 mb-8 text-center font-serif">
       {{ $t('homeForm.title').replace($t('homeForm.titleHighlight'), '') }}
       <span class="text-gold-500">{{ $t('homeForm.titleHighlight') }}</span>
       {{ $t('homeForm.title').split($t('homeForm.titleHighlight'))[1] || '' }}

@@ -38,6 +38,9 @@ export default defineNuxtConfig({
         lazy: true,
         langDir: 'locales/',
         strategy: 'no_prefix',
+
+        messageCompiler: false,
+        escapeParameterHtml: false,
       },
     ],
 

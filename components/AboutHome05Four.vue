@@ -16,23 +16,27 @@
 </template>
 
 <script lang="ts" setup>
-const features = [
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const features = computed(() => [
   {
-    title: 'Cross-Border Expertise',
-    description: 'Legal gateway for international companies entering Kuwait',
+    title: t('aboutFeatures.0.title'),
+    description: t('aboutFeatures.0.description'),
   },
   {
-    title: 'Legal Coverage',
-    description:
-      'We offer legal coverage for finance, healthcare, and real estate.',
+    title: t('aboutFeatures.1.title'),
+    description: t('aboutFeatures.1.description'),
   },
   {
-    title: 'Litigation & Arbitration',
-    description: 'Strong advocacy in local courts and international forums',
+    title: t('aboutFeatures.2.title'),
+    description: t('aboutFeatures.2.description'),
   },
   {
-    title: 'Established Client Trust',
-    description: 'Serving multinational corporations and government entities',
+    title: t('aboutFeatures.3.title'),
+    description: t('aboutFeatures.3.description'),
   },
-];
+]);
 </script>

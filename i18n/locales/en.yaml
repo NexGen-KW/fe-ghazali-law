@@ -99,6 +99,56 @@ homeFaq:
 # About - page
 aboutHeroHeading: ABOUT US
 aboutHeroParagraph: With a deep-rooted dedication to legal excellence, we proudly serve clients in Kuwait and beyond, combining local insight with global standards to deliver impactful legal solutions
+aboutContactHeading: 'Decades of Excellence, Built on Trust'
+aboutContactParagraph: 'With over 30 years of dedication to legal excellence, Rawan Mishari Al-Ghazali Law Firm (RMG) stands as a trusted partner for local and global clients. Our legacy is defined by strategic vision, cross-border expertise, and a commitment to client success in Kuwait and beyond.'
+# Analytics
+aboutAnalytics:
+  - number: '+30'
+    title: Years of Experience
+    description: 'Delivering trusted legal solutions since 1992'
+  - number: '+50'
+    title: International Clients
+    description: 'Fortune 500 companies and global institutions'
+  - number: '+10'
+    title: Core Practice Areas
+    description: 'Corporate, commercial investment, and more.'
+  - number: '+4'
+    title: Jurisdictions Covered
+    description: 'Advising across the US, UK, GCC, and beyond'
+# About Journey Timeline
+aboutJourneyTitle: Our Journey
+aboutJourneyParagraph: Our journey is a testament to our commitment to excellence and innovation. From our humble beginnings to our current position as a leading law firm in Kuwait, we have always been guided by our core values of integrity, professionalism, and client satisfaction.
+aboutJourney:
+  - year: '1992'
+    description: 'Mishari Mohammed Al-Ghazali Law Firm was established, marking its beginning with an international partnership with the U.S.-based law firm Graham & James. This collaboration laid the groundwork for future global affiliations and rebranding efforts, eventually leading to a partnership with Squire Patton Boggs.'
+  - year: '2006'
+    description: 'Rawan Al-Ghazali joined the firm as an associate. Her entry marked the beginning of a new era, as she steadily advanced within the firm, bringing a progressive and internationally focused legal perspective.'
+  - year: '2012'
+    description: 'Rawan Al-Ghazali became the first named partner, and the firm was rebranded as Mishari Al-Ghazali and Rawan Mishari Al-Ghazali Law Firm, recognizing her leadership and rising prominence in Kuwait’s legal sector.'
+  - year: '2015'
+    description: 'Mishari Al-Ghazali stepped down, appointing Rawan as Managing Director. The firm was renamed Rawan Mishari Al-Ghazali Law Firm, solidifying its identity under her leadership and setting the course for its growth as a full-service, internationally oriented Kuwaiti law firm.'
+# About Features
+aboutFeatures:
+  - title: 'Cross-Border Expertise'
+    description: 'Legal gateway for international companies entering Kuwait'
+  - title: 'Legal Coverage'
+    description: 'We offer legal coverage for finance, healthcare, and real estate.'
+  - title: 'Litigation & Arbitration'
+    description: 'Strong advocacy in local courts and international forums'
+  - title: 'Established Client Trust'
+    description: 'Serving multinational corporations and government entities'
+
+# About Clients
+aboutClientsTitle: Our Clients
+aboutClientsParagraph: We proudly represent a diverse portfolio of organizations — from corporations to government bodies — who rely on our legal expertise to navigate challenges.
+aboutClients:
+  - title: 'Kuwait Petroleum Corporation'
+    description: 'Kuwait Petroleum Corporation'
+
+# Service Page
+# Service Hero
+serviceHeroTitle: OUR SERVICES
+serviceHeroParagraph: We offer tailored corporate and commercial legal services, combining in-depth knowledge of Kuwait's legal system with a global perspective to support your business at every stage.
 
 # Team member page
 Biography: Biography

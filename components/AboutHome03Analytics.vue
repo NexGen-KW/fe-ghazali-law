@@ -1,40 +1,55 @@
 <template>
-  <div class="font-marcellus border-t border-[#D6CBA1] bg-white py-12">
+  <div class="border-t border-[#D6CBA1] bg-white py-12">
     <div
       class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 text-center md:grid-cols-4"
     >
-      <div v-for="item in analytics" :key="item.title">
-        <div class="mb-2 text-5xl font-light text-[#C6B16B] md:text-6xl">
+      <div
+        v-for="item in aboutAnalytics"
+        :key="item.title"
+        class="justify-centermin flex flex-col items-center"
+      >
+        <div class="text-gold-500 mb-2 text-5xl font-light md:text-6xl">
           {{ item.number }}
         </div>
-        <div class="mb-1 text-lg font-semibold">{{ item.title }}</div>
-        <div class="text-base text-gray-800" v-html="item.description"></div>
+        <p class="ltr:font-marcellus mb-1 leading-tight">
+          {{ item.title }}
+        </p>
+        <p
+          class="ltr:font-montserrat max-w-[260px] text-base leading-tight text-gray-800"
+        >
+          {{ item.description }}
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const analytics = [
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
+
+const { t } = useI18n();
+
+const aboutAnalytics = computed(() => [
   {
-    number: '+30',
-    title: 'Years of Experience',
-    description: 'Delivering trusted legal<br />solutions since 1992',
+    number: t('aboutAnalytics.0.number'),
+    title: t('aboutAnalytics.0.title'),
+    description: t('aboutAnalytics.0.description'),
   },
   {
-    number: '+50',
-    title: 'International Clients',
-    description: 'Fortune 500 companies<br />and global institutions',
+    number: t('aboutAnalytics.1.number'),
+    title: t('aboutAnalytics.1.title'),
+    description: t('aboutAnalytics.1.description'),
   },
   {
-    number: '+10',
-    title: 'Core Practice Areas',
-    description: 'Corporate, commercial,<br />investment, and more.',
+    number: t('aboutAnalytics.2.number'),
+    title: t('aboutAnalytics.2.title'),
+    description: t('aboutAnalytics.2.description'),
   },
   {
-    number: '+4',
-    title: 'Jurisdictions Covered',
-    description: 'Advising across the US, UK,<br />GCC, and beyond',
+    number: t('aboutAnalytics.3.number'),
+    title: t('aboutAnalytics.3.title'),
+    description: t('aboutAnalytics.3.description'),
   },
-];
+]);
 </script>

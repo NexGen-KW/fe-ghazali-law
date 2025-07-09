@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import 'tailwindcss';
 
 @utility container {
@@ -20,7 +21,7 @@
   /* Font Variants */
   --font-markazi: 'Markazi Text';
   --font-montserrat: 'Montserrat';
-  --font-ar-ibm: 'IBM Plex Sans Arabic';
+  --font-ar-ibm: 'Noto Kufi Arabic';
   --font-marcellusSC: 'Marcellus SC', serif;
   --font-marcellus: 'Marcellus', serif;
 
@@ -69,7 +70,7 @@
     @apply max-w-[100vw] overflow-x-hidden;
   }
   section {
-    @apply py-[100px] lg:py-[150px];
+    @apply pb-[100px] lg:py-[150px];
   }
 
   button:not(:disabled),
@@ -78,11 +79,11 @@
   }
 
   h1 {
-    @apply font-markazi text-[36px] leading-tight lg:text-[48px];
+    @apply py-[16px] text-[36px] leading-tight lg:text-[48px];
   }
 
   h2 {
-    @apply font-marcellus py-[16px] text-[36px] sm:items-center lg:ltr:text-left lg:rtl:text-right;
+    @apply py-[16px] text-[36px] sm:items-center lg:ltr:text-left lg:rtl:text-right;
   }
 
   h3 {
@@ -99,7 +100,18 @@
   }
 
   html[dir='ltr'] {
-    @apply font-montserrat;
+    h1 {
+      @apply font-marcellus;
+    }
+    h2 {
+      @apply font-marcellus;
+    }
+    h3 {
+      @apply font-marcellus;
+    }
+    p {
+      @apply font-montserrat;
+    }
   }
 
   html[dir='rtl'] {

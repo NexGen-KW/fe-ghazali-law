@@ -6,13 +6,11 @@
     </div>
     <!-- Heading -->
     <h2 class="mb-4 text-center text-3xl font-normal md:text-4xl">
-      Our Journey Through the Years
+      {{ t('aboutJourneyTitle') }}
     </h2>
     <!-- Subheading -->
     <p class="mx-auto mb-10 max-w-2xl text-base text-gray-700">
-      From our beginnings to becoming a trusted law firm, our timeline
-      highlights key milestones that shaped RMG’s legacy and reflects our
-      commitment to legal excellence.
+      {{ t('aboutJourneyParagraph') }}
     </p>
     <!-- Enhanced Interactive Timeline -->
     <div
@@ -93,30 +91,29 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const milestones = [
+const { t } = useI18n();
+
+const milestones = computed(() => [
   {
-    year: 1992,
-    description:
-      'Mishari Mohammed Al-Ghazali Law Firm was established, marking its beginning with an international partnership with the U.S.-based law firm Graham & James. This collaboration laid the groundwork for future global affiliations and rebranding efforts, eventually leading to a partnership with Squire Patton Boggs.',
+    year: t('aboutJourney.0.year'),
+    description: t('aboutJourney.0.description'),
   },
   {
-    year: 2006,
-    description:
-      'Rawan Al-Ghazali joined the firm as an associate. Her entry marked the beginning of a new era, as she steadily advanced within the firm, bringing a progressive and internationally focused legal perspective.',
+    year: t('aboutJourney.1.year'),
+    description: t('aboutJourney.1.description'),
   },
   {
-    year: 2012,
-    description:
-      'Rawan Al-Ghazali became the first named partner, and the firm was rebranded as Mishari Al-Ghazali and Rawan Mishari Al-Ghazali Law Firm, recognizing her leadership and rising prominence in Kuwait’s legal sector.',
+    year: t('aboutJourney.2.year'),
+    description: t('aboutJourney.2.description'),
   },
   {
-    year: 2015,
-    description:
-      'Mishari Al-Ghazali stepped down, appointing Rawan as Managing Director. The firm was renamed Rawan Mishari Al-Ghazali Law Firm, solidifying its identity under her leadership and setting the course for its growth as a full-service, internationally oriented Kuwaiti law firm.',
+    year: t('aboutJourney.3.year'),
+    description: t('aboutJourney.3.description'),
   },
-];
+]);
 
 const activeIndex = ref(0);
 function selectMilestone(idx: number) {

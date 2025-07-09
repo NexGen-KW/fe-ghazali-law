@@ -1,25 +1,26 @@
 <template>
   <section
     id="services"
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[130px] sm:h-[45vh] sm:pt-[150px] md:pt-[170px]"
+    class="relative mt-[-111px] flex h-[100vh] items-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
-      <h1 class="font-marcellusSC text-[24px] sm:text-[32px]">
-        {{ $t('OUR SERVICES') }}
+      <h1>
+        {{ $t('serviceHeroTitle') }}
       </h1>
-      <p class="text-shadow-custom text-white">
-        {{
-          $t(
-            'We offer tailored corporate and commercial legal services, combining in-depth knowledge of Kuwait’s legal system with a global perspective to support your business at every stage.',
-          )
-        }}
+      <p class="text-shadow-custom text-white md:text-[24px]">
+        {{ $t('serviceHeroParagraph') }}
       </p>
+    </div>
+    <!-- Reusable Scroll Down Button -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <ScrollDownButton target="statement" />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
 import { NuxtLink } from '#components';
+import ScrollDownButton from './ui/ScrollDownButton.vue';
 </script>
 <style>
 .text-shadow-custom {

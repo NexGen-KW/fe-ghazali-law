@@ -51,7 +51,7 @@ const faqs = computed(() => [
           <AccordionTrigger
             class="text-gold-900 flex w-full cursor-pointer items-center text-start text-lg font-medium select-none"
           >
-            <p class="flex-1">{{ faq.q }}</p>
+            <p class="flex-1 font-semibold">{{ faq.q }}</p>
             <p
               class="border-gold-900 ml-4 flex h-10 w-10 items-center justify-center rounded-full border"
             >

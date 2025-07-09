@@ -1,6 +1,7 @@
 <template>
   <section
-    class="container py-[90px] pt-[130px] sm:pt-[150px] md:pt-[170px]"
+    class="container px-4! py-[90px] pt-[130px] sm:pt-[150px] md:pt-[170px]"
+    id="contact"
     :class="[
       'border-gold-200 grid grid-cols-1 justify-between gap-4 py-[24px] text-center lg:grid-cols-2 lg:text-left',
       localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',
@@ -8,15 +9,11 @@
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
-      <h2>
-        {{ $t('Decades of Excellence, Built on Trust') }}
+      <h2 class="text-start">
+        {{ $t('aboutContactHeading') }}
       </h2>
-      <p class="text-[18px] leading-[34px]">
-        {{
-          $t(
-            'With over 30 years of dedication to legal excellence, Rawan Mishari Al-Ghazali Law Firm (RMG) stands as a trusted partner for local and global clients. Our legacy is defined by strategic vision, cross-border expertise, and a commitment to client success in Kuwait and beyond.',
-          )
-        }}
+      <p class="text-start text-[18px] leading-[34px]">
+        {{ $t('aboutContactParagraph') }}
       </p>
       <div class="flex justify-center lg:justify-start">
         <BaseButton class="mt-[32px]">
@@ -31,7 +28,7 @@
         loading="lazy"
         src="/group-international.jpg"
         alt="difference"
-        class="h-[371px] w-full max-w-[626px] object-cover"
+        class="h-[200px] w-full max-w-[626px] object-cover sm:h-[250px] md:h-[300px] lg:h-[371px]"
       />
     </div>
   </section>
