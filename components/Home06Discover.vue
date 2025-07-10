@@ -8,7 +8,7 @@
         class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
       >
         <HeaderScale :t="`${$t('discoverHeaderScale')}`" />
-        <h2 class="font-marcellus mb-8 text-center text-5xl">
+        <h2 class="ltr:font-marcellus mb-8 text-center text-5xl">
           {{ $t('discoverHeading') }}
         </h2>
         <BaseButton>
@@ -27,7 +27,7 @@
           >
             <AccordionHeader class="flex">
               <AccordionTrigger
-                class="text-gold-900 font-montserrat flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
+                class="text-gold-900 ltr:font-montserrat flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
               >
                 <span
                   class="mx-3 flex h-8 w-8 items-center justify-center text-2xl font-bold"

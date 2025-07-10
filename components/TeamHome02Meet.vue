@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center bg-white px-2 py-12" id="meet">
+  <div class="flex flex-col items-center bg-white px-2 py-12">
     <HeaderScale :t="$t('teamPage.meetCTA')" class="mb-10" />
     <div
       class="custom-card mx-auto flex w-full max-w-6xl flex-col items-center gap-8 p-8 md:flex-row"
