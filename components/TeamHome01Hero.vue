@@ -1,11 +1,12 @@
 <template>
   <section
     class="relative mt-[-111px] flex h-[100dvh] items-center justify-center overflow-hidden"
-    id="meet"
+    id="team-hero"
     style="
       background-image: url('/fe-ghazali-law/Big-Group-Photo-2.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
     "
   >
     <!-- Overlay text container near the bottom, above the button -->
@@ -27,7 +28,7 @@
     </div>
     <!-- Reusable Scroll Down Button -->
     <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
-      <ScrollDownButton target="meet" />
+      <ScrollDownButton target="team-meet" />
     </div>
   </section>
 </template>

@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col items-center bg-white px-2 py-12">
+  <section
+    class="flex flex-col items-center bg-white px-2 py-12"
+    id="team-meet"
+  >
     <HeaderScale :t="$t('teamPage.meetCTA')" class="mb-10" />
     <div
       class="custom-card mx-auto flex w-full max-w-6xl flex-col items-center gap-8 p-8 md:flex-row"
@@ -12,10 +15,10 @@
         />
       </div>
       <div class="flex-1 text-center md:text-start">
-        <h2 class="ltr:font-marcellus text-gold-900 mb-2 text-4xl">
+        <h2 class="ltr:font-marcellus text-gold-900 mb-2">
           {{ $t('teamPage.memberName') }}
         </h2>
-        <h3 class="font-500 mb-4 text-xl text-neutral-900">
+        <h3 class="font-500 mb-4 text-center text-neutral-900 md:text-start">
           {{ $t('teamPage.memberRole') }}
         </h3>
         <p class="mb-8 text-lg text-neutral-700">
@@ -26,7 +29,7 @@
         </NuxtLink>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
