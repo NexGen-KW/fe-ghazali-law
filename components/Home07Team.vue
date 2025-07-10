@@ -65,7 +65,7 @@ const members = computed(() => {
       class="mx-auto mb-8 grid w-full max-w-[1140px] grid-cols-1 justify-center justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-4"
     >
       <div
-        v-for="member in members"
+        v-for="member in members.reverse()"
         :key="member.slug"
         class="relative flex h-[373px] max-h-[373px] w-[273px] flex-col items-center justify-end overflow-hidden shadow-lg"
       >

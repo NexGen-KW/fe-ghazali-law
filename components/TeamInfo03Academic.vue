@@ -10,9 +10,7 @@ defineProps<{ member?: { academic?: string } }>();
     <div class="mb-10 flex w-full flex-col items-center">
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
-        <h2
-          class="ltr:font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
-        >
+        <h2 class="ltr:font-marcellus text-center text-neutral-900">
           {{ $t('Academic Qualifications') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>

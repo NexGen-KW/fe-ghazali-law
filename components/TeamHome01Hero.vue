@@ -1,6 +1,7 @@
 <template>
   <section
     class="relative mt-[-111px] flex h-[100dvh] items-center justify-center overflow-hidden"
+    id="meet"
     style="
       background-image: url('/fe-ghazali-law/Big-Group-Photo-2.jpg');
       background-size: cover;

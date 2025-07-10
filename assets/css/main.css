@@ -87,7 +87,7 @@
   }
 
   h2 {
-    @apply py-[16px] text-[36px] sm:items-center lg:ltr:text-left lg:rtl:text-right;
+    @apply py-[16px] text-[24px] sm:items-center sm:text-[36px] lg:ltr:text-left lg:rtl:text-right;
   }
 
   h3 {
