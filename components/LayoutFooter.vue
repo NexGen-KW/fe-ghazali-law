@@ -56,7 +56,7 @@
           <span class="text-gold-50 font-bold">{{
             $t('footer.emailLabel')
           }}</span>
-          {{ $t('Ghazaly@gmail.com') }}
+          Ghazaly@gmail.com
         </p>
       </div>
       <!-- Right: Browse Links -->
