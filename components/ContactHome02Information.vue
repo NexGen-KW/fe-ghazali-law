@@ -13,8 +13,7 @@
           v-for="item in contactInfo"
           :key="item.label"
           class="custom-card group relative flex h-48 w-full max-w-xs cursor-pointer flex-col items-center rounded bg-white p-8 text-center shadow-sm"
-          @touchstart="showTooltip"
-          @touchend="hideTooltip"
+          @click="toggleTooltip"
         >
           <Icon :name="item.icon" size="48" class="mb-4 text-[#3A3321]" />
           <div class="mb-2 w-full truncate text-xl font-normal">
@@ -29,7 +28,7 @@
 
           <!-- Tooltip overlay -->
           <div
-            class="tooltip-overlay bg-opacity-90 absolute inset-0 flex items-center justify-center rounded bg-black text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            class="tooltip-overlay bg-opacity-90 absolute inset-0 flex items-center justify-center rounded bg-black text-white opacity-0 transition-opacity duration-150 group-hover:opacity-100"
           >
             <div class="p-4 text-center">
               <div class="mb-2 text-lg font-medium">{{ item.label }}</div>
@@ -49,7 +48,7 @@
 
 <script lang="ts" setup>
 import { useI18n } from '#imports';
-import { computed } from 'vue';
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue';
 
 const { t } = useI18n();
 
@@ -71,18 +70,43 @@ const contactInfo = computed(() => [
   },
 ]);
 
-// Touch event handlers for mobile
-const showTooltip = (event: TouchEvent) => {
+// Simple click handler for mobile
+const activeCard = ref<HTMLElement | null>(null);
+
+const toggleTooltip = (event: MouseEvent) => {
   const card = event.currentTarget as HTMLElement;
-  card.classList.add('touch-active');
+
+  // If clicking the same card, hide it
+  if (activeCard.value === card) {
+    card.classList.remove('touch-active');
+    activeCard.value = null;
+  } else {
+    // Hide previous card if exists
+    if (activeCard.value) {
+      activeCard.value.classList.remove('touch-active');
+    }
+    // Show new card immediately
+    card.classList.add('touch-active');
+    activeCard.value = card;
+  }
 };
 
-const hideTooltip = (event: TouchEvent) => {
-  const card = event.currentTarget as HTMLElement;
-  setTimeout(() => {
-    card.classList.remove('touch-active');
-  }, 2000); // Show for 2 seconds
+// Hide tooltip when clicking outside
+const hideAllTooltips = (event: MouseEvent) => {
+  if (activeCard.value && !activeCard.value.contains(event.target as Node)) {
+    activeCard.value.classList.remove('touch-active');
+    activeCard.value = null;
+  }
 };
+
+// Add global click listener
+onMounted(() => {
+  document.addEventListener('click', hideAllTooltips);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', hideAllTooltips);
+});
 </script>
 
 <style scoped>
@@ -104,20 +128,16 @@ const hideTooltip = (event: TouchEvent) => {
   backdrop-filter: blur(2px);
 }
 
-/* Mobile touch interactions */
+/* Mobile touch interactions - immediate show */
 .custom-card.touch-active .tooltip-overlay {
-  opacity: 1;
+  opacity: 1 !important;
+  transition: opacity 0.1s ease-in-out;
 }
 
-/* Hide hover effects on touch devices */
-@media (hover: none) and (pointer: coarse) {
+/* Disable hover on touch devices */
+@media (hover: none) {
   .custom-card:hover .tooltip-overlay {
     opacity: 0;
-  }
-
-  .custom-card:hover {
-    transform: none;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
 </style>
