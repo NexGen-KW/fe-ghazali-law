@@ -3,9 +3,7 @@
     <div
       class="flex w-full max-w-6xl flex-col items-center rounded-xl px-4 py-12"
     >
-      <h2
-        class="ltr:font-marcellusSC mb-10 text-center text-3xl text-neutral-900"
-      >
+      <h2 class="ltr:font-marcellusSC mb-10 text-center text-neutral-900">
         {{ $t('contactPage.contactInfo') }}
       </h2>
       <div

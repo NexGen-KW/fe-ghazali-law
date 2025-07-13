@@ -31,7 +31,7 @@
             <span
               v-if="idx % 2 === 0"
               :class="[
-                'font-markazi mb-2 text-xl transition-all duration-300 md:text-2xl',
+                'font-markazi mb-2 text-base transition-all duration-300 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl',
                 idx === activeIndex
                   ? 'font-bold text-[#3B371F]'
                   : 'text-[#3B371F]/80',
@@ -61,7 +61,7 @@
             <span
               v-if="idx % 2 === 1"
               :class="[
-                'font-markazi mt-2 text-xl transition-all duration-300 md:text-2xl',
+                'font-markazi mt-2 text-base transition-all duration-300 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl',
                 idx === activeIndex
                   ? 'font-bold text-[#3B371F]'
                   : 'text-[#3B371F]/80',
@@ -121,13 +121,4 @@ function selectMilestone(idx: number) {
 }
 </script>
 
-<style scoped>
-.font-markazi {
-  font-family: 'Markazi Text', serif;
-}
-@media (max-width: 900px) {
-  .font-markazi {
-    font-size: 1.1rem;
-  }
-}
-</style>
+<style scoped></style>

@@ -9,10 +9,10 @@
   >
     <div class="justify-content-center flex flex-col lg:pl-10">
       <UiHeaderScale t="heroDifference" />
-      <h2 class="text-start">
+      <h2>
         {{ $t('aboutContactHeading') }}
       </h2>
-      <p class="text-start text-[18px] leading-[34px]">
+      <p class="leading-[34px]">
         {{ $t('aboutContactParagraph') }}
       </p>
       <div class="flex justify-center lg:justify-start">

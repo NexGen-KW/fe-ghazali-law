@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F7F7F8] py-10">
     <div
-      class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 text-center md:grid-cols-4"
+      class="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-4 text-center sm:gap-8 md:grid-cols-4"
     >
       <div v-for="item in features" :key="item.title">
         <div

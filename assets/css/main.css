@@ -86,7 +86,7 @@
   }
 
   h1 {
-    @apply py-[16px] text-center text-[36px] leading-tight sm:text-start lg:text-[48px];
+    @apply py-[16px] text-center text-[24px] leading-tight sm:text-start sm:text-[32px] lg:text-[48px];
   }
 
   h2 {
