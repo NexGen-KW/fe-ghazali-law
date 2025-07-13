@@ -28,7 +28,7 @@
 
           <!-- Tooltip overlay -->
           <div
-            class="tooltip-overlay bg-opacity-90 absolute inset-0 flex items-center justify-center rounded bg-black text-white opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+            class="tooltip-overlay bg-opacity-90 bg-gold-600 absolute inset-0 flex items-center justify-center rounded text-white opacity-0 transition-opacity duration-150 group-hover:opacity-100"
           >
             <div class="p-4 text-center">
               <div class="mb-2 text-lg font-medium">{{ item.label }}</div>
