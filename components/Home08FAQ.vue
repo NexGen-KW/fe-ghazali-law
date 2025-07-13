@@ -8,6 +8,8 @@ import {
   AccordionRoot,
   AccordionTrigger,
 } from 'reka-ui';
+import { useI18n } from '#imports';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 
