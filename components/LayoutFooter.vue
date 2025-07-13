@@ -56,7 +56,7 @@
           <span class="text-gold-50 font-bold">{{
             $t('footer.emailLabel')
           }}</span>
-          Ghazaly@gmail.com
+          Mail@alghazali-law.com
         </p>
       </div>
       <!-- Right: Browse Links -->

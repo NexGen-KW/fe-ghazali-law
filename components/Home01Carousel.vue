@@ -6,13 +6,11 @@
       class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 pt-20"
     >
       <!-- Logo/Slogan on the left/above -->
-      <div
-        class="mb-4 flex hidden w-full max-w-full flex-col items-center md:mb-0 md:flex md:max-w-[400px]"
-      >
+      <div class="mb-4 hidden flex-col items-center md:mb-0 lg:flex">
         <img
           src="/sloganandlogo.svg"
           alt="RMG Law Logo and Slogan"
-          class="hide-on-short h-auto w-full max-w-[200px] sm:max-w-[240px] md:max-w-[300px] lg:max-w-[400px]"
+          class="h-auto w-full md:w-[400px] lg:w-[450px] xl:w-[500px] 2xl:w-[550px]"
         />
       </div>
 
@@ -24,7 +22,7 @@
         class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
       >
         <div
-          class="hero-msg mx-auto min-h-[180px] max-w-[600px] text-center text-white"
+          class="hero-msg mx-auto flex h-[220px] max-w-[600px] flex-col justify-center text-center text-white"
         >
           <transition
             :name="isRTL ? 'slide-right' : 'slide-left'"
@@ -51,7 +49,7 @@
         </div>
         <!-- Navigation Dots (moved outside hero-msg) -->
         <div
-          class="mt-6 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
+          class="mt-14 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
         >
           <button
             v-for="(slide, idx) in slides"
@@ -171,7 +169,7 @@ onBeforeUnmount(() => {
   .carousel-950-row {
     flex-direction: row !important;
     gap: 0 !important;
-    padding-top: 5rem !important; /* pt-20 */
+    padding-top: 5rem !important;
   }
 }
 </style>

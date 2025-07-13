@@ -3,7 +3,9 @@
     class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-4 px-[81px] lg:px-[81px]"
     style="border-bottom: 1px solid #797879"
   >
-    <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
+    <NuxtLink to="/">
+      <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
+    </NuxtLink>
 
     <!-- Desktop Navigation -->
     <ul class="hidden space-x-4 lg:flex">
@@ -87,7 +89,7 @@
                 <NuxtLink
                   :to="item.url"
                   @click="closeMobileMenu"
-                  class="hover:text-gold-500 block rounded-lg text-gray-800 px-4 py-3 font-medium capitalize transition-colors"
+                  class="hover:text-gold-500 block rounded-lg px-4 py-3 font-medium text-gray-800 capitalize transition-colors"
                   :class="{
                     'bg-gold-500 text-white': route.path === item.url,
                     'hover:bg-gray-100': route.path !== item.url,

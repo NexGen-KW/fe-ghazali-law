@@ -1,0 +1,164 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.unicodeHighlight.includeComments": true,
+
+  "editor.rulers": [
+    { "column": 80, "color": "#00FF0010" },
+    { "column": 100, "color": "#BDB76B15" },
+    { "column": 120, "color": "#FA807219" }
+  ],
+
+  "workbench.statusBar.visible": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.colorTheme": "One Monokai",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#007acc8e",
+    "editor.selectionForeground": "#FFFFFF"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "files.insertFinalNewline": false
+  },
+  "[bat]": {
+    "files.eol": "\r\n"
+  },
+
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/tsconfig.*.json": true
+  },
+
+  "php.executablePath": "C:/My_Data/Programs/XAMPP/Instalation_folder/php/php.exe",
+  "php.validate.executablePath": "I:\\Programs\\XAMPP\\installation\\php\\php.exe",
+
+  "javascript.suggest.completeFunctionCalls": true,
+  "json.schemas": [],
+  "emmet.variables": {
+    "lang": "en"
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript", "typescript", "vue"],
+
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "tabnine.experimentalAutoImports": true,
+
+  "cSpell.diagnosticLevel": "Hint",
+  "trailing-spaces.backgroundColor": "rgba(255,0,0,0.1)",
+  "trailing-spaces.includeEmptyLines": false,
+
+  "todohighlight.isEnable": true,
+  "todohighlight.keywordsPattern": "\\*\\*(.*?)\\*\\*",
+  "todohighlight.defaultStyle": {
+    "color": "#fff200",
+    "backgroundColor": "#007acc3e",
+    "isWholeLine": false
+  },
+
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 10,
+  "notebook.output.wordWrap": true,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.showFoldingControls": "always",
+  "notebook.codeActionsOnSave": {},
+  "notebook.markup.fontSize": 15,
+
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.advanced": {},
+
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true,
+
+  "python.experiments.optInto": [],
+  "python.autoComplete.extraPaths": [],
+
+  "mssql.connections": [
+    {
+      "server": "ABU-BAKR",
+      "database": "skinet",
+      "authenticationType": "Integrated",
+      "profileName": "skinet",
+      "encrypt": "Mandatory",
+      "trustServerCertificate": true,
+      "user": "",
+      "password": "",
+      "connectTimeout": 15,
+      "commandTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "id": "E180E530-FB21-483D-B286-56B19359C6AB",
+      "groupId": "99F87415-111C-4B76-81E9-8856CD0D2867"
+    }
+  ],
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "99F87415-111C-4B76-81E9-8856CD0D2867"
+    }
+  ],
+
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 1.7,
+
+  "tailwindCSS.experimental.classRegex": [
+    ["class\\s*=\\s*\"([^\"]*)", 1],
+    ["class:\\s*'([^']*)", 1]
+  ],
+
+  "typescript.tsserver.useSeparateSyntaxServer": false,
+  "typescript.tsserver.pluginPaths": ["@vue/typescript-plugin"],
+
+  "vue.tsPlugin": {
+    "enable": true
+  },
+  "vue.enableTakeOverMode": true,
+  "volar.takeOverMode.enabled": true,
+
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "source": "PowerShell"
+    },
+    "Command Prompt": {
+      "source": "Command Prompt"
+    }
+  },
+  "terminal.integrated.automationProfile.windows": {
+    "path": "cmd"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
