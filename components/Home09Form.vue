@@ -2,43 +2,43 @@
   <section
     class="container flex w-full flex-col items-center justify-center py-12"
   >
-    <HeaderScale :t="formHeader" class="mb-4" />
+    <HeaderScale :t="formTranslations.header" class="mb-4" />
     <h2 class="text-gold-900 mb-8 text-center ltr:font-serif">
-      {{ formTitle.replace(formTitleHighlight, '') }}
-      <span class="text-gold-500">{{ formTitleHighlight }}</span>
+      {{ formTranslations.title.replace(formTranslations.titleHighlight, '') }}
+      <span class="text-gold-500">{{ formTranslations.titleHighlight }}</span>
     </h2>
     <form class="mx-auto w-full max-w-5xl space-y-6">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
-          :placeholder="formName"
+          :placeholder="formTranslations.name"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="email"
-          :placeholder="formEmail"
+          :placeholder="formTranslations.email"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
-          :placeholder="formPhone"
+          :placeholder="formTranslations.phone"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="text"
-          :placeholder="formSubject"
+          :placeholder="formTranslations.subject"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
       <textarea
         rows="4"
-        :placeholder="formMessage"
+        :placeholder="formTranslations.message"
         class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
       ></textarea>
       <div class="flex justify-center">
-        <BaseButton type="submit">{{ formSubmit }}</BaseButton>
+        <BaseButton type="submit">{{ formTranslations.submit }}</BaseButton>
       </div>
     </form>
   </section>
@@ -52,14 +52,16 @@ import { computed } from 'vue';
 
 const { t } = useI18n();
 
-// Reactive computed properties for form translations
-const formHeader = computed(() => t('homeForm.header'));
-const formTitle = computed(() => t('homeForm.title'));
-const formTitleHighlight = computed(() => t('homeForm.titleHighlight'));
-const formName = computed(() => t('homeForm.name'));
-const formEmail = computed(() => t('homeForm.email'));
-const formPhone = computed(() => t('homeForm.phone'));
-const formSubject = computed(() => t('homeForm.subject'));
-const formMessage = computed(() => t('homeForm.message'));
-const formSubmit = computed(() => t('homeForm.submit'));
+// Single computed object for all form translations
+const formTranslations = computed(() => ({
+  header: t('homeForm.header'),
+  title: t('homeForm.title'),
+  titleHighlight: t('homeForm.titleHighlight'),
+  name: t('homeForm.name'),
+  email: t('homeForm.email'),
+  phone: t('homeForm.phone'),
+  subject: t('homeForm.subject'),
+  message: t('homeForm.message'),
+  submit: t('homeForm.submit'),
+}));
 </script>
