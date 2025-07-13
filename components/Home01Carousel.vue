@@ -144,6 +144,7 @@ const swiperDirection = computed(() => {
   width: 100%;
   height: 100%;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .hero-slide {
