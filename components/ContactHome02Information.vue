@@ -12,7 +12,9 @@
         <div
           v-for="item in contactInfo"
           :key="item.label"
-          class="custom-card group relative flex h-48 w-full max-w-xs flex-col items-center rounded bg-white p-8 text-center shadow-sm"
+          class="custom-card group relative flex h-48 w-full max-w-xs cursor-pointer flex-col items-center rounded bg-white p-8 text-center shadow-sm"
+          @touchstart="showTooltip"
+          @touchend="hideTooltip"
         >
           <Icon :name="item.icon" size="48" class="mb-4 text-[#3A3321]" />
           <div class="mb-2 w-full truncate text-xl font-normal">
@@ -68,6 +70,19 @@ const contactInfo = computed(() => [
     value: t('contactPage.address'),
   },
 ]);
+
+// Touch event handlers for mobile
+const showTooltip = (event: TouchEvent) => {
+  const card = event.currentTarget as HTMLElement;
+  card.classList.add('touch-active');
+};
+
+const hideTooltip = (event: TouchEvent) => {
+  const card = event.currentTarget as HTMLElement;
+  setTimeout(() => {
+    card.classList.remove('touch-active');
+  }, 2000); // Show for 2 seconds
+};
 </script>
 
 <style scoped>
@@ -87,5 +102,22 @@ const contactInfo = computed(() => [
 
 .tooltip-overlay {
   backdrop-filter: blur(2px);
+}
+
+/* Mobile touch interactions */
+.custom-card.touch-active .tooltip-overlay {
+  opacity: 1;
+}
+
+/* Hide hover effects on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-card:hover .tooltip-overlay {
+    opacity: 0;
+  }
+
+  .custom-card:hover {
+    transform: none;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 </style>
