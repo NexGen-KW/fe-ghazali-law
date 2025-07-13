@@ -47,4 +47,5 @@
 <script setup lang="ts">
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
+import { useI18n } from '#imports';
 </script>
