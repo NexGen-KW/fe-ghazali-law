@@ -45,7 +45,10 @@
   </section>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
+import { useI18n } from '#imports';
+
+const { t: $t } = useI18n();
 </script>

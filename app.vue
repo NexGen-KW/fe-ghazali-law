@@ -5,10 +5,14 @@
 </template>
 
 <script setup lang="ts">
-const { localeProperties } = useI18n();
+import { useI18n } from '#imports';
+import { computed } from 'vue';
+import { useHead } from '#imports';
 
-const htmlLang = computed(() => localeProperties.value.code);
-const htmlDir = computed(() => localeProperties.value.dir);
+const { locale } = useI18n();
+
+const htmlLang = computed(() => locale.value);
+const htmlDir = computed(() => (locale.value === 'ar' ? 'rtl' : 'ltr'));
 
 useHead({
   htmlAttrs: {
