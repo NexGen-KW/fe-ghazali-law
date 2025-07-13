@@ -5,7 +5,7 @@
     >
       <div v-for="item in features" :key="item.title">
         <div
-          class="font-marcellus mb-2 text-xl font-normal text-[#3B371F] md:text-2xl"
+          class="ltr:font-marcellus mb-2 text-xl font-normal text-[#3B371F] md:text-2xl"
         >
           {{ item.title }}
         </div>

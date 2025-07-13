@@ -67,7 +67,7 @@ const members = computed(() => {
       <div
         v-for="member in members.reverse()"
         :key="member.slug"
-        class="relative flex h-[373px] max-h-[373px] w-[273px] flex-col items-center justify-end overflow-hidden shadow-lg"
+        class="relative flex h-[373px] max-h-[373px] max-w-[273px] flex-col items-center justify-end overflow-hidden shadow-lg"
       >
         <NuxtLink :to="`/team/${member.slug}`" class="block h-full w-full">
           <img

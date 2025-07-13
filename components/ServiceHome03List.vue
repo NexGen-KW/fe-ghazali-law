@@ -1,25 +1,27 @@
 <template>
   <div class="mt-12 mb-16 flex w-full justify-center">
     <div
-      class="grid w-full max-w-6xl grid-cols-1 gap-[64px] sm:grid-cols-2 lg:grid-cols-3"
+      class="grid w-full max-w-6xl grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3 xl:gap-[64px]"
     >
       <div
         v-for="service in services"
         :key="service.title"
-        class="service-card relative flex min-h-[210px] min-w-[367px] flex-col justify-between overflow-hidden border-l border-[#e5e1d8] bg-[#f7f7f7] px-6 py-5 transition-colors duration-500"
+        class="service-card relative flex min-h-[210px] w-full flex-col justify-between overflow-hidden border-l border-[#e5e1d8] px-4 py-5 transition-colors duration-500 sm:px-6"
       >
         <div>
-          <h3 class="mb-2 font-semibold text-[#3a2e13]">{{ service.title }}</h3>
-          <p class="text[16px] mb-4 text-[#3a2e13]">
+          <h3 class="mb-2 text-sm font-semibold text-[#3a2e13] sm:text-base">
+            {{ service.title }}
+          </h3>
+          <p class="mb-4 text-xs text-[#3a2e13] sm:text-sm md:text-base">
             {{ service.description }}
           </p>
         </div>
 
         <NuxtLink
           :to="`/services/${service.slug}`"
-          class="slide-overlay-btn relative mt-2 inline-block w-[116px] overflow-hidden px-[8px] py-2 font-semibold text-[#a08c5b] transition"
+          class="slide-overlay-btn relative mt-2 inline-block w-fit overflow-hidden px-2 py-2 font-semibold text-[#a08c5b] transition sm:w-[116px] sm:px-[8px]"
         >
-          <span>{{ $t('readMore') }}</span>
+          <span class="text-sm sm:text-base">{{ $t('readMore') }}</span>
         </NuxtLink>
       </div>
     </div>

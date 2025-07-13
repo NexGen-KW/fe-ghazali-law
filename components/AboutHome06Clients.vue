@@ -6,7 +6,7 @@
     </div>
     <!-- Heading -->
     <h2
-      class="font-marcellus mb-6 text-center text-2xl font-bold text-[#3B371F] md:text-3xl"
+      class="ltr:font-marcellus mb-6 text-center text-2xl font-bold text-[#3B371F] md:text-3xl"
     >
       {{ t('aboutClientsTitle') }}
     </h2>

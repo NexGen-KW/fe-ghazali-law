@@ -158,7 +158,7 @@ backToServices: Back To Services
 
 # Team page
 teamPage:
-  subtitle: Meet Our Experts
+  subtitle: MEET OUR EXPERTS
   paragraph: Providing trusted legal guidance with integrity and dedication. Whether you're facing a dispute, planning for the future, or seeking counsel—our team is here to protect your rights
   meetCTA: Meet RMG Experts
   memberName: Rawan Mishari Al-Ghazali
@@ -217,7 +217,7 @@ Legislative and Academic Participations: Legislative and Academic Participations
 
 # Contact Page
 contactPage:
-  title: Contact Us
+  title: CONTACT US
   subtitle: Our Team Looks Forward to Hearing from You!
   contactInfo: Contact Information
   addressLabel: Location

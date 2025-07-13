@@ -1,9 +1,9 @@
 <template>
   <section
-    class="container px-4! py-[90px] pt-[130px] sm:pt-[150px] md:pt-[170px]"
+    class="container"
     id="contact"
     :class="[
-      'border-gold-200 grid grid-cols-1 justify-between gap-4 py-[24px] text-center lg:grid-cols-2 lg:text-left',
+      'border-gold-200 grid grid-cols-1 justify-between gap-4 text-center lg:grid-cols-2 lg:text-left',
       localeProperties.dir === 'ltr' ? 'xl:pl-[155px]' : 'xl:pr-[155px]',
     ]"
   >

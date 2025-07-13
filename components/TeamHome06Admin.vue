@@ -24,13 +24,11 @@
         :key="member.name"
         class="relative flex w-full max-w-[300px] flex-col items-center"
       >
-        <NuxtLink :to="`/team/${member.slug}`">
-          <img
-            :src="member.img"
-            :alt="member.name"
-            class="h-[420px] w-full object-cover shadow"
-          />
-        </NuxtLink>
+        <img
+          :src="member.img"
+          :alt="member.name"
+          class="h-[420px] w-full object-cover shadow"
+        />
         <div
           class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-4 text-center"
         >

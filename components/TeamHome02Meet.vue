@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col items-center bg-white px-2 py-12"
+    class="flex flex-col items-center bg-white px-5 py-12"
     id="team-meet"
   >
     <HeaderScale :t="$t('teamPage.meetCTA')" class="mb-10" />

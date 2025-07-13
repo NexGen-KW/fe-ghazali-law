@@ -16,9 +16,7 @@
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-[30px] py-4 text-center"
       >
-        <h1
-          class="ltr:font-marcellus mb-4 text-[24px] text-white sm:text-[32px]"
-        >
+        <h1 class="ltr:font-marcellus mb-4 text-center text-white">
           {{ $t('teamPage.subtitle') }}
         </h1>
         <p class="text-shadow-custom hidden text-white lg:block">

@@ -8,7 +8,7 @@
         class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
       >
         <HeaderScale :t="`${$t('discoverHeaderScale')}`" />
-        <h2 class="ltr:font-marcellus mb-8 text-center text-5xl">
+        <h2 class="ltr:font-marcellus mb-8 text-center">
           {{ $t('discoverHeading') }}
         </h2>
         <BaseButton>
@@ -18,7 +18,11 @@
         </BaseButton>
       </div>
       <!-- Right: Accordion -->
-      <AccordionRoot class="max-w-[660px]" type="single" :collapsible="true">
+      <AccordionRoot
+        class="w-full max-w-[660px]"
+        type="single"
+        :collapsible="true"
+      >
         <template v-for="item in services" :key="item.title">
           <AccordionItem
             class="border-b border-[var(--color-gold-200)] py-6"
@@ -27,7 +31,7 @@
           >
             <AccordionHeader class="flex">
               <AccordionTrigger
-                class="text-gold-900 ltr:font-montserrat flex w-full cursor-pointer items-center text-left text-[22px] font-medium select-none"
+                class="text-gold-900 ltr:font-montserrat flex w-full cursor-pointer items-center text-left font-medium select-none"
               >
                 <span
                   class="mx-3 flex h-8 w-8 items-center justify-center text-2xl font-bold"
@@ -40,7 +44,7 @@
             <AccordionContent
               class="AccordionContent text-gold-900 pt-3 pl-10 font-sans text-[17px] font-normal"
             >
-              <div class="text-gold-800">
+              <div class="text-gold-800 overflow-hidden break-words">
                 {{ item.description }}
               </div>
             </AccordionContent>
@@ -64,6 +68,7 @@ import {
 } from 'reka-ui';
 
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
@@ -88,29 +93,5 @@ const openIdx = ref<number | null>(1);
 <style>
 .AccordionContent {
   overflow: hidden;
-}
-.AccordionContent[data-state='open'] {
-  animation: slideDown 300ms ease-out;
-}
-.AccordionContent[data-state='closed'] {
-  animation: slideUp 300ms ease-out;
-}
-
-@keyframes slideDown {
-  from {
-    height: 0;
-  }
-  to {
-    height: var(--reka-accordion-content-height);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    height: var(--reka-accordion-content-height);
-  }
-  to {
-    height: 0;
-  }
 }
 </style>

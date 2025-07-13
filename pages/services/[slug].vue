@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { computed, useAsyncData, useHead } from '#imports';
+import { computed, definePageMeta, useAsyncData, useHead } from '#imports';
 import { useServices } from '~/composables/useServices';
 
 definePageMeta({
@@ -18,9 +18,9 @@ const slug = computed(() => route.params.slug as string);
 const { services, getServiceBySlug } = useServices();
 const service = computed(() => getServiceBySlug(slug.value));
 
-// Debug logging
-console.log('Page: Current slug:', slug.value);
-console.log('Page: Service data:', service.value);
+// // Debug logging
+// console.log('Page: Current slug:', slug.value);
+// console.log('Page: Service data:', service.value);
 </script>
 
 <template>

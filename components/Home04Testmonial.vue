@@ -11,12 +11,12 @@
     <div class="mx-auto w-full max-w-[1100px] flex-1">
       <Swiper
         v-if="localeReady"
-        :key="locale.value"
+        :key="locale"
         :modules="[SwiperNavigation, SwiperPagination]"
         :slides-per-view="1"
         :space-between="30"
         :loop="true"
-        :dir="locale.value === 'ar' ? 'rtl' : 'ltr'"
+        :dir="locale === 'ar' ? 'rtl' : 'ltr'"
         :navigation="{
           nextEl: '.swiper-button-prev',
           prevEl: '.swiper-button-next',
@@ -68,6 +68,8 @@ import {
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { ref, watch, nextTick, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const { locale, t } = useI18n();
 
@@ -98,6 +100,7 @@ const testimonials = computed(() => [
   border-radius: 50% !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease;
+  z-index: 10 !important;
 }
 .testimonial-swiper .swiper-button-prev::after,
 .testimonial-swiper .swiper-button-next::after {

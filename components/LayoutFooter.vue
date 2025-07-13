@@ -67,35 +67,13 @@
           {{ $t('footer.browseLinks') }}
         </h3>
         <ul class="text-gold-50 space-y-2 text-lg">
-          <li>
-            <Nuxt-Link
-              to="/"
-              @click="scrollToTop"
-              class="text-gold-50 cursor-pointer hover:underline"
-              >{{ $t('footer.home') }}</Nuxt-Link
-            >
-          </li>
-          <li>
-            <Nuxt-Link to="/about" class="text-gold-50 hover:underline"
-              >{{ $t('footer.about') }}
-            </Nuxt-Link>
-          </li>
-          <li>
-            <Nuxt-Link to="/services" class="text-gold-50 hover:underline"
-              >{{ $t('footer.services') }}
-            </Nuxt-Link>
-          </li>
-          <li>
-            <Nuxt-Link to="/team" class="text-gold-50 hover:underline"
-              >{{ $t('footer.team') }}
-            </Nuxt-Link>
-          </li>
-          <li></li>
-          <li>
-            <Nuxt-Link to="/contact" class="text-gold-50 hover:underline"
-              >{{ $t('footer.contact') }}
-            </Nuxt-Link>
-          </li>
+          <template v-for="(item, index) in navigation" :key="index">
+            <li>
+              <Nuxt-Link :to="item.url" class="text-gold-50 hover:underline">
+                {{ $t(`footer.${item.label}`) }}
+              </Nuxt-Link>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
@@ -105,16 +83,7 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
 import { useI18n } from 'vue-i18n';
+import { navigation } from '~/static/navigation';
 
 const { t: $t } = useI18n();
-</script>
-
-<script lang="ts">
-export default {
-  methods: {
-    scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    },
-  },
-};
 </script>

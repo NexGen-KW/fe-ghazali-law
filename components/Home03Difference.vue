@@ -10,7 +10,7 @@
         <h2>
           {{ $t('differenceHeading') }}
         </h2>
-        <p class="text-start text-[18px] leading-[34px]">
+        <p class="leading-[34px]">
           {{ $t('differenceParagraph') }}
         </p>
         <div class="flex justify-center lg:justify-start">
@@ -23,18 +23,18 @@
       </div>
     </div>
     <div class="flex flex-col">
-      <img
-        loading="lazy"
-        src="/public/diff.jpg"
-        alt="difference"
-        class="h-auto w-full object-cover"
-      />
+      <div class="relative">
+        <img
+          loading="lazy"
+          :src="`/fe-ghazali-law/diff.jpg`"
+          alt="difference"
+          class="h-auto w-full object-cover"
+        />
+      </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
 import BaseButton from '~/components/ui/BaseButton.vue';
-import { useI18n } from 'vue-i18n';
-const { localeProperties } = useI18n();
 </script>

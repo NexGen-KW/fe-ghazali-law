@@ -1,7 +1,7 @@
 <template>
   <header
-    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-4 px-[81px] lg:px-[81px]"
-    style="border-bottom: 1px solid #bebebe"
+    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-white px-[81px] lg:px-[81px]"
+    style="border-bottom: 1px solid rgb(237 237 237)"
   >
     <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
 
@@ -11,7 +11,7 @@
         <li>
           <NuxtLink
             :to="item.url"
-            class="hover:text-gold-900 font-medium capitalize transition-colors"
+            class="hover:text-gold-700 font-medium capitalize transition-colors"
             :style="{
               color: route.path === item.url ? 'var(--color-gold-500)' : '',
             }"

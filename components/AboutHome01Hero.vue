@@ -1,27 +1,36 @@
 <template>
   <section
     id="about"
-    class="relative mt-[-111px] flex h-[100dvh] items-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat"
+    class="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-[url(/top-view-school-supplies-dark-surface.jpg)] bg-cover bg-center bg-no-repeat lg:bg-fixed"
   >
+    <!-- Dark overlay for better text contrast -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
     <div
-      class="hero-msg mx-auto max-w-[977px] px-4 text-center text-white sm:px-6 md:px-8"
+      class="hero-msg relative z-10 mx-auto max-w-[977px] px-4 text-center text-white sm:px-6 md:px-8"
     >
-      <h1 class="mb-4 text-white">
-        {{ $t('aboutHeroHeading') }}
-      </h1>
-      <p class="text-shadow-custom text-base text-white md:text-[24px]">
-        {{ $t('aboutHeroParagraph') }}
-      </p>
+      <div
+        class="rounded-lg bg-white/10 p-4 shadow-2xl backdrop-blur-sm sm:p-6 md:p-8"
+      >
+        <h1 class="mb-4 text-center break-words text-white drop-shadow-2xl">
+          {{ $t('aboutHeroHeading') }}
+        </h1>
+        <p
+          class="text-shadow-custom text-sm leading-relaxed break-words text-white drop-shadow-lg sm:text-base md:text-lg lg:text-xl"
+        >
+          {{ $t('aboutHeroParagraph') }}
+        </p>
+      </div>
     </div>
     <!-- Reusable Scroll Down Button -->
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
-      <ScrollDownButton target="contact" />
-    </div>
+    <!-- <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <ScrollDownButton target="statement" />
+    </div> -->
   </section>
 </template>
 
 <script lang="ts" setup>
-import ScrollDownButton from './ui/ScrollDownButton.vue';
+// import ScrollDownButton from './ui/ScrollDownButton.vue';
 </script>
 <style>
 .text-shadow-custom {
