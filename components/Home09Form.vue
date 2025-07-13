@@ -12,11 +12,13 @@
         <input
           type="text"
           :placeholder="formName"
+          :key="`name-${locale}`"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="email"
           :placeholder="formEmail"
+          :key="`email-${locale}`"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
@@ -24,17 +26,20 @@
         <input
           type="text"
           :placeholder="formPhone"
+          :key="`phone-${locale}`"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
         <input
           type="text"
           :placeholder="formSubject"
+          :key="`subject-${locale}`"
           class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
         />
       </div>
       <textarea
         rows="4"
         :placeholder="formMessage"
+        :key="`message-${locale}`"
         class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
       ></textarea>
       <div class="flex justify-center">
@@ -48,7 +53,7 @@
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
 import { useI18n } from '#imports';
-import { computed } from 'vue';
+import { computed, watch, nextTick } from 'vue';
 
 const { t, locale } = useI18n();
 
@@ -62,4 +67,11 @@ const formPhone = computed(() => t('homeForm.phone'));
 const formSubject = computed(() => t('homeForm.subject'));
 const formMessage = computed(() => t('homeForm.message'));
 const formSubmit = computed(() => t('homeForm.submit'));
+
+// Watch for locale changes and force re-render
+watch(locale, () => {
+  nextTick(() => {
+    // Force re-render of form elements
+  });
+});
 </script>
