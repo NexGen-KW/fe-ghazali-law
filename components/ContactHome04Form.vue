@@ -47,24 +47,22 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
 import { useI18n } from '#imports';
 import { computed } from 'vue';
 
-const { t } = useI18n();
-
 // Single computed object for all form translations
 const formTranslations = computed(() => ({
   header: t('homeForm.header'),
-  title: t('homeForm.title'),
-  titleHighlight: t('homeForm.titleHighlight'),
-  name: t('homeForm.name'),
-  email: t('homeForm.email'),
-  phone: t('homeForm.phone'),
-  subject: t('homeForm.subject'),
-  message: t('homeForm.message'),
-  submit: t('contactPage.submit'),
+  title: $t('homeForm.title'),
+  titleHighlight: $t('homeForm.titleHighlight'),
+  name: $t('homeForm.name'),
+  email: $t('homeForm.email'),
+  phone: $t('homeForm.phone'),
+  subject: $t('homeForm.subject'),
+  message: $t('homeForm.message'),
+  submit: $t('contactPage.submit'),
 }));
 </script>
