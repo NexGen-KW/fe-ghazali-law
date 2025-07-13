@@ -58,13 +58,13 @@ discoverHeaderScale: What We Do In RMG
 # Services Accordion
 services:
   contracting:
-    title: Contracting & Real-Estate Field
+    title: Contracting & Real-Estate
     description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
   intellectualProperty:
-    title: Intellectual Property Field
+    title: Intellectual Property
     description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
   arbitration:
-    title: Arbitration Field
+    title: Arbitration
     description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
 # Home Form
 homeForm:

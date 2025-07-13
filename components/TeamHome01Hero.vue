@@ -1,38 +1,35 @@
 <template>
-  <section
-    class="relative mt-[-111px] flex h-[100dvh] items-center justify-center overflow-hidden"
-    id="team-hero"
-    style="
-      background-image: url('/fe-ghazali-law/Big-Group-Photo-2.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    "
-  >
-    <!-- Overlay text container near the bottom, above the button -->
+  <section class="flex max-h-[calc(100dvh-111px)] flex-col px-0 py-0">
+    <!-- Hero Image -->
     <div
-      class="absolute top-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
+      class="relative flex w-full flex-1 items-center justify-center overflow-hidden"
+      id="team-hero"
     >
-      <div
-        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-[30px] py-4 text-center"
-      >
-        <h1 class="ltr:font-marcellus mb-4 text-center text-white">
+      <img
+        src="/Big-Group-Photo-2.jpg"
+        alt="Team group"
+        class="h-auto max-h-full w-auto max-w-full object-contain"
+      />
+    </div>
+
+    <!-- Text Section -->
+    <div class="bg-white py-10">
+      <div class="container mx-auto px-4 text-center">
+        <h1
+          class="ltr:font-marcellus mb-4 text-center font-bold text-[#3B371F]"
+        >
           {{ $t('teamPage.subtitle') }}
         </h1>
-        <p class="text-shadow-custom hidden text-white lg:block">
+        <p class="mx-auto text-[#3B371F]/80">
           {{ $t('teamPage.paragraph') }}
         </p>
       </div>
-    </div>
-    <!-- Reusable Scroll Down Button -->
-    <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
-      <ScrollDownButton target="team-meet" />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import ScrollDownButton from './ui/ScrollDownButton.vue';
+// import ScrollDownButton from './ui/ScrollDownButton.vue';
 </script>
 
 <style>

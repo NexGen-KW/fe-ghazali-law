@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'white-background',
+});
+
 const route = useRoute();
 const { locale } = useI18n();
 
@@ -30,22 +34,24 @@ watch([locale, slug], fetchMember, { immediate: true });
 </script>
 
 <template>
-  <LayoutMain>
-    <template v-if="loading">
-      <div>Loading...</div>
-    </template>
-    <template v-else-if="error">
-      <div class="text-red-500">Error loading member data.</div>
-    </template>
-    <template v-else-if="post">
-      <TeamInfo01Hero :member="post" />
-      <TeamInfo02Bio :member="post" />
-      <TeamInfo03Academic :member="post" />
-      <TeamInfo04Experience :member="post" />
-      <TeamInfo05Participation :member="post" />
-    </template>
-    <template v-else>
-      <div>Member not found.</div>
-    </template>
-  </LayoutMain>
+  <div>
+    <LayoutMain>
+      <template v-if="loading">
+        <div>Loading...</div>
+      </template>
+      <template v-else-if="error">
+        <div class="text-red-500">Error loading member data.</div>
+      </template>
+      <template v-else-if="post">
+        <TeamInfo01Hero :member="post" />
+        <TeamInfo02Bio :member="post" />
+        <TeamInfo03Academic :member="post" />
+        <TeamInfo04Experience :member="post" />
+        <TeamInfo05Participation :member="post" />
+      </template>
+      <template v-else>
+        <div>Member not found.</div>
+      </template>
+    </LayoutMain>
+  </div>
 </template>

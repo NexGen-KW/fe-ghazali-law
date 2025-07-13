@@ -34,7 +34,7 @@ const faqs = computed(() => [
 <template>
   <section class="flex w-full flex-col items-center justify-center px-4 py-12">
     <HeaderScale :t="$t('homeFaq.header')" class="mb-4" />
-    <h2 class="text-gold-900 mb-8">{{ $t('homeFaq.title') }}</h2>
+    <h2>{{ $t('homeFaq.title') }}</h2>
     <AccordionRoot
       class="w-full max-w-3xl px-4"
       type="single"
@@ -49,7 +49,7 @@ const faqs = computed(() => [
       >
         <AccordionHeader class="flex">
           <AccordionTrigger
-            class="text-gold-900 flex w-full cursor-pointer items-center text-start text-lg font-medium select-none"
+            class="flex w-full cursor-pointer items-center text-start font-medium select-none"
           >
             <p class="flex-1 font-semibold">{{ faq.q }}</p>
             <p
