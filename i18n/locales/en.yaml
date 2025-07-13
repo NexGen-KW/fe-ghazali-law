@@ -218,12 +218,13 @@ Legislative and Academic Participations: Legislative and Academic Participations
 # Contact Page
 contactPage:
   title: CONTACT US
+  submit: Submit Now
   subtitle: Our Team Looks Forward to Hearing from You!
   contactInfo: Contact Information
   addressLabel: Location
-  address: Al-Shohadaa St, Kuwait
+  address: The Law Firm of Rawan Mishari Al-Ghazali (RMG), Kuwait Chamber of Commerce & Industry Building, Mubarak Alkabeer Street, 1st Floor, Kuwait City
   phoneLabel: 'Phone'
-  phone: '2143522452'
+  phone: '+965 1802234'
   emailLabel: 'Email'
   stepsTitle: Follow The Following
   steps:

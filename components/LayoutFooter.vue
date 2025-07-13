@@ -50,7 +50,7 @@
           <span class="text-gold-50 font-bold">{{
             $t('footer.phoneLabel')
           }}</span>
-          {{ $t('footer.phone') }}
+          <span dir="ltr">{{ $t('footer.phone') }}</span>
         </p>
         <p class="text-gold-50 mb-2">
           <span class="text-gold-50 font-bold">{{

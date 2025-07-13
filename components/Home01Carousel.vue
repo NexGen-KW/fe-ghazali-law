@@ -22,48 +22,56 @@
         class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
       >
         <div
-          class="hero-msg mx-auto flex h-[220px] max-w-[600px] flex-col justify-center text-center text-white"
+          class="hero-msg mx-auto flex h-[220px] w-full max-w-[600px] flex-col justify-center text-center text-white"
         >
-          <transition
-            :name="isRTL ? 'slide-right' : 'slide-left'"
-            mode="out-in"
+          <Swiper
+            :modules="[Autoplay, Pagination]"
+            :slides-per-view="1"
+            :space-between="0"
+            :loop="true"
+            :autoplay="{
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }"
+            :pagination="{
+              clickable: true,
+              el: '.swiper-pagination-custom',
+              bulletClass: 'swiper-pagination-bullet-custom',
+              bulletActiveClass: 'swiper-pagination-bullet-active-custom',
+            }"
+            :dir="swiperDirection"
+            :key="swiperKey"
+            class="hero-swiper"
           >
-            <h1
-              class="carousel-heading text-center lg:text-start"
-              :key="slides[currentSlide].heading"
+            <SwiperSlide
+              v-for="(slide, index) in slides"
+              :key="index"
+              class="hero-slide"
             >
-              {{ slides[currentSlide].heading }}
-            </h1>
-          </transition>
-          <transition
-            :name="isRTL ? 'slide-right' : 'slide-left'"
-            mode="out-in"
-          >
-            <p
-              class="carousel-paragraph text-shadow-custom mt-4 text-center text-white lg:text-start"
-              :key="slides[currentSlide].paragraph"
-            >
-              {{ slides[currentSlide].paragraph }}
-            </p>
-          </transition>
+              <div class="hero-slide-content">
+                <h1 class="carousel-heading text-center lg:text-start">
+                  {{ slide.heading }}
+                </h1>
+                <p
+                  class="carousel-paragraph text-shadow-custom mt-4 text-center text-white lg:text-start"
+                >
+                  {{ slide.paragraph }}
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-        <!-- Navigation Dots (moved outside hero-msg) -->
+
+        <!-- Custom Pagination -->
         <div
-          class="mt-14 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
+          class="mt-8 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
         >
-          <button
-            v-for="(slide, idx) in slides"
-            :key="idx"
-            :class="[
-              'h-2 rounded-full transition-all duration-300',
-              idx === currentSlide ? 'bg-gold-400 w-8' : 'w-5 bg-white/50',
-            ]"
-            @click="goToSlide(idx)"
-            aria-label="Go to slide"
-          ></button>
+          <div class="swiper-pagination-custom"></div>
         </div>
       </div>
     </div>
+
     <!-- Reusable Scroll Down Button -->
     <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
       <ScrollDownButton target="statement" />
@@ -72,9 +80,16 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { computed, watch, nextTick } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Pagination } from 'swiper/modules';
 import ScrollDownButton from './ui/ScrollDownButton.vue';
 import { useI18n } from '#imports';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const { t, locale } = useI18n();
 
 // Get slides from translations
@@ -97,45 +112,25 @@ const slides = computed(() => [
   },
 ]);
 
-// Only keep isRTL for transition direction
+// RTL support
 const isRTL = computed(() => locale.value === 'ar');
 
-const currentSlide = ref(0);
-let intervalId: ReturnType<typeof setInterval> | null = null;
-
-function goToSlide(idx: number) {
-  currentSlide.value = idx;
-  resetAutoplay();
-}
-
-function nextSlide() {
-  currentSlide.value = (currentSlide.value + 1) % slides.value.length;
-  resetAutoplay();
-}
-
-function prevSlide() {
-  currentSlide.value =
-    (currentSlide.value - 1 + slides.value.length) % slides.value.length;
-  resetAutoplay();
-}
-
-function startAutoplay() {
-  intervalId = setInterval(() => {
-    currentSlide.value = (currentSlide.value + 1) % slides.value.length;
-  }, 5000);
-}
-
-function resetAutoplay() {
-  if (intervalId) clearInterval(intervalId);
-  startAutoplay();
-}
-
-onMounted(() => {
-  startAutoplay();
+// Watch for locale changes to handle RTL/LTR properly
+watch(locale, () => {
+  // Force re-render when locale changes with a small delay
+  setTimeout(() => {
+    nextTick(() => {
+      // This will trigger a re-render of the Swiper component
+    });
+  }, 100);
 });
 
-onBeforeUnmount(() => {
-  if (intervalId) clearInterval(intervalId);
+// Add a computed key for Swiper re-rendering
+const swiperKey = computed(() => `${locale.value}-${isRTL.value}`);
+
+// Handle RTL direction more carefully
+const swiperDirection = computed(() => {
+  return isRTL.value ? 'rtl' : 'ltr';
 });
 </script>
 
@@ -143,33 +138,184 @@ onBeforeUnmount(() => {
 .text-shadow-custom {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.slide-left-enter-active,
-.slide-left-leave-active,
-.slide-right-enter-active,
-.slide-right-leave-active {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Swiper Custom Styles */
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
-.slide-left-enter-from {
-  opacity: 0;
-  transform: translateX(40px);
+
+.hero-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-.slide-left-leave-to {
-  opacity: 0;
-  transform: translateX(-40px);
+
+.hero-slide-content {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
 }
-.slide-right-enter-from {
-  opacity: 0;
-  transform: translateX(-40px);
+
+/* Custom Pagination Styles */
+:deep(.swiper-pagination-custom) {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 0;
 }
-.slide-right-leave-to {
-  opacity: 0;
-  transform: translateX(40px);
+
+:deep(.swiper-pagination-bullet-custom) {
+  width: 15px;
+  height: 0.5rem;
+  background-color: #ebe3c7;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+  border: none;
+  outline: none;
 }
-@media (min-width: 950px) {
+
+:deep(.swiper-pagination-bullet-active-custom) {
+  background-color: #ceba75;
+  width: 25px;
+  border-radius: 0.25rem;
+}
+
+:deep(.swiper-pagination-bullet-custom:hover) {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+/* RTL Support */
+[dir='rtl'] :deep(.swiper-pagination-custom) {
+  flex-direction: row-reverse;
+}
+
+/* Ensure RTL Swiper works properly */
+.hero-swiper[dir='rtl'] {
+  direction: rtl;
+}
+
+.hero-swiper[dir='ltr'] {
+  direction: ltr;
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
   .carousel-950-row {
     flex-direction: row !important;
     gap: 0 !important;
     padding-top: 5rem !important;
   }
+
+  .hero-slide-content {
+    text-align: left;
+    padding: 0;
+  }
+
+  :deep(.swiper-pagination-custom) {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-slide-content {
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  .hero-msg {
+    height: auto;
+    min-height: 220px;
+    padding: 1rem 0;
+    max-width: 100%;
+  }
+
+  .carousel-heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  .carousel-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 949px) {
+  .hero-slide-content {
+    padding: 0 2rem;
+  }
+
+  .carousel-heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .carousel-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Extra Small Mobile Responsive */
+@media (max-width: 480px) {
+  .hero-slide-content {
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+
+  .hero-msg {
+    max-width: 100%;
+  }
+
+  .carousel-heading {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    width: 100%;
+  }
+
+  .carousel-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 100%;
+  }
+}
+
+/* Large Desktop Responsive */
+@media (min-width: 1280px) {
+  .hero-slide-content {
+    padding: 0;
+  }
+
+  .carousel-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .carousel-paragraph {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+/* Hide default Swiper pagination */
+:deep(.swiper-pagination) {
+  display: none;
 }
 </style>
