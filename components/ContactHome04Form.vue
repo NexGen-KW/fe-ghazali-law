@@ -8,7 +8,7 @@
       <span class="text-gold-500">{{ $t('homeForm.titleHighlight') }}</span>
       {{ $t('homeForm.title').split($t('homeForm.titleHighlight'))[1] || '' }}
     </h2>
-    <form class="mx-auto w-full max-w-5xl space-y-6">
+    <form class="mx-auto w-full max-w-5xl space-y-6" :key="locale">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
@@ -48,6 +48,6 @@
 <script setup lang="ts">
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
-import { useI18n } from 'vue-i18n';
-const { t: $t } = useI18n();
+import { useI18n } from '#imports';
+const { t: $t, locale } = useI18n();
 </script>

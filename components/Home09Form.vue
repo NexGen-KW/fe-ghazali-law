@@ -7,7 +7,7 @@
       {{ formTitle.replace(formTitleHighlight, '') }}
       <span class="text-gold-500">{{ formTitleHighlight }}</span>
     </h2>
-    <form class="mx-auto w-full max-w-5xl space-y-6">
+    <form class="mx-auto w-full max-w-5xl space-y-6" :key="locale">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
           type="text"
@@ -47,10 +47,10 @@
 <script setup lang="ts">
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
-import { useI18n } from 'vue-i18n';
+import { useI18n } from '#imports';
 import { computed } from 'vue';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 // Reactive computed properties for form translations
 const formHeader = computed(() => t('homeForm.header'));
@@ -62,5 +62,4 @@ const formPhone = computed(() => t('homeForm.phone'));
 const formSubject = computed(() => t('homeForm.subject'));
 const formMessage = computed(() => t('homeForm.message'));
 const formSubmit = computed(() => t('homeForm.submit'));
-console.log(formSubmit.value);
 </script>
