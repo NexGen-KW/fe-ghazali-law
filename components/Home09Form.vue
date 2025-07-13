@@ -62,4 +62,5 @@ const formPhone = computed(() => t('homeForm.phone'));
 const formSubject = computed(() => t('homeForm.subject'));
 const formMessage = computed(() => t('homeForm.message'));
 const formSubmit = computed(() => t('homeForm.submit'));
+console.log(formSubmit.value);
 </script>
