@@ -170,46 +170,46 @@ teamPage:
   internationalMembers:
     - name: بدر مشاري الغزالي
       img: 5.jpg
-      slug: بدر-مشاري-الغزالي
+      slug: bader-mishari-al-ghazali
     - name: ندى بورحمة
       img: 4.jpg
-      slug: ندى-بورحمة
+      slug: nada-bourahmah
     - name: خديجة رياض حكيم
       img: 13.jpg
-      slug: خديجة لياد حكيم
+      slug: khadija-riyad-hakim
   localDepartment: القسم المحلي
   localMembers:
     - name: مها الرشيدي
       img: 7.jpg
-      slug: مها-الرشيدي
+      slug: maha-al-rashidi
     - name: سعود الجاسم
       img: 9.jpg
-      slug: سعود-الجاسم
+      slug: saoud-al-jasem
   seniorCounselors: المحاميون المتقدمون
   seniorCounselorsMembers:
     - name: سامي عبد الباقي
       img: 10.jpg
-      slug: سامي-عبد-الباقي
+      slug: samy-abdulbaqi
     - name: أحمد علي باسيوني
       img: 6.jpg
-      slug: أحمد-علي-باسيوني
+      slug: ahmed-ali-basyoni
   administrativeTeam: فريق الإدارة
   administrativeTeamMembers:
     - name: محمد منصور
       img: 3.jpg
-      slug: محمد-منصور
+      slug: mahmoud-mansour
     - name: زهيدة حسن
       img: 2.jpg
-      slug: زهيدة-حسن
+      slug: zahida-hassan
     - name: امير المدبولي
       img: 8.jpg
-      slug: عمر-المدبولي
+      slug: amir-elmadboli
     - name: أحمد علي التناهي
       img: 11.jpg
-      slug: أحمد-علي-التناهي
+      slug: ahmed-al-tanahi
     - name: أحمد أبو الوفا
       img: 12.jpg
-      slug: أحمد-أبو-الوفا
+      slug: ahmed-abul-wafa
 # Team member page
 Biography: السيرة الذاتية
 Academic Qualifications: المؤهلات العلمية

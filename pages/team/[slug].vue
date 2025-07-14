@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import {
+  computed,
+  definePageMeta,
+  queryCollection,
+  ref,
+  useI18n,
+  useRoute,
+  watch,
+} from '#imports';
+
 definePageMeta({
   layout: 'white-background',
 });
@@ -19,9 +29,9 @@ async function fetchMember() {
     const filePath =
       locale.value === 'ar' ? `/team/${slug.value}.ar` : `/team/${slug.value}`;
     post.value = await (queryCollection as any)('team').path(filePath).first();
-    // console.log('Fetched member:', post.value);
-    // console.log('Current locale:', locale.value);
-    // console.log('File path used:', filePath);
+    console.log('Fetched member:', post.value);
+    console.log('Current locale:', locale.value);
+    console.log('File path used:', filePath);
   } catch (e) {
     error.value = e as unknown;
     post.value = null;
