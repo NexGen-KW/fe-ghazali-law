@@ -4,11 +4,9 @@
   >
     <HeaderScale :t="formTranslations.header" class="mb-4" />
     <h2 class="text-gold-900 mb-8 text-center text-3xl ltr:font-serif">
-      {{ formTranslations.title.replace(formTranslations.titleHighlight, '') }}
+      {{ formTranslations.title.split(formTranslations.titleHighlight)[0] }}
       <span class="text-gold-500">{{ formTranslations.titleHighlight }}</span>
-      {{
-        formTranslations.title.split(formTranslations.titleHighlight)[1] || ''
-      }}
+      {{ formTranslations.title.split(formTranslations.titleHighlight)[1] }}
     </h2>
     <form class="mx-auto w-full max-w-5xl space-y-6">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
