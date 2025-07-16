@@ -6,6 +6,15 @@
       class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 pt-20"
     >
       <!-- Logo/Slogan on the left/above -->
+      <!-- Mobile/Tablet: Logo above text -->
+      <div class="mb-2 flex flex-col items-center lg:hidden">
+        <img
+          src="/logowithtext.svg"
+          alt="RMG Law Logo with Text"
+          class="h-auto w-[300px]"
+        />
+      </div>
+      <!-- Desktop: Logo/Slogan on the left -->
       <div class="mb-4 hidden flex-col items-center md:mb-0 lg:flex">
         <img
           src="/sloganandlogo.svg"
@@ -22,7 +31,7 @@
         class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
       >
         <div
-          class="hero-msg mx-auto flex w-full max-w-[600px] flex-col justify-center text-center text-white"
+          class="hero-msg mx-auto flex h-fit w-full max-w-[600px] flex-col text-center text-white"
         >
           <Swiper
             v-if="isLocaleReady"
@@ -52,7 +61,7 @@
             >
               <div class="hero-slide-content">
                 <h1
-                  class="carousel-heading text-center ltr:lg:text-left rtl:lg:text-right"
+                  class="carousel-heading py-0 text-center ltr:lg:text-left rtl:lg:text-right"
                 >
                   {{ slide.heading }}
                 </h1>
@@ -68,7 +77,7 @@
 
         <!-- Custom Pagination -->
         <div
-          class="mt-8 flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
+          class="mt-[20px] flex w-full max-w-[600px] justify-center space-x-2 text-center lg:justify-start lg:text-start"
         >
           <div class="swiper-pagination-custom"></div>
         </div>
@@ -235,13 +244,6 @@ const swiperDirection = computed(() => {
     word-wrap: break-word;
     overflow-wrap: break-word;
     width: 100%;
-  }
-
-  .hero-msg {
-    height: auto;
-    min-height: 220px;
-    padding: 1rem 0;
-    max-width: 100%;
   }
 
   .carousel-heading {

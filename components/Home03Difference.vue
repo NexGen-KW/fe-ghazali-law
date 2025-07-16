@@ -28,7 +28,7 @@
           loading="lazy"
           :src="`/fe-ghazali-law/diff.jpg`"
           alt="difference"
-          class="h-auto w-full object-cover"
+          class="hidden h-auto w-full object-cover lg:block"
         />
       </div>
     </div>
