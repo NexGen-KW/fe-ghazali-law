@@ -25,6 +25,7 @@
           class="hero-msg mx-auto flex w-full max-w-[600px] flex-col justify-center text-center text-white"
         >
           <Swiper
+            v-if="isLocaleReady"
             :modules="[Autoplay, Pagination]"
             :slides-per-view="1"
             :space-between="0"
@@ -91,6 +92,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const { t, locale } = useI18n();
+
+const isLocaleReady = computed(() => !!locale.value);
 
 // Get slides from translations
 const slides = computed(() => [
