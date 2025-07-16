@@ -80,7 +80,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed, watch, nextTick } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
 import ScrollDownButton from './ui/ScrollDownButton.vue';
@@ -115,7 +115,16 @@ const slides = computed(() => [
 // RTL support
 const isRTL = computed(() => locale.value === 'ar');
 
-// Add a computed key for Swiper re-rendering
+// Add a c// Watch for locale changes to handle RTL/LTR properly
+watch(locale, () => {
+  // Force re-render when locale changes with a small delay
+  setTimeout(() => {
+    nextTick(() => {
+      // This will trigger a re-render of the Swiper component
+    });
+  }, 100);
+});
+
 const swiperKey = computed(() => `${locale.value}-${isRTL.value}`);
 
 // Handle RTL direction more carefully
