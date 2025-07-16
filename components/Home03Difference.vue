@@ -23,12 +23,12 @@
       </div>
     </div>
     <div class="flex flex-col">
-      <div class="relative">
+      <div class="relative flex justify-center">
         <img
           loading="lazy"
-          :src="`/fe-ghazali-law/diff.jpg`"
+          :src="`/fe-ghazali-law/star.svg`"
           alt="difference"
-          class="hidden h-auto w-full object-cover lg:block"
+          class="hidden h-auto w-full max-w-[500px] object-cover lg:block"
         />
       </div>
     </div>

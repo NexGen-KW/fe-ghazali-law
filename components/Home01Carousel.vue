@@ -3,14 +3,18 @@
     class="relative mt-[-111px] flex h-[100dvh] w-full items-center justify-center bg-[url(/homepage-bg.jpg)] bg-cover bg-center bg-no-repeat"
   >
     <div
-      class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 pt-20"
+      class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4"
     >
       <!-- Logo/Slogan on the left/above -->
       <!-- Mobile/Tablet: Logo above text -->
       <div class="mb-2 flex flex-col items-center lg:hidden">
         <img
-          src="/logowithtext.svg"
-          alt="RMG Law Logo with Text"
+          :src="mobileLogoSrc"
+          :alt="
+            locale === 'ar'
+              ? 'شعار ر.م.ج القانوني مع النص'
+              : 'RMG Law Logo with Text'
+          "
           class="h-auto w-[300px]"
         />
       </div>
@@ -28,7 +32,7 @@
 
       <!-- Hero Text Carousel -->
       <div
-        class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
+        class="hero-text flex w-full flex-1 flex-col items-center justify-center gap-4 md:w-auto"
       >
         <div
           class="hero-msg mx-auto flex h-fit w-full max-w-[600px] flex-col text-center text-white"
@@ -129,7 +133,12 @@ const slides = computed(() => [
 // RTL support
 const isRTL = computed(() => locale.value === 'ar');
 
-// Add a c// Watch for locale changes to handle RTL/LTR properly
+// Computed image source for mobile logo
+const mobileLogoSrc = computed(() =>
+  locale.value === 'ar' ? '/logowithtextar.svg' : '/logowithtext.svg',
+);
+
+// Watch for locale changes to handle RTL/LTR properly
 watch(locale, () => {
   // Force re-render when locale changes with a small delay
   setTimeout(() => {
