@@ -22,17 +22,17 @@ defineProps<{
       class="absolute bottom-40 left-1/2 z-10 flex -translate-x-1/2 justify-center"
     >
       <div
-        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-2 text-center md:py-8"
+        class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-2 text-center md:py-4"
       >
         <h1
-          class="ltr:font-marcellusSC text-center text-[20px] text-white md:text-[32px]"
+          class="ltr:font-marcellusSC text-center text-[20px] text-white lg:text-[28px]"
         >
-          {{ member?.name || $t('Meet Our Team') }}
+          {{ member?.name }}
         </h1>
         <p
-          class="text-shadow-custom hidden text-[16px] text-white md:block md:text-[24px]"
+          class="text-shadow-custom hidden text-[16px] text-white md:text-[20px] lg:block"
         >
-          {{ member?.role || $t('carouselParagraph') }}
+          {{ member?.role }}
         </p>
       </div>
     </div>
