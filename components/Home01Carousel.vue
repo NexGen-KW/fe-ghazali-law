@@ -51,11 +51,13 @@
               class="hero-slide"
             >
               <div class="hero-slide-content">
-                <h1 class="carousel-heading text-center lg:text-start">
+                <h1
+                  class="carousel-heading text-center ltr:lg:text-left rtl:lg:text-right"
+                >
                   {{ slide.heading }}
                 </h1>
                 <p
-                  class="carousel-paragraph text-shadow-custom mt-4 text-center text-white lg:text-start"
+                  class="carousel-paragraph text-shadow-custom mt-4 text-center text-white ltr:lg:text-left rtl:lg:text-right"
                 >
                   {{ slide.paragraph }}
                 </p>
