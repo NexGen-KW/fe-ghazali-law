@@ -15,20 +15,20 @@ breadcrumb:
 # Carousel - Home
 carousel:
   slides:
-    - heading: Justice. Expertise. Results.
+    - heading: Justice. Expertise. Results
       paragraph: Providing trusted legal guidance with integrity and dedication. Whether you're facing a dispute, planning for the future, or seeking counsel—our team is here to protect your rights
-    - heading: Your Rights, Our Priority.
-      paragraph: We are committed to defending your interests and delivering results with professionalism and care.
-    - heading: Experience You Can Trust.
-      paragraph: Our team brings years of expertise in a wide range of legal fields, ensuring you receive the best possible advice.
-    - heading: Cross-Border Legal Expertise.
-      paragraph: A dedicated International Department advising foreign entities on investments, compliance, and dispute resolution in Kuwait.
+    - heading: Your Rights, Our Priority
+      paragraph: We are committed to defending your interests and delivering results with professionalism and care
+    - heading: Experience You Can Trust
+      paragraph: Our team brings years of expertise in a wide range of legal fields, ensuring you receive the best possible advice
+    - heading: Cross-Border Legal Expertise
+      paragraph: A dedicated International Department advising foreign entities on investments, compliance, and dispute resolution in Kuwait
 # Statement
 statementHeading: Where Professionalism Meets Purpose
 statementParagraph: Our legal strategy is built on meticulous preparation, thoughtful analysis, and unwavering advocacy. At every stage, we prioritize transparency, professionalism, and outcomes that truly serve our clients' best interests. With a commitment to ethical excellence and forward-thinking counsel, we ensure every case receives the attention and strategy it deserves
 heroDifference: What Makes Us Different
 differenceHeading: Your Advantage in National and Cross-Border Law
-differenceParagraph: What sets us apart is our legal expertise and understanding of Kuwait's legal landscape. We offer tailored counsel that bridges local insight with global strategy, helping businesses navigate challenges with confidence.
+differenceParagraph: What sets us apart is our legal expertise and understanding of Kuwait's legal landscape. We offer tailored counsel that bridges local insight with global strategy, helping businesses navigate challenges with confidence
 # Testimonials
 testimonials:
   - text: "Partnering with this firm has been a game-changer for our business. Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals"
