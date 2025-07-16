@@ -10,7 +10,7 @@
         <h2>
           {{ $t('differenceHeading') }}
         </h2>
-        <p class="text-start leading-[34px]">
+        <p class="text-center leading-[34px] lg:text-start">
           {{ $t('differenceParagraph') }}
         </p>
         <div class="flex justify-center lg:justify-start">

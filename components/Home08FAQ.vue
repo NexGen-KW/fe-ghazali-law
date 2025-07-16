@@ -65,7 +65,7 @@ const faqs = computed(() => [
           </AccordionTrigger>
         </AccordionHeader>
         <AccordionContent
-          class="AccordionContent text-gold-900 pt-3 pl-10 text-base font-normal"
+          class="AccordionContent text-gold-900 pt-3 pl-4 text-base font-normal"
         >
           <div>{{ faq.a }}</div>
         </AccordionContent>

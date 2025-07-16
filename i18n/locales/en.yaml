@@ -59,13 +59,13 @@ discoverHeaderScale: What We Do In RMG
 services:
   contracting:
     title: Contracting & Real-Estate
-    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
+    description: Comprehensive legal services in contracts and real estate, including contract drafting, review, and legal advice to protect your interests in all real estate and contractual transactions.
   intellectualProperty:
     title: Intellectual Property
-    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
+    description: Safeguarding your innovations and creative works through intellectual property registration, rights enforcement, and specialized advisory services locally and internationally.
   arbitration:
     title: Arbitration
-    description: Protecting your innovations, trademarks, and creative works through strategic IP registration, enforcement, and advisory — locally and internationally.
+    description: Effective arbitration solutions for resolving commercial and civil disputes, with expertise in representing clients before local and international arbitration bodies.
 # Home Form
 homeForm:
   header: Keep In Touch With Us

@@ -42,7 +42,7 @@
               </AccordionTrigger>
             </AccordionHeader>
             <AccordionContent
-              class="AccordionContent text-gold-900 pt-3 pl-10 font-sans text-[17px] font-normal"
+              class="AccordionContent text-gold-900 pt-3 font-sans text-[17px] font-normal ltr:pl-4 rtl:pr-4"
             >
               <div class="text-gold-800 overflow-hidden break-words">
                 {{ item.description }}
