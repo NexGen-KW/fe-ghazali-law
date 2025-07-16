@@ -5,7 +5,7 @@ defineProps<{ member?: { participations?: string } }>();
 <template>
   <section
     v-if="member?.participations"
-    class="flex w-full flex-col items-center px-2 py-12"
+    class="flex w-full flex-col items-center"
   >
     <div class="mb-10 flex w-full flex-col items-center">
       <div class="mb-4 flex w-full max-w-6xl items-center">

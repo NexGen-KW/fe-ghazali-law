@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <section
-    class="relative flex h-[calc(100dvh-111px)] items-center justify-center bg-cover bg-center bg-no-repeat"
+    class="responsive-bg-image relative flex h-[calc(100dvh-111px)] items-center justify-center bg-cover bg-center bg-no-repeat px-0 py-0"
     :style="{
       backgroundImage: `url(/fe-ghazali-law/${member?.image})`,
     }"
@@ -24,7 +24,9 @@ defineProps<{
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-2 text-center md:py-8"
       >
-        <h1 class="ltr:font-marcellusSC text-[20px] text-white md:text-[32px]">
+        <h1
+          class="ltr:font-marcellusSC text-center text-[20px] text-white md:text-[32px]"
+        >
           {{ member?.name || $t('Meet Our Team') }}
         </h1>
         <p
@@ -41,7 +43,30 @@ defineProps<{
   </section>
 </template>
 
-<style>
+<style scoped>
+.responsive-bg-image {
+  background-size: cover;
+}
+@media (min-width: 1100px) and (min-height: 806px) {
+  .responsive-bg-image {
+    background-size: cover;
+    background-position: top;
+  }
+}
+@media (min-width: 1300px) {
+  .responsive-bg-image {
+    background-size: contain;
+    background-position: top;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 910px) {
+  .responsive-bg-image {
+    background-size: contain;
+    background-position: top;
+  }
+}
+
 .text-shadow-custom {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

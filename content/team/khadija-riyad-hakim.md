@@ -4,7 +4,7 @@ image: 13.jpg
 department: international
 role: Senior Legal Consultant
 biography: |
-  Khadija is a highly respected legal consultant with almost two decades of experience advising clients throughout Lebanon, Kuwait, and the wider GCC. As a key member of the International Department at Rawan Mishari Al-Ghazali Law Firm, she handles complex cross-border matters in commercial, corporate, administrative, and international law, drawing on deep knowledge of both civil- and common-law systems.
+  Khadija is a highly respected legal consultant with almost two decades of experience advising clients throughout Lebanon, Kuwait, and the wider GCC. As a key member of the International Department at Rawan Mishari Al Ghazali Law Firm, she handles complex cross-border matters in commercial, corporate, administrative, and international law, drawing on deep knowledge of both civil- and common-law systems.
 
   Over her career, Khadija has guided multinational companies, NGOs, and government-linked entities on energy transactions, regulatory compliance, employment issues, and legal-policy initiatives. Fluent in Arabic and English, she drafts, negotiates, and interprets intricate legal documents with linguistic precision and cultural sensitivity, and she frequently supports corporate-governance and public-sector-reform projects across the MENA region.
 

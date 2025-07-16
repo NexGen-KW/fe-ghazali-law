@@ -4,7 +4,7 @@ image: 4.jpg
 role: Senior Legal Consultant and Lawyer
 department: international
 biography: |
-  Nada is a highly experienced legal professional currently serving as Legal Counsel in the International Department at Rawan Mishari Al-Ghazali Law Firm. She specializes in cross-border transactions, commercial litigation, and international contract advisory, and is known for her strategic thinking and precision in legal drafting within both Kuwaiti and international legal frameworks.
+  Nada is a highly experienced legal professional currently serving as Legal Counsel in the International Department at Rawan Mishari Al Ghazali Law Firm. She specializes in cross-border transactions, commercial litigation, and international contract advisory, and is known for her strategic thinking and precision in legal drafting within both Kuwaiti and international legal frameworks.
 
   Previously, she held the position of Deputy Legal Director at Kuwait Airways, where she gained extensive experience in aviation law, including aircraft restructuring negotiations, engine subleases, MRO agreements, and high-value procurement contracts. Her work also included corporate governance, legal drafting, and dispute resolution at a senior level.
 
@@ -18,7 +18,7 @@ experience: |
 
   Over 15 years of legal experience advising international corporations and clients doing business in Kuwait
 
-  Legal Counsel in the International Department at Rawan Mishari Al-Ghazali Law Firm, specializing in cross-border legal matters
+  Legal Counsel in the International Department at Rawan Mishari Al Ghazali Law Firm, specializing in cross-border legal matters
 
   Former Deputy Legal Director at Kuwait Airways, overseeing legal operations and corporate compliance across global jurisdictions
 

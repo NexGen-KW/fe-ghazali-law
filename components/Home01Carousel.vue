@@ -22,7 +22,7 @@
         class="hero-text flex w-full flex-1 flex-col items-center justify-center md:w-auto"
       >
         <div
-          class="hero-msg mx-auto flex h-[220px] w-full max-w-[600px] flex-col justify-center text-center text-white"
+          class="hero-msg mx-auto flex w-full max-w-[600px] flex-col justify-center text-center text-white"
         >
           <Swiper
             :modules="[Autoplay, Pagination]"
@@ -80,7 +80,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, watch, nextTick } from 'vue';
+import { computed } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
 import ScrollDownButton from './ui/ScrollDownButton.vue';
@@ -114,16 +114,6 @@ const slides = computed(() => [
 
 // RTL support
 const isRTL = computed(() => locale.value === 'ar');
-
-// Watch for locale changes to handle RTL/LTR properly
-watch(locale, () => {
-  // Force re-render when locale changes with a small delay
-  setTimeout(() => {
-    nextTick(() => {
-      // This will trigger a re-render of the Swiper component
-    });
-  }, 100);
-});
 
 // Add a computed key for Swiper re-rendering
 const swiperKey = computed(() => `${locale.value}-${isRTL.value}`);

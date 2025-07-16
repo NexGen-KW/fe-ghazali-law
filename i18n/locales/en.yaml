@@ -44,8 +44,8 @@ news:
     description: Leaders gathered to explore evolving compliance standards.
     date: 23 March, 2025
   - image: kuwait2.jpg
-    title: Rawan Al-Ghazali joins IMF Panel.
-    description: Ms. Al-Ghazali advises on legislation for emerging markets.
+    title: Rawan Al Ghazali joins IMF Panel.
+    description: Ms. Al Ghazali advises on legislation for emerging markets.
     date: 23 March, 2025
   - image: kuwait3.jpg
     title: Update on Investment Law
@@ -100,7 +100,7 @@ homeFaq:
 aboutHeroHeading: ABOUT US
 aboutHeroParagraph: With a deep-rooted dedication to legal excellence, we proudly serve clients in Kuwait and beyond, combining local insight with global standards to deliver impactful legal solutions
 aboutContactHeading: 'Decades of Excellence, Built on Trust'
-aboutContactParagraph: 'With over 30 years of dedication to legal excellence, Rawan Mishari Al-Ghazali Law Firm (RMG) stands as a trusted partner for local and global clients. Our legacy is defined by strategic vision, cross-border expertise, and a commitment to client success in Kuwait and beyond.'
+aboutContactParagraph: 'With over 30 years of dedication to legal excellence, Rawan Mishari Al Ghazali Law Firm (RMG) stands as a trusted partner for local and global clients. Our legacy is defined by strategic vision, cross-border expertise, and a commitment to client success in Kuwait and beyond.'
 # Analytics
 aboutAnalytics:
   - number: '+30'
@@ -120,13 +120,13 @@ aboutJourneyTitle: Our Journey
 aboutJourneyParagraph: Our journey is a testament to our commitment to excellence and innovation. From our humble beginnings to our current position as a leading law firm in Kuwait, we have always been guided by our core values of integrity, professionalism, and client satisfaction.
 aboutJourney:
   - year: '1992'
-    description: 'Mishari Mohammed Al-Ghazali Law Firm was established, marking its beginning with an international partnership with the U.S.-based law firm Graham & James. This collaboration laid the groundwork for future global affiliations and rebranding efforts, eventually leading to a partnership with Squire Patton Boggs.'
+    description: 'Mishari Mohammed Al Ghazali Law Firm was established, marking its beginning with an international partnership with the U.S.-based law firm Graham & James. This collaboration laid the groundwork for future global affiliations and rebranding efforts, eventually leading to a partnership with Squire Patton Boggs.'
   - year: '2006'
-    description: 'Rawan Al-Ghazali joined the firm as an associate. Her entry marked the beginning of a new era, as she steadily advanced within the firm, bringing a progressive and internationally focused legal perspective.'
+    description: 'Rawan Al Ghazali joined the firm as an associate. Her entry marked the beginning of a new era, as she steadily advanced within the firm, bringing a progressive and internationally focused legal perspective.'
   - year: '2012'
-    description: 'Rawan Al-Ghazali became the first named partner, and the firm was rebranded as Mishari Al-Ghazali and Rawan Mishari Al-Ghazali Law Firm, recognizing her leadership and rising prominence in Kuwait’s legal sector.'
+    description: 'Rawan Al Ghazali became the first named partner, and the firm was rebranded as Mishari Al Ghazali and Rawan Mishari Al Ghazali Law Firm, recognizing her leadership and rising prominence in Kuwait’s legal sector.'
   - year: '2015'
-    description: 'Mishari Al-Ghazali stepped down, appointing Rawan as Managing Director. The firm was renamed Rawan Mishari Al-Ghazali Law Firm, solidifying its identity under her leadership and setting the course for its growth as a full-service, internationally oriented Kuwaiti law firm.'
+    description: 'Mishari Al Ghazali stepped down, appointing Rawan as Managing Director. The firm was renamed Rawan Mishari Al Ghazali Law Firm, solidifying its identity under her leadership and setting the course for its growth as a full-service, internationally oriented Kuwaiti law firm.'
 # About Features
 aboutFeatures:
   - title: 'Cross-Border Expertise'
@@ -161,13 +161,13 @@ teamPage:
   subtitle: MEET OUR EXPERTS
   paragraph: Providing trusted legal guidance with integrity and dedication. Whether you're facing a dispute, planning for the future, or seeking counsel—our team is here to protect your rights
   meetCTA: Meet RMG Experts
-  memberName: Rawan Mishari Al-Ghazali
+  memberName: Rawan Mishari Al Ghazali
   memberRole: Founder and Managing Director
-  memberBiography: With nearly two decades of experience, Ms. Rawan Al-Ghazali is a leading force in Kuwait’s legal sector, known for her work in legislative reform, legal consultancy, and arbitration, and for advising institutions such as the World Bank and IMF on key national laws.
+  memberBiography: With nearly two decades of experience, Ms. Rawan Al Ghazali is a leading force in Kuwait’s legal sector, known for her work in legislative reform, legal consultancy, and arbitration, and for advising institutions such as the World Bank and IMF on key national laws.
   knowMore: Know More
   internationalDepartment: International Department
   internationalMembers:
-    - name: Bader Mishari Al-Ghazali
+    - name: Bader Mishari Al Ghazali
       img: 5.jpg
       slug: bader-mishari-al-ghazali
     - name: Nada Bourahmah
@@ -222,7 +222,7 @@ contactPage:
   subtitle: Our Team Looks Forward to Hearing from You!
   contactInfo: Contact Information
   addressLabel: Location
-  address: The Law Firm of Rawan Mishari Al-Ghazali (RMG), Kuwait Chamber of Commerce & Industry Building, Mubarak Alkabeer Street, 1st Floor, Kuwait City
+  address: The Law Firm of Rawan Mishari Al Ghazali (RMG), Kuwait Chamber of Commerce & Industry Building, Mubarak Alkabeer Street, 1st Floor, Kuwait City
   phoneLabel: 'Phone'
   phone: '+965 1802234'
   emailLabel: 'Email'
@@ -244,7 +244,7 @@ footer:
     with global standards and local
     expertise since 1992.
   contactInfo: Contact Info
-  address: The Law Firm of Rawan Mishari Al-Ghazali (RMG), Kuwait Chamber of Commerce & Industry Building, Mubarak Alkabeer Street, 1st Floor, Kuwait City
+  address: The Law Firm of Rawan Mishari Al Ghazali (RMG), Kuwait Chamber of Commerce & Industry Building, Mubarak Alkabeer Street, 1st Floor, Kuwait City
   phoneLabel: 'Phone :'
   phone: '+965 1802234'
   emailLabel: 'Email :'

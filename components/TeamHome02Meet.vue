@@ -10,7 +10,7 @@
       <div class="flex w-full flex-shrink-0 justify-center md:w-[300px]">
         <img
           src="/1.jpg"
-          alt="Rawan Mishari Al-Ghazali"
+          alt="Rawan Mishari Al Ghazali"
           class="x h-[380px] w-[300px] object-cover"
         />
       </div>

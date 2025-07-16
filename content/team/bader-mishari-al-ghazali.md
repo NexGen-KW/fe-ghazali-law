@@ -4,7 +4,7 @@ image: 5.jpg
 role: Legal Consultant and Lawyer
 department: international
 biography: |
-  Bader is a bilingual Kuwaiti lawyer in the International Department at Rawan Mishari Al-Ghazali Law Firm, where he is developing a dynamic cross-border practice in financial services, corporate law, and commercial transactions. He holds an LL.B. (Hons) from Manchester Metropolitan University and gained international exposure during a secondment at Simmons & Simmons in London, contributing to matters involving private funds, financial services, and energy investments.
+  Bader is a bilingual Kuwaiti lawyer in the International Department at Rawan Mishari Al Ghazali Law Firm, where he is developing a dynamic cross-border practice in financial services, corporate law, and commercial transactions. He holds an LL.B. (Hons) from Manchester Metropolitan University and gained international exposure during a secondment at Simmons & Simmons in London, contributing to matters involving private funds, financial services, and energy investments.
 
   While at Simmons & Simmons, Bader worked on private placement memorandums, NDAs, and financing agreements for investment vehicles in the energy and infrastructure sectors. Though his direct hedge fund experience is limited, he demonstrates a strong understanding of financial law, asset management, and private equity, and keeps up with evolving global finance trends.
 

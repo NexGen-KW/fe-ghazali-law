@@ -4,7 +4,7 @@ image: 7.jpg
 department: international
 role: Lawyer
 biography: |
-  Ms. Maha Al Rashidi is a registered Kuwaiti lawyer with a growing litigation practice focused on commercial and civil disputes. She currently serves as a litigator at Rawan Mishari Al-Ghazali Law Firm, where she attends court sessions, follows up on enforcement of judgments, and assists in the preparation of pleadings and legal memoranda. Her practice emphasizes dedication to client advocacy and procedural precision.
+  Ms. Maha Al Rashidi is a registered Kuwaiti lawyer with a growing litigation practice focused on commercial and civil disputes. She currently serves as a litigator at Rawan Mishari Al Ghazali Law Firm, where she attends court sessions, follows up on enforcement of judgments, and assists in the preparation of pleadings and legal memoranda. Her practice emphasizes dedication to client advocacy and procedural precision.
 
   Ms. Al Rashidi holds an LL.B. from Kuwait International Law School, where she graduated with distinction (GPA 3.82), and is currently pursuing her LL.M. in Private Law at the same institution. She has also completed the arbitrator preparation program at the Kuwait Commercial Arbitration Center, qualifying her for work in alternative dispute resolution.
 

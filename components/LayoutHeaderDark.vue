@@ -3,7 +3,9 @@
     class="relative z-20 flex h-[111px] items-center justify-between border-b bg-white px-[81px] lg:px-[81px]"
     style="border-bottom: 1px solid rgb(237 237 237)"
   >
-    <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
+    <NuxtLink to="/">
+      <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
+    </NuxtLink>
 
     <!-- Desktop Navigation -->
     <ul class="hidden space-x-4 lg:flex">
@@ -57,13 +59,17 @@
 
     <!-- Mobile Menu Panel -->
     <div
-      class="absolute top-0 right-0 h-full w-80 transform bg-white shadow-lg transition-transform duration-300"
+      class="absolute top-0 h-full w-80 transform bg-white shadow-lg transition-transform duration-300 ltr:right-0 rtl:left-0"
       @click.stop
     >
       <div class="flex h-full flex-col">
         <!-- Mobile Menu Header -->
         <div
           class="flex items-center justify-between border-b border-gray-200 p-6"
+          :class="{
+            'flex-row-reverse': $i18n.locale === 'ar',
+            'flex-row': $i18n.locale !== 'ar',
+          }"
         >
           <img
             src="/logo.svg"

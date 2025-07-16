@@ -1,6 +1,6 @@
 <template>
   <header
-    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-4 px-[81px] lg:px-[81px]"
+    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-[81px] lg:px-[81px]"
     style="border-bottom: 1px solid #797879"
   >
     <NuxtLink to="/">
@@ -59,7 +59,7 @@
 
     <!-- Mobile Menu Panel -->
     <div
-      class="absolute top-0 right-0 h-full w-80 transform bg-white shadow-lg transition-transform duration-300"
+      class="absolute top-0 h-full w-80 transform bg-white shadow-lg transition-transform duration-300 ltr:right-0 rtl:left-0"
       @click.stop
     >
       <div class="flex h-full flex-col">
