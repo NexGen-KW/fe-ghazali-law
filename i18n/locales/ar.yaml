@@ -5,10 +5,10 @@ readMore: إقرأ المزيد
 
 breadcrumb:
   home: الرئيسية
-  about: حول
-  services: خدمات
-  team: فريق
-  contact: اتصال
+  about: نبذه عن المكتب
+  services: الخدمات
+  team: الفريق
+  contact: تواصل معنا
   switchLanguage: Arabic
 
 # Page -> Home
@@ -155,7 +155,7 @@ serviceStatement:
   servicesPresented: ماذا نقدم لكم؟
   paragraph: نقدم خدمات قانونية تجارية وشركات مخصصة، نجمع بين المعرفة العميقة بالنظام القانوني الكويتي والرؤية العالمية لدعم أعمالك في كل مرحلة.
 # Service Info
-backToServices: عودة إلى خدماتنا
+backToServices: عودة إلى الخدمات
 
 # Team page
 teamPage:
@@ -251,8 +251,8 @@ footer:
   emailLabel: 'البريد الإلكتروني :'
   browseLinks: روابط التصفح
   home: الرئيسية
-  about: حول
-  services: خدمات
+  about: نبذه عن المكتب
+  services: الخدمات
   team: الفريق
   contact: تواصل معنا
   findUsOn: تجدنا على

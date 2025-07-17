@@ -7,7 +7,7 @@ defineProps<{ member?: { participations?: string } }>();
     v-if="member?.participations"
     class="flex w-full flex-col items-center"
   >
-    <div class="mb-10 flex w-full flex-col items-center">
+    <div class="flex w-full flex-col items-center">
       <div class="mb-4 flex w-full max-w-6xl items-center">
         <div class="border-gold-200 flex-1 border-t"></div>
         <h2 class="ltr:font-marcellus text-center text-neutral-900">

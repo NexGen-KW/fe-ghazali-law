@@ -1,10 +1,10 @@
 <template>
   <section
-    class="relative m-auto flex h-[100dvh] max-w-[1440px] flex-col pt-[40px]"
+    class="relative m-auto flex h-[100dvh] max-w-[1440px] flex-col px-8 pt-[40px] lg:px-4"
   >
     <!-- Back Button -->
     <button
-      class="mb-8 flex w-fit items-center text-[#3a2e13] hover:underline"
+      class="fixed bottom-15 left-[50%] z-50 flex w-fit -translate-x-1/2 items-center justify-center gap-2 rounded-lg bg-[#f7f5ef] px-4 py-3 text-[#3a2e13] shadow-sm transition hover:bg-[#ede9dd] focus:ring-2 focus:ring-[#a08c5b] focus:outline-none lg:hidden"
       @click="goBack"
     >
       <span v-if="!isRtl" class="mr-2">&larr;</span>
@@ -15,7 +15,7 @@
     <!-- Content Row: Sidebar + Main Content -->
     <div class="flex flex-col gap-8 md:flex-row">
       <!-- Sidebar -->
-      <aside class="w-full flex-shrink-0 md:w-64">
+      <aside class="hidden w-full flex-shrink-0 md:w-64 lg:block">
         <div class="flex flex-col gap-2">
           <button
             v-for="svc in services"
@@ -35,7 +35,7 @@
 
       <!-- Main Content -->
       <main class="flex-1">
-        <div v-if="service" class="service-details">
+        <div v-if="service" class="service-details" ref="serviceDetails">
           <h1 class="mb-4 text-[32px] text-[#3a2e13]">
             {{ service.title }}
           </h1>
@@ -59,9 +59,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 import { useServices } from '~/composables/useServices';
-import { computed } from 'vue';
+import { computed, ref, nextTick, onMounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const props = defineProps<{
@@ -71,9 +71,16 @@ const props = defineProps<{
 
 const emit = defineEmits(['select', 'back']);
 const router = useRouter();
+const route = useRoute();
 const { services } = useServices();
 const { localeProperties } = useI18n();
 const isRtl = computed(() => localeProperties.value.dir === 'rtl');
+
+const serviceDetails = ref<HTMLElement | null>(null);
+
+function isMobile() {
+  return window.innerWidth < 768;
+}
 
 function selectService(slug: string) {
   router.push(`/services/${slug}`);
@@ -82,4 +89,18 @@ function selectService(slug: string) {
 function goBack() {
   router.push({ name: 'services' });
 }
+
+onMounted(() => {
+  if (route.query.scroll === '1' && isMobile() && serviceDetails.value) {
+    nextTick(() => {
+      serviceDetails.value?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+      // Remove the scroll param for cleanliness
+      const { scroll, ...rest } = route.query;
+      router.replace({ query: rest });
+    });
+  }
+});
 </script>

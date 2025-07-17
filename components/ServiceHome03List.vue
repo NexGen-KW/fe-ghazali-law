@@ -20,7 +20,7 @@
         </div>
 
         <NuxtLink
-          :to="`/services/${service.slug}`"
+          :to="`/services/${service.slug}?scroll=1`"
           class="slide-overlay-btn relative z-10 mt-2 inline-block w-fit overflow-hidden px-2 py-2 font-semibold text-[#a08c5b] transition sm:w-[116px] sm:px-[8px]"
         >
           <span class="text-sm sm:text-base">{{ $t('readMore') }}</span>
