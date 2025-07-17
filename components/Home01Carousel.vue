@@ -1,6 +1,9 @@
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100dvh] w-full items-center justify-center bg-[url(/homepage-bg.jpg)] bg-cover bg-center bg-no-repeat"
+    :class="[
+      'relative mt-[-111px] flex h-[100dvh] w-full items-center justify-center bg-[url(/homepage-bg.jpg)] bg-cover bg-center bg-no-repeat',
+      isRTL ? 'flip-bg-ar' : '',
+    ]"
   >
     <div
       class="centered-hero-content carousel-950-row mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4"
@@ -335,5 +338,15 @@ const swiperDirection = computed(() => {
 /* Hide default Swiper pagination */
 :deep(.swiper-pagination) {
   display: none;
+}
+
+/* Flip background horizontally for Arabic */
+.flip-bg-ar {
+  transform: scaleX(-1);
+}
+
+/* Prevent flipping child content */
+.flip-bg-ar > * {
+  transform: scaleX(-1);
 }
 </style>
