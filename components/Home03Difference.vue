@@ -1,7 +1,7 @@
 <template>
   <section
     :class="[
-      'border-gold-200 relative container grid grid-cols-1 items-center justify-center gap-4 overflow-hidden text-center',
+      'border-gold-200 relative grid grid-cols-1 items-center justify-center gap-4 overflow-hidden py-8 text-center lg:py-26 xl:py-[130px]',
     ]"
   >
     <!-- Stylish background gazelle image -->
