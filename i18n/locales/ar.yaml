@@ -55,7 +55,7 @@ news:
 newsSectionTitle: آخر أخبارنا
 discoverCTA: اكتشف جميع خدماتنا
 discoverHeading: ماذا نقدم؟
-discoverHeaderScale: ما الذي نفعله في آر إم جي؟
+discoverHeaderScale: ما الذي نفعله في RMG؟
 # Services Accordion
 services:
   contracting:
@@ -255,3 +255,4 @@ footer:
   services: خدمات
   team: الفريق
   contact: تواصل معنا
+  findUsOn: تجدنا على

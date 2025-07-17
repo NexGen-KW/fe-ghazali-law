@@ -10,30 +10,17 @@
           {{ $t('footer.description') }}
         </p>
         <div class="flex gap-4">
+          <p class="text-gold-50 mb-2">{{ $t('footer.findUsOn') }}</p>
           <a
-            href="#"
-            aria-label="Facebook"
+            v-for="(social, idx) in socialLinks"
+            :key="idx"
+            :href="social.href"
+            :aria-label="social.label"
             class="bg-gold-300 hover:bg-gold-500 text-gold-50 rounded p-3 px-[12px]"
-            ><Icon
-              icon="fa6-brands:facebook-f"
-              size="40"
-              class="text-[#181507]"
-          /></a>
-          <a
-            href="#"
-            aria-label="LinkedIn"
-            class="bg-gold-300 hover:bg-gold-500 text-gold-50 rounded p-3 px-[12px]"
-            ><Icon
-              icon="fa6-brands:linkedin-in"
-              size="40"
-              class="text-[#181507]"
-          /></a>
-          <a
-            href="#"
-            aria-label="X"
-            class="bg-gold-300 hover:bg-gold-500 text-gold-50 rounded p-3 px-[12px]"
-            ><Icon icon="fa6-brands:x-twitter" size="40" class="text-[#181507]"
-          /></a>
+            target="_blank"
+          >
+            <Icon :icon="social.icon" size="40" class="text-[#181507]" />
+          </a>
         </div>
       </div>
       <!-- Center: Contact Info -->
@@ -86,4 +73,22 @@ import { useI18n } from 'vue-i18n';
 import { navigation } from '~/static/navigation';
 
 const { t: $t } = useI18n();
+
+const socialLinks = [
+  // {
+  //   href: '#',
+  //   label: 'Facebook',
+  //   icon: 'fa6-brands:facebook-f',
+  // },
+  {
+    href: 'https://www.linkedin.com/company/rmglf/',
+    label: 'LinkedIn',
+    icon: 'fa6-brands:linkedin-in',
+  },
+  // {
+  //   href: '#',
+  //   label: 'X',
+  //   icon: 'fa6-brands:x-twitter',
+  // },
+];
 </script>
