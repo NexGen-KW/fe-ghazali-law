@@ -38,7 +38,7 @@ defineProps<{
     </div>
     <!-- Reusable Scroll Down Button -->
     <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
-      <ScrollDownButton target="statement" />
+      <ScrollDownButton target="bio" />
     </div>
   </section>
 </template>
