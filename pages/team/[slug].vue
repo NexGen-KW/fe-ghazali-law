@@ -54,6 +54,9 @@ watch([locale, slug], fetchMember, { immediate: true });
       </template>
       <template v-else-if="post">
         <TeamInfo01Hero :member="post" />
+        <div class="flex w-full flex-col items-center pt-[70px]">
+          <UiHeaderScale :t="`${$t('teamMemberPageTitle')} ${post.name}`" />
+        </div>
         <TeamInfo02Bio :member="post" />
         <TeamInfo03Academic :member="post" />
         <TeamInfo04Experience :member="post" />

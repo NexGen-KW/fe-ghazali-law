@@ -213,10 +213,11 @@ teamPage:
       img: 12.jpg
       slug: ahmed-abul-wafa
 # Team member page
-Biography: السيرة الذاتية
-Academic Qualifications: المؤهلات العلمية
-Professional Experience: الخبرة المهنية
-Legislative and Academic Participations: الأنشطة التشريعية والعلمية
+teamMemberPageTitle: المزيد عن
+biography: السيرة الذاتية
+academicQualifications: المؤهلات العلمية
+professionalExperience: الخبرة المهنية
+legislativeAndAcademicParticipations: الأنشطة التشريعية والعلمية
 
 # Contact Page
 contactPage:

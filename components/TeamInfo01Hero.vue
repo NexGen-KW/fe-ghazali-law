@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <section
-    class="responsive-bg-image relative mb-20 flex h-[calc(100dvh-111px)] items-center justify-center bg-cover bg-center bg-no-repeat px-0 py-0"
+    class="responsive-bg-image relative flex h-[calc(100dvh-111px)] items-center justify-center bg-cover bg-center bg-no-repeat px-0 py-0"
     :style="{
       backgroundImage: `url(/fe-ghazali-law/${member?.image})`,
     }"

@@ -211,10 +211,11 @@ teamPage:
       img: 12.jpg
       slug: ahmed-abul-wafa
   # Team member page
-Biography: Biography
-Academic Qualifications: Academic Qualifications
-Professional Experience: Professional Experience
-Legislative and Academic Participations: Legislative and Academic Participations
+teamMemberPageTitle: More About
+biography: Biography
+academicQualifications: Academic Qualifications
+professionalExperience: Professional Experience
+legislativeAndAcademicParticipations: Legislative and Academic Participations
 
 # Contact Page
 contactPage:

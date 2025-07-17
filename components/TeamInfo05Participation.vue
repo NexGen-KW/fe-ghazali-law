@@ -5,17 +5,11 @@ defineProps<{ member?: { participations?: string } }>();
 <template>
   <section
     v-if="member?.participations"
-    class="flex w-full flex-col items-center"
+    class="container flex w-full flex-col items-center py-0 pb-[24px]"
   >
     <div class="flex w-full flex-col items-center">
-      <div class="mb-4 flex w-full max-w-6xl items-center">
-        <div class="border-gold-200 flex-1 border-t"></div>
-        <h2 class="ltr:font-marcellus text-center text-neutral-900">
-          {{ $t('Legislative and Academic Participations') }}
-        </h2>
-        <div class="border-gold-200 flex-1 border-t"></div>
-      </div>
-      <div class="mx-auto w-full max-w-[1140px] px-4">
+      <UiSectionHeader :title="$t('legislativeAndAcademicParticipations')" />
+      <div class="mx-auto w-full pt-[24px]">
         <p
           v-for="(para, idx) in (member?.participations || '').split(/\n\n+/)"
           :key="idx"
