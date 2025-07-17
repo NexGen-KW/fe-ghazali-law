@@ -135,7 +135,9 @@ const isRTL = computed(() => locale.value === 'ar');
 
 // Computed image source for mobile logo
 const mobileLogoSrc = computed(() =>
-  locale.value === 'ar' ? '/logowithtextar.svg' : '/logowithtext.svg',
+  locale.value === 'ar'
+    ? '/fe-ghazali-law/logowithtextar.svg'
+    : '/fe-ghazali-law/logowithtext.svg',
 );
 
 // Watch for locale changes to handle RTL/LTR properly
