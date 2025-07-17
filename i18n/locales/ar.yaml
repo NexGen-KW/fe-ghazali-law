@@ -5,7 +5,7 @@ readMore: إقرأ المزيد
 
 breadcrumb:
   home: الرئيسية
-  about: نبذه عن المكتب
+  about: نبذة عن المكتب
   services: الخدمات
   team: الفريق
   contact: تواصل معنا
@@ -164,7 +164,7 @@ teamPage:
   paragraph: نقدم خدمات قانونية تجارية وشركات مخصصة، نجمع بين المعرفة العميقة بالنظام القانوني الكويتي والرؤية العالمية لدعم أعمالك في كل مرحلة.
   meetCTA: اعرف المزيد عن الفريق
   memberName: روان مشاري الغزالي
-  memberRole: مؤسسة ومدير تنفيذي
+  memberRole: مؤسسة ومديرة تنفيذية
   memberBiography: مع أكثر من 19 عامًا من الخبرة في مجال القانون الكويتي، تمثل روان مشاري الغزالي شريكًا موثوقًا للعملاء المحليين والدوليين. تعتبر حصتنا من التميّز مبنية على الثقة والخبرة الدولية والتزامنا بنجاح عملائنا في الكويت وخارجها.
   knowMore: اعرف المزيد
   internationalDepartment: القسم الدولي
@@ -172,7 +172,7 @@ teamPage:
     - name: بدر مشاري الغزالي
       img: 5.jpg
       slug: bader-mishari-al-ghazali
-    - name: ندى بورحمة
+    - name: ندى عيسى بورحمه
       img: 4.jpg
       slug: nada-bourahmah
     - name: خديجة رياض حكيم
@@ -180,32 +180,32 @@ teamPage:
       slug: khadija-riyad-hakim
   localDepartment: القسم المحلي
   localMembers:
-    - name: مها الرشيدي
+    - name: مها خلف الرشيدي
       img: 7.jpg
       slug: maha-al-rashidi
-    - name: سعود الجاسم
+    - name: سعود عبدالعزيز الجاسم
       img: 9.jpg
       slug: saoud-al-jasem
-  seniorCounselors: المحاميون المتقدمون
+  seniorCounselors: المستشارين
   seniorCounselorsMembers:
     - name: سامي عبد الباقي
       img: 10.jpg
       slug: samy-abdulbaqi
-    - name: أحمد علي باسيوني
+    - name: أحمد بسيونى
       img: 6.jpg
       slug: ahmed-ali-basyoni
   administrativeTeam: فريق الإدارة
   administrativeTeamMembers:
-    - name: محمد منصور
+    - name: محمود منصور
       img: 3.jpg
       slug: mahmoud-mansour
-    - name: زهيدة حسن
+    - name: زاهدة حسن
       img: 2.jpg
       slug: zahida-hassan
     - name: امير المدبولي
       img: 8.jpg
       slug: amir-elmadboli
-    - name: أحمد علي التناهي
+    - name: أحمد حليم الطناحي
       img: 11.jpg
       slug: ahmed-al-tanahi
     - name: أحمد أبو الوفا
@@ -224,7 +224,7 @@ contactPage:
   subtitle: ينتظر فريقنا مقابلتكم
   contactInfo: معلومات التواصل
   addressLabel: الموقع
-  address: مكتب المحامية روان مشاري الغزالي (RMG)، مبنى مجلس الصناعة والتجارة الكويتي، شارع مبارك الكبير، الطابق الأول، المنطقة الحرة
+  address: مكتب المحامية روان مشاري الغزالي (RMG)، مبنى غرفة تجارة وصناعة الكويت، شارع عبدالعزيز حمد الصقر ، الطابق الاول، المرقاب
   phoneLabel: 'هاتف'
   phone: '+965 1802234'
   emailLabel: 'البريد الإلكتروني'
@@ -246,13 +246,13 @@ footer:
     بمعايير عالمية وخبرة محلية
     منذ عام 1992.
   contactInfo: معلومات التواصل
-  address: 'مكتب المحامية روان مشاري الغزالي (RMG)، مبنى مجلس الصناعة والتجارة الكويتي، شارع مبارك الكبير، الطابق الأول، المنطقة الحرة'
+  address: 'مكتب المحامية روان مشاري الغزالي (RMG)، مبنى غرفة تجارة وصناعة الكويت، شارع عبدالعزيز حمد الصقر ، الطابق الاول، المرقاب'
   phoneLabel: 'هاتف :'
   phone: '+965 1802234'
   emailLabel: 'البريد الإلكتروني :'
   browseLinks: روابط التصفح
   home: الرئيسية
-  about: نبذه عن المكتب
+  about: نبذة عن المكتب
   services: الخدمات
   team: الفريق
   contact: تواصل معنا
