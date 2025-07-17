@@ -1,5 +1,5 @@
 <template>
-  <section class="flex w-full justify-center py-12" id="information">
+  <section class="flex w-full justify-center" id="information">
     <div
       class="flex w-full max-w-6xl flex-col items-center rounded-xl px-4 py-12"
     >

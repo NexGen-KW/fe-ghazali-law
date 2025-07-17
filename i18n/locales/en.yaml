@@ -38,6 +38,7 @@ testimonials:
   - text: "Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals"
     author: 'Mohamed, CEO of Techno Co.'
 # News
+newsTitle: From Our Legal Desk
 news:
   - image: kuwait1.jpg
     title: RMG Hosts Governance Seminar

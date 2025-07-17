@@ -28,7 +28,7 @@
         loading="lazy"
         src="/group-international.jpg"
         alt="difference"
-        class="h-[200px] w-full max-w-[626px] object-cover sm:h-[250px] md:h-[300px] lg:h-[371px]"
+        class="h-[200px] w-full max-w-[626px] object-contain sm:h-[250px] md:h-[300px] lg:h-[371px]"
       />
     </div>
   </section>

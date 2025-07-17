@@ -1,5 +1,5 @@
 <template>
-  <section class="grid gap-8 bg-[#F3F3F5] pt-24" id="statement">
+  <section class="grid gap-8 bg-[#F3F3F5]" id="statement">
     <h2 class="text-gold-900 ltr:font-marcellus text-center font-medium">
       {{ $t('statementHeading') }}
     </h2>

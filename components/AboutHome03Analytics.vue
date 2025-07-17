@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t border-[#D6CBA1] bg-white py-12">
+  <section class="border-t border-[#D6CBA1] bg-white">
     <div
       class="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-4 text-center sm:gap-8 md:grid-cols-4"
     >
@@ -21,7 +21,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

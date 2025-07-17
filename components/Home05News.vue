@@ -1,8 +1,8 @@
 <template>
   <section
-    class="flex w-full flex-col items-center justify-center bg-[#f7f7f7] py-16"
+    class="flex w-full flex-col items-center justify-center bg-[#f7f7f7]"
   >
-    <UiHeaderScale t="heroDifference" />
+    <UiHeaderScale t="newsTitle" />
     <h2>{{ t('newsSectionTitle') }}</h2>
     <div
       class="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-16 text-center">
+  <section class="bg-white text-center">
     <!-- Reusable section header -->
     <div class="mb-4 flex justify-center">
       <HeaderScale :t="t('aboutClientsTitle')" />
@@ -16,7 +16,7 @@
         {{ t('aboutClientsParagraph') }}
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex w-full flex-col items-center justify-center py-12">
+  <section class="flex w-full flex-col items-center justify-center">
     <div class="mb-4 flex items-center justify-center">
       <span
         v-for="n in 5"

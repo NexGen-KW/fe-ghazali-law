@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-16 text-center">
+  <section class="bg-white text-center">
     <!-- Icon -->
     <div class="mb-4 flex justify-center">
       <img src="/logo.svg" alt="Antlers" class="w-20" />
@@ -87,7 +87,7 @@
         {{ milestones[activeIndex].description }}
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

@@ -23,9 +23,14 @@
         type="single"
         :collapsible="true"
       >
-        <template v-for="item in services" :key="item.title">
+        <template v-for="(item, idx) in services" :key="item.title">
           <AccordionItem
-            class="border-b border-[var(--color-gold-200)] py-6"
+            :class="[
+              idx !== services.length - 1
+                ? 'border-b border-[var(--color-gold-200)]'
+                : '',
+              'py-6',
+            ]"
             :value="item.title"
             v-slot="{ open }"
           >

@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="mt-8 flex w-full flex-col items-center pt-0! pb-[45px] md:pb-[80px]"
-    id="statement"
-  >
+  <section class="flex w-full flex-col items-center" id="statement">
     <div class="w-full max-w-[1042px] text-center">
       <h2 class="mb-4 text-center text-[#3a2e13]">
         {{ $t('serviceStatement.servicesPresented') }}

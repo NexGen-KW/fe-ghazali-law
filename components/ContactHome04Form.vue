@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="container flex w-full flex-col items-center justify-center py-12"
-  >
+  <section class="container flex w-full flex-col items-center justify-center">
     <HeaderScale :t="formTranslations.header" class="mb-4" />
     <h2 class="text-gold-900 mb-8 text-center text-3xl ltr:font-serif">
       {{ formTranslations.title.split(formTranslations.titleHighlight)[0] }}

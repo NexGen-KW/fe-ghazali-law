@@ -56,7 +56,7 @@ const members = computed(() => {
 </script>
 
 <template>
-  <section class="flex w-full flex-col items-center justify-center py-12">
+  <section class="flex w-full flex-col items-center justify-center">
     <HeaderScale :t="$t('team.subtitle')" class="mb-4" />
     <h2>
       {{ $t('team.title') }}

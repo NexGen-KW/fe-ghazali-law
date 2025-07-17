@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F7F7F8] py-10">
+  <section class="bg-[#F7F7F8]">
     <div
       class="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-4 text-center sm:gap-8 md:grid-cols-4"
     >
@@ -12,7 +12,7 @@
         <div class="text-base text-[#3B371F]">{{ item.description }}</div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

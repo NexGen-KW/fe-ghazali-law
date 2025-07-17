@@ -34,7 +34,9 @@ const faqs = computed(() => [
 </script>
 
 <template>
-  <section class="flex w-full flex-col items-center justify-center px-4 py-12">
+  <section
+    class="flex w-full flex-col items-center justify-center bg-[#F3F3F5] px-4"
+  >
     <HeaderScale :t="$t('homeFaq.header')" class="mb-4" />
     <h2>{{ $t('homeFaq.title') }}</h2>
     <AccordionRoot
@@ -53,7 +55,7 @@ const faqs = computed(() => [
           <AccordionTrigger
             class="flex w-full cursor-pointer items-center text-start font-medium select-none"
           >
-            <p class="flex-1 font-semibold">{{ faq.q }}</p>
+            <p class="flex-1 font-medium">{{ faq.q }}</p>
             <p
               class="border-gold-900 ml-4 flex h-10 w-10 items-center justify-center rounded-full border"
             >
