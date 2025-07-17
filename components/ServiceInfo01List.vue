@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="relative m-auto flex h-[100dvh] max-w-[1440px] flex-col px-8 lg:px-4"
-  >
+  <section class="relative m-auto flex max-w-[1440px] flex-col px-8 lg:px-4">
     <!-- Back Button -->
     <button
       class="fixed bottom-15 left-[50%] z-50 flex w-fit -translate-x-1/2 items-center justify-center gap-2 rounded-lg bg-[#f7f5ef] px-4 py-3 text-[#3a2e13] shadow-sm transition hover:bg-[#ede9dd] focus:ring-2 focus:ring-[#a08c5b] focus:outline-none lg:hidden"

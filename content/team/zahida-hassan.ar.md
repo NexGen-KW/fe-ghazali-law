@@ -1,5 +1,5 @@
 ---
-name: السيدة زهيدة حسن
+name: السيدة زاهدة حسن
 image: 2.jpg
 department: الإدارة
 role: إداري

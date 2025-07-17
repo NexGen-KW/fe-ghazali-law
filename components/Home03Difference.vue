@@ -1,19 +1,31 @@
 <template>
   <section
     :class="[
-      'border-gold-200 grid grid-cols-1 justify-center gap-4 text-center lg:grid-cols-2 lg:text-left',
+      'border-gold-200 relative container grid grid-cols-1 items-center justify-center gap-4 overflow-hidden text-center',
     ]"
   >
-    <div class="justify-content-center flex flex-col lg:pl-10">
-      <div class="px-10">
+    <!-- Stylish background gazelle image -->
+    <div
+      class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center"
+      aria-hidden="true"
+    >
+      <img
+        loading="lazy"
+        :src="`/fe-ghazali-law/gazelle.svg`"
+        alt=""
+        class="h-auto w-full max-w-2xl scale-125 object-contain opacity-10 blur-sm select-none"
+      />
+    </div>
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center">
         <UiHeaderScale t="heroDifference" />
         <h2>
           {{ $t('differenceHeading') }}
         </h2>
-        <p class="text-center leading-[34px] lg:text-start">
+        <p class="text-center leading-[34px]">
           {{ $t('differenceParagraph') }}
         </p>
-        <div class="flex justify-center lg:justify-start">
+        <div class="flex justify-center">
           <BaseButton class="mt-[32px]">
             <NuxtLink to="/contact">
               {{ $t('contactCTA') }}
@@ -23,14 +35,7 @@
       </div>
     </div>
     <div class="flex flex-col">
-      <div class="relative flex justify-center">
-        <img
-          loading="lazy"
-          :src="`/fe-ghazali-law/star.svg`"
-          alt="difference"
-          class="hidden h-auto w-full max-w-[500px] object-cover lg:block"
-        />
-      </div>
+      <!-- No foreground image -->
     </div>
   </section>
 </template>
