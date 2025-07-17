@@ -1,11 +1,11 @@
 ---
-name: Rawan Mishari Al-Ghazali
+name: Rawan Mishari Al Ghazali
 image: 1.jpg
 role: Founder and Managing Director
 biography: |
-  With a legal career spanning nearly two decades, Ms. Al-Ghazali continues to be a driving force in legal reform, consultancy, and advocacy. Her dedication to excellence and integrity has cemented her reputation as a leading figure in Kuwait’s legal sector
+  With a legal career spanning nearly two decades, Ms. Al Ghazali continues to be a driving force in legal reform, consultancy, and advocacy. Her dedication to excellence and integrity has cemented her reputation as a leading figure in Kuwait’s legal sector
 
-  Throughout her career, Ms. Al-Ghazali has made significant contributions to Kuwait’s legal landscape, collaborating with institutions such as the World Bank and the International Monetary Fund in legislative development. She has played a key role in drafting legal frameworks, including the Foreign Capital Investment Law, Telecommunications Authority Decree-Law, and revisions to the Public-Private Partnership (PPP) Law.
+  Throughout her career, Ms. Al Ghazali has made significant contributions to Kuwait’s legal landscape, collaborating with institutions such as the World Bank and the International Monetary Fund in legislative development. She has played a key role in drafting legal frameworks, including the Foreign Capital Investment Law, Telecommunications Authority Decree-Law, and revisions to the Public-Private Partnership (PPP) Law.
 
   Her expertise extends to legal consultancy, arbitration, and contract law, leading specialized legal departments and serving as a consultant for major legislative initiatives.
 
@@ -15,7 +15,7 @@ academic: |
 
   LLM- Master of Private Law - Kuwait International Law College - May 2016 - with honors.
 experience: |
-  Founder and Managing Director of Rawan Mishari Al-Ghazali Law Firm and Legal Consultations (2017)
+  Founder and Managing Director of Rawan Mishari Al Ghazali Law Firm and Legal Consultations (2017)
 
   Executive Director and Coordinator of Diplomatic and International Relations of the Humanitarian Foundation for Legal Aid- 2016 – 2020
 
@@ -27,7 +27,7 @@ experience: |
 
   Passing all five stages of preparing the arbitrator accredited by the Commercial Arbitration Center of the Gulf Cooperation Council.
 
-  Partner in the office of Mishari Al-Ghazali and Rawan Al-Ghazali Law Firm & Legal Consultations (2012-2017)
+  Partner in the office of Mishari Al Ghazali and Rawan Al Ghazali Law Firm & Legal Consultations (2012-2017)
 
   Partner - Head of Consulting and Contracts Department 2012-2017
 
