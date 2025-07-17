@@ -34,17 +34,17 @@
       <!-- Main Content -->
       <main class="flex-1">
         <div v-if="service" class="service-details" ref="serviceDetails">
-          <h1 class="mb-4 text-[32px] text-[#3a2e13]">
+          <h1 class="mb-4 text-[#3a2e13]">
             {{ service.title }}
           </h1>
-          <p class="mb-[24px] text-[20px] text-[#3a2e13]">
+          <p class="mb-[24px] text-[#3a2e13]">
             {{ service.description }}
           </p>
           <div class="space-y-4">
             <p
               v-for="(detail, idx) in service.details"
               :key="idx"
-              class="mb-[24px] text-[20px] text-[#3a2e13]"
+              class="mb-[24px] text-[#3a2e13]"
             >
               {{ detail }}
             </p>
