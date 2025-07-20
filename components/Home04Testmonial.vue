@@ -31,7 +31,7 @@
             class="flex h-full flex-col items-center justify-center px-8 md:px-16"
           >
             <p
-              class="max-w-4xl text-center text-base leading-relaxed font-normal md:text-start md:text-lg"
+              class="max-w-4xl text-center text-base leading-relaxed font-normal"
             >
               {{ testimonial.text }}
             </p>
