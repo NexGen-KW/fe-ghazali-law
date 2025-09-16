@@ -32,5 +32,5 @@ experience: |
 
   Completed arbitrator preparation program at the Kuwait Commercial Arbitration Center
 
-  Currently pursuing L.L.M in Private Law from Kuwait International Law School
+  L.L.M in Private Law from Kuwait International Law School
 ---
