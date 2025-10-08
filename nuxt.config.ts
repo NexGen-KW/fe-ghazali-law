@@ -6,13 +6,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  ssr: true,
-  nitro: {
-    preset: 'static', // THIS enables SSG
-  },
-  app: {
-    baseURL: '/fe-ghazali-law/',
-  },
+  ssr: false,
   modules: [
     '@nuxt/content',
     [
