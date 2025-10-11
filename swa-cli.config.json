@@ -3,7 +3,7 @@
   "configurations": {
     "fe-ghazali-law": {
       "appLocation": ".",
-      "outputLocation": ".output/public",
+      "outputLocation": "dist",
       "appBuildCommand": "npm run generate",
       "run": "npm run serve",
       "appDevserverUrl": "http://localhost:8080",
