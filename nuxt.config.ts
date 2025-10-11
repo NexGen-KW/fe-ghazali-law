@@ -37,7 +37,9 @@ export default defineNuxtConfig({
     'reka-ui/nuxt',
     '@vueuse/nuxt',
   ],
-
+  nitro: {
+    preset: 'azure-swa',
+  },
   vite: {
     plugins: [tailwindcss()],
   },
