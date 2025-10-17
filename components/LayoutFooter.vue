@@ -46,16 +46,19 @@
           Contact Info
         </h3>
         <p class="text-gold-50 mb-2">
-          Al-Shohadaa st, Building No.3,<br />Department No.2
+          Kuwait Chamber of Commerce & Industry Building, 1st Floor, Kuwait City
         </p>
         <p class="text-gold-50 mb-2">
-          <span class="text-gold-50 font-bold">Phone :</span> 2143522452
+          <span class="text-gold-50 font-bold">Phone :</span> 1802234
         </p>
         <p class="text-gold-50 mb-2">
           <span class="text-gold-50 font-bold">Email :</span>
-          Al-Ghazaly@gmail.com
+          mail@alghazali-law.com
         </p>
-        <a href="#" class="text-gold-50 mt-2 font-bold underline"
+        <a
+          href="https://www.google.com/maps/dir//9XCJ%2BM92,+Al-Shuhada+St,+Kuwait+City/@29.371612,47.8984984,21491m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3fcf84c007b71c29:0x609cc9378c29467c!2m2!1d47.9808998!2d29.3716373?entry=ttu&g_ep=EgoyMDI1MTAxNS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="text-gold-50 mt-2 font-bold underline"
           >GET DIRECTIONS</a
         >
       </div>

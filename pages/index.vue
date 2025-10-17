@@ -6,7 +6,7 @@
     <Home02Statement />
     <Home03Difference />
     <Home04Testmonial />
-    <Home05News />
+    <!-- <Home05News /> -->
     <Home06Discover />
     <Home07Team />
     <Home08FAQ />
