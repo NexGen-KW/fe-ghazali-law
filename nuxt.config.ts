@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   ssr: false,
+  nitro: {
+    preset: 'static', // THIS enables SSG
+  },
   app: {
     baseURL: '/fe-ghazali-law/',
   },
@@ -40,9 +43,6 @@ export default defineNuxtConfig({
     'reka-ui/nuxt',
     '@vueuse/nuxt',
   ],
-  nitro: {
-    preset: 'azure',
-  },
   vite: {
     plugins: [tailwindcss()],
   },
