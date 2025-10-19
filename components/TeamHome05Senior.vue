@@ -30,7 +30,9 @@
         <div
           class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-4 text-center"
         >
-          <span class="text-xl font-medium text-white">{{ member.name }}</span>
+          <span class="text-xl font-medium text-white">{{
+            locale === 'ar' ? member.name_ar : member.name
+          }}</span>
         </div>
       </div>
     </div>
@@ -38,14 +40,20 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+
 const members = [
   {
     name: 'Mr. Samy Abdulbaqi',
+    name_ar: 'سامي عبدالباقي',
     img: '10.jpg',
     slug: 'samy-abdulbaqi',
   },
   {
     name: 'Mr. Ahmed Ali Basyoni',
+    name_ar: 'أحمد علي بسيوني',
     img: '6.jpg',
     slug: 'ahmed-ali-basyoni',
   },
