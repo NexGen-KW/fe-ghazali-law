@@ -10,9 +10,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static', // THIS enables SSG
   },
-  app: {
-    baseURL: '/fe-ghazali-law/',
-  },
   modules: [
     '@nuxt/content',
     [
