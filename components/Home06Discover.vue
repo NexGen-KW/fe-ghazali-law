@@ -8,7 +8,9 @@
         class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2 lg:self-start"
       >
         <HeaderScale t="discover" />
-        <h2 class="font-marcellus mb-8 text-center text-5xl">Our Services</h2>
+        <h2 class="font-marcellus mb-8 text-center text-5xl">
+          {{ $t('discoverHeading') }}
+        </h2>
         <BaseButton>
           <NuxtLink to="/services">
             {{ $t('discoverCTA') }}
