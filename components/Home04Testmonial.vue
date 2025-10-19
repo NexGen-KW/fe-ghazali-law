@@ -16,6 +16,7 @@
         :slides-per-view="1"
         :space-between="30"
         :loop="true"
+        :dir="isRtl ? 'rtl' : 'ltr'"
         :navigation="{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -23,7 +24,9 @@
         class="testimonial-swiper"
       >
         <SwiperSlide
-          v-for="testimonial in testimonials"
+          v-for="testimonial in locale === 'ar'
+            ? testimonials_ar
+            : testimonials"
           :key="testimonial.author"
         >
           <div class="flex h-full flex-col items-center justify-center px-16">
@@ -36,8 +39,18 @@
           </div>
         </SwiperSlide>
 
-        <div class="swiper-button-prev !text-gold-500 !absolute !left-4"></div>
-        <div class="swiper-button-next !text-gold-500 !absolute !right-4"></div>
+        <div
+          :class="[
+            'swiper-button-prev !text-gold-500 !absolute',
+            isRtl ? '!right-4' : '!left-4',
+          ]"
+        ></div>
+        <div
+          :class="[
+            'swiper-button-next !text-gold-500 !absolute',
+            isRtl ? '!left-4' : '!right-4',
+          ]"
+        ></div>
       </Swiper>
     </div>
     <BaseButton>
@@ -58,6 +71,11 @@ import {
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
+
+const { locale } = useI18n();
+const isRtl = computed(() => locale.value === 'ar');
 
 const testimonials = [
   {
@@ -71,6 +89,21 @@ const testimonials = [
   {
     text: "Their legal team brings sharp commercial insight, unmatched professionalism, and a clear understanding of both local and international regulations. They've consistently delivered solutions that are not only legally sound but strategically aligned with our goals",
     author: 'Mohamed, CEO of Techno Co.',
+  },
+];
+
+const testimonials_ar = [
+  {
+    text: 'التعاون مع هذه الشركة كان نقطة تحول في أعمالنا. فريقهم القانوني يجلب رؤية تجارية حادة، احترافية لا مثيل لها، وفهم واضح للوائح المحلية والدولية. لقد قدموا باستمرار حلول ليست فقط سليمة قانونياً ولكنها محاذاة استراتيجية مع أهدافنا',
+    author: 'معتز صلاح، الرئيس التنفيذي لشركة تكنو',
+  },
+  {
+    text: 'لوريم إيبسوم دولار سيت أميت كونسيكتيتور أدبيسينج إليت. كويسكوام، كووس.',
+    author: 'أحمد، الرئيس التنفيذي لشركة تكنو',
+  },
+  {
+    text: 'فريقهم القانوني يجلب رؤية تجارية حادة، احترافية لا مثيل لها، وفهم واضح للوائح المحلية والدولية. لقد قدموا باستمرار حلول ليست فقط سليمة قانونياً ولكنها محاذاة استراتيجية مع أهدافنا',
+    author: 'محمد، الرئيس التنفيذي لشركة تكنو',
   },
 ];
 </script>

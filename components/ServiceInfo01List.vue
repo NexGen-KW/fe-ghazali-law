@@ -7,7 +7,7 @@
       class="mb-8 flex w-fit items-center text-[#3a2e13] hover:underline"
       @click="goBack"
     >
-      <span class="mr-2">&larr;</span> Back To Services
+      <span class="mr-2">&larr;</span> {{ $t('servicesInfo.backButton') }}
     </button>
 
     <!-- Content Row: Sidebar + Main Content -->
@@ -26,7 +26,7 @@
                 : 'border-[#ede9dd] bg-white font-normal text-[#3a2e13] hover:bg-[#f7f5ef]',
             ]"
           >
-            {{ svc.title }}
+            {{ locale === 'ar' && svc.title_ar ? svc.title_ar : svc.title }}
           </button>
         </div>
       </aside>
@@ -35,14 +35,24 @@
       <main class="flex-1">
         <div v-if="service" class="service-details">
           <h1 class="font-marcellus mb-4 text-[32px] text-[#3a2e13]">
-            {{ service.title }}
+            {{
+              locale === 'ar' && service.title_ar
+                ? service.title_ar
+                : service.title
+            }}
           </h1>
           <p class="mb-[24px] text-[20px] text-[#3a2e13]">
-            {{ service.description }}
+            {{
+              locale === 'ar' && service.description_ar
+                ? service.description_ar
+                : service.description
+            }}
           </p>
           <div class="space-y-4">
             <p
-              v-for="(detail, idx) in service.details"
+              v-for="(detail, idx) in locale === 'ar' && service.details_ar
+                ? service.details_ar
+                : service.details"
               :key="idx"
               class="mb-[24px] text-[20px] text-[#3a2e13]"
             >
@@ -50,7 +60,7 @@
             </p>
           </div>
         </div>
-        <div v-else>Service not found.</div>
+        <div v-else>{{ $t('servicesInfo.notFound') }}</div>
       </main>
     </div>
   </section>
@@ -58,16 +68,23 @@
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
 
 const props = defineProps<{
   service?: {
     title: string;
+    title_ar?: string;
     description: string;
+    description_ar?: string;
     details: string[];
+    details_ar?: string[];
   } | null;
   services: Array<{
     slug: string;
     title: string;
+    title_ar?: string;
   }>;
   currentSlug: string;
 }>();

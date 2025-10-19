@@ -1,7 +1,7 @@
 ---
 name: Mr. Ahmed Al Tanahi
 name_ar: أحمد الطناحي
-image: 11.jpg
+image: 15.png
 role: Admin
 role_ar: إداري
 department: administrative

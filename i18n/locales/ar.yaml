@@ -4,7 +4,7 @@ breadcrumb:
   services: خدمات
   team: فريق
   contact: اتصال
-  switchLanguage: Arabic
+  switchLanguage: ع
 
 # Page -> Home
 carouselHeading: العدالة. الخبرة. النتائج.
@@ -53,6 +53,7 @@ team:
   academicQualifications: المؤهلات الأكاديمية
   professionalExperience: أبرز الخبرات المهنية
   participations: المشاركات التشريعية والأكاديمية
+  meetAllTeam: تعرف على كامل الفريق
 
 # Global
 heroCTA: 'اعرف المزيد عنا'
@@ -88,3 +89,180 @@ homeFaq:
 # About - page
 aboutHeroHeading: المزيد عنا
 aboutHeroParagraph: مع التزام عميق بالجودة القانونية، نفخر بخدمة عملائنا في الكويت وخارجها، حيث نجمع بين الفهم المحلي والمعايير العالمية لتقديم حلول قانونية مؤثرة
+
+# About Analytics
+analytics:
+  experience:
+    title: سنوات الخبرة
+    description: تقديم حلول قانونية موثوقة منذ 1992
+  clients:
+    title: العملاء الدوليون
+    description: شركات فورتشن 500 ومؤسسات عالمية
+  practice:
+    title: مجالات الممارسة الأساسية
+    description: الشركات، التجارة، الاستثمار، والمزيد.
+  jurisdictions:
+    title: الولايات القضائية المغطاة
+    description: نقدم المشورة عبر الولايات المتحدة والمملكة المتحدة ودول مجلس التعاون الخليجي وما بعدها
+
+# About Journey
+aboutJourney:
+  heading: رحلتنا عبر السنين
+  description: من بداياتنا إلى أن أصبحنا شركة محاماة موثوقة، يسلط جدولنا الزمني الضوء على المعالم الرئيسية التي شكلت إرث RMG ويعكس التزامنا بالتميز القانوني.
+  milestone:
+    year: '1992'
+    text: تأسيس مكتب مشاري محمد الغزالي للمحاماة، بالشراكة مع شركة جراهام وجيمس الأمريكية.
+
+# About Features
+aboutFeatures:
+  crossBorder:
+    title: الخبرة عبر الحدود
+    description: بوابة قانونية للشركات الدولية الداخلة إلى الكويت
+  legalCoverage:
+    title: التغطية القانونية
+    description: نقدم تغطية قانونية للتمويل والرعاية الصحية والعقارات.
+  litigation:
+    title: التقاضي والتحكيم
+    description: دفاع قوي في المحاكم المحلية والمنتديات الدولية
+  clientTrust:
+    title: ثقة العملاء الراسخة
+    description: خدمة الشركات متعددة الجنسيات والجهات الحكومية
+
+# About Clients
+aboutClients:
+  header: موثوق به من قبل قادة الصناعة
+  heading: عملاؤنا
+  description: نحن فخورون بتمثيل محفظة متنوعة من المنظمات — من الشركات إلى الهيئات الحكومية — الذين يعتمدون على خبرتنا القانونية لمواجهة التحديات.
+
+# Contact - page
+contactHeroHeading: تواصل معنا
+contactHeroParagraph: يتطلع فريقنا للاستماع إليك!
+
+# Contact Information
+contactInformation:
+  heading: معلومات الاتصال
+  email:
+    label: البريد الإلكتروني
+  phone:
+    label: رقم الهاتف
+  location:
+    label: الموقع
+    value: شارع الشهداء، الكويت
+    valueAr: شارع الشهداء، الكويت
+
+# Contact Steps
+contactSteps:
+  heading: اتبع الخطوات التالية
+  stepLabel: الخطوة
+  step1:
+    title: حجز موعد
+    description: اختر وقتًا مناسبًا للقاء مع فريقنا القانوني
+  step2:
+    title: استشارة أولية
+    description: ناقش قضيتك واحصل على فهم واضح لخياراتك
+  step3:
+    title: الاستراتيجية القانونية
+    description: نطور خطة مخصصة لتلبية احتياجاتك القانونية
+  step4:
+    title: حل القضية
+    description: يعمل فريقنا على حل قضيتك بكفاءة وفعالية
+
+# Contact Form
+submitNow: أرسل الآن
+
+# Services - page
+servicesHeroHeading: خدماتنا
+servicesHeroParagraph: نقدم خدمات قانونية مخصصة للشركات والأعمال التجارية، تجمع بين المعرفة المتعمقة بالنظام القانوني في الكويت والمنظور العالمي لدعم أعمالك في كل مرحلة.
+
+# Services Statement
+servicesStatement:
+  heading: الخدمات المقدمة
+  description: نقدم مجموعة من الخدمات القانونية للشركات والتجارة للعملاء المحليين والدوليين. يجمع فريقنا بين الخبرة القانونية والرؤية الاستراتيجية لتقديم حلول تحمي مصالحك وتدعم أهدافك التجارية. سواء كنت تطلق مشروعاً جديداً أو تتعامل مع تحديات تنظيمية، نحن هنا لإرشادك.
+
+# Services List
+servicesList:
+  trade:
+    title: المجال التجاري
+    description: دعم قانوني لاتفاقيات التجارة والمعاملات عبر الحدود.
+  corporate:
+    title: مجال الشركات
+    description: نقدم الدعم القانوني لتأسيس الشركات والحوكمة.
+  banking:
+    title: المجال المصرفي
+    description: المشورة بشأن اللوائح المصرفية والامتثال في الكويت.
+  investment:
+    title: مجال الاستثمار
+    description: توجيه قانوني للاستثمارات الآمنة والاستراتيجية في الكويت
+  intellectualProperty:
+    title: مجال الملكية الفكرية
+    description: حماية العلامات التجارية وحقوق التأليف والنشر بخبرة قانونية.
+  contracting:
+    title: مجال العقود والعقارات
+    description: دعم قانوني للعقارات والبناء والتطوير.
+  arbitration:
+    title: مجال التحكيم
+    description: حل النزاعات بكفاءة من خلال إجراءات التحكيم التي يقودها الخبراء
+  energy:
+    title: مجال الطاقة
+    description: دعم مشاريع الطاقة والاستثمار في قطاع الطاقة في الكويت.
+  taxation:
+    title: الضرائب
+    description: المشورة بشأن الامتثال الضريبي لتحسين عملياتك.
+
+# Services Info
+servicesInfo:
+  backButton: العودة إلى الخدمات
+  notFound: الخدمة غير موجودة.
+
+# Team - page
+teamHeroHeading: تعرف على فريقنا
+
+# Team Meet
+teamMeet:
+  header: تعرف على خبراء RMG
+  founder:
+    name: روان مشاري الغزالي
+    position: المؤسسة والمديرة التنفيذية
+    bio: مع ما يقرب من عقدين من الخبرة، تعد السيدة روان الغزالي قوة رائدة في القطاع القانوني في الكويت، معروفة بعملها في الإصلاح التشريعي والاستشارات القانونية والتحكيم، ولتقديم المشورة لمؤسسات مثل البنك الدولي وصندوق النقد الدولي بشأن القوانين الوطنية الرئيسية.
+  knowMore: اعرف المزيد
+
+# Team Sections
+teamSections:
+  international: القسم الدولي
+  local: القسم المحلي
+  senior: المستشارون الأقدم
+  admin: الفريق الإداري
+
+# News
+news:
+  heading: آخر الأخبار
+  items:
+    governance:
+      title: RMG تستضيف ندوة الحوكمة
+      description: اجتمع القادة لاستكشاف معايير الامتثال المتطورة.
+      date: 23 مارس، 2025
+    imf:
+      title: روان الغزالي تنضم إلى لجنة صندوق النقد الدولي
+      description: تقدم السيدة الغزالي المشورة بشأن التشريعات للأسواق الناشئة.
+      date: 23 مارس، 2025
+    investment:
+      title: تحديث قانون الاستثمار
+      description: آخر التغييرات على لوائح الاستثمار الأجنبي المباشر في الكويت.
+      date: 23 مارس، 2025
+
+# Footer
+footer:
+  description: تقديم حلول قانونية موثوقة بمعايير عالمية وخبرة محلية منذ 1992.
+  contactInfo:
+    heading: معلومات الاتصال
+    address: مبنى غرفة التجارة والصناعة الكويتية، الطابق الأول، مدينة الكويت
+    phone: 'هاتف :'
+    email: 'البريد الإلكتروني :'
+    directions: الحصول على الاتجاهات
+  browseLinks:
+    heading: روابط التصفح
+    home: الرئيسية
+    about: عن المكتب
+    services: الخدمات
+    team: الفريق
+    contact: اتصل بنا

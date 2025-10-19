@@ -2,11 +2,16 @@
   <section
     class="container flex w-full flex-col items-center justify-center py-12"
   >
-    <HeaderScale t="We care about you" class="mb-4" />
-    <h2 class="text-gold-900 mb-8">How Can We Help You?</h2>
+    <HeaderScale
+      :t="locale === 'ar' ? 'تواصل معنا' : 'We care about you'"
+      class="mb-4"
+    />
+    <h2 class="text-gold-900 mb-8">
+      {{ locale === 'ar' ? 'كيف يمكننا مساعدتك؟' : 'How Can We Help You?' }}
+    </h2>
     <AccordionRoot class="w-full max-w-3xl" type="single" :collapsible="true">
       <AccordionItem
-        v-for="faq in faqs"
+        v-for="faq in locale === 'ar' ? faqs_ar : faqs"
         :key="faq.q"
         :value="faq.q"
         class="border-gold-200 border-b py-6"
@@ -14,11 +19,17 @@
       >
         <AccordionHeader class="flex">
           <AccordionTrigger
-            class="text-gold-900 flex w-full cursor-pointer items-center text-left text-lg font-medium select-none"
+            :class="[
+              'text-gold-900 flex w-full cursor-pointer items-center text-lg font-medium select-none',
+              locale === 'ar' ? 'text-right' : 'text-left',
+            ]"
           >
             <span class="flex-1">{{ faq.q }}</span>
             <span
-              class="border-gold-900 ml-4 flex h-10 w-10 items-center justify-center rounded-full border"
+              :class="[
+                'border-gold-900 flex h-10 w-10 items-center justify-center rounded-full border',
+                locale === 'ar' ? 'mr-4' : 'ml-4',
+              ]"
             >
               <Icon
                 :icon="open ? 'ic:round-expand-less' : 'ic:round-expand-more'"
@@ -28,7 +39,10 @@
           </AccordionTrigger>
         </AccordionHeader>
         <AccordionContent
-          class="AccordionContent text-gold-900 pt-3 pl-10 text-base font-normal"
+          :class="[
+            'AccordionContent text-gold-900 pt-3 text-base font-normal',
+            locale === 'ar' ? 'pr-10' : 'pl-10',
+          ]"
         >
           <div>{{ faq.a }}</div>
         </AccordionContent>
@@ -47,6 +61,9 @@ import {
   AccordionRoot,
   AccordionTrigger,
 } from 'reka-ui';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
 
 const faqs = [
   {
@@ -64,6 +81,25 @@ const faqs = [
   {
     q: 'Who are some of your notable clients?',
     a: 'We have represented a variety of notable clients across different industries. Please contact us for more details.',
+  },
+];
+
+const faqs_ar = [
+  {
+    q: 'هل تقدمون الدعم القانوني للشركات الدولية التي تدخل الكويت؟',
+    a: 'نعم، نقدم دعمًا قانونيًا شاملاً للشركات الدولية التي تسعى لتأسيس أو توسيع أعمالها في الكويت.',
+  },
+  {
+    q: 'هل يتعامل مكتبكم مع القضايا القانونية عبر الحدود؟',
+    a: 'بالتأكيد. فريقنا لديه خبرة في التعامل مع المعاملات والنزاعات عبر الحدود.',
+  },
+  {
+    q: 'ما هي الخدمات القانونية التي يقدمها مكتب RMG للمحاماة؟',
+    a: 'نقدم مجموعة واسعة من الخدمات القانونية بما في ذلك القانون التجاري والشركات والتحكيم والملكية الفكرية.',
+  },
+  {
+    q: 'من هم بعض عملائكم البارزين؟',
+    a: 'لقد مثّلنا مجموعة متنوعة من العملاء البارزين في مختلف الصناعات. يرجى الاتصال بنا لمزيد من التفاصيل.',
   },
 ];
 </script>

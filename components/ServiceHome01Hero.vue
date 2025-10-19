@@ -5,14 +5,10 @@
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
       <h1 class="font-marcellusSC text-[32px]">
-        {{ $t('OUR SERVICES') }}
+        {{ $t('servicesHeroHeading') }}
       </h1>
       <p class="text-shadow-custom text-white">
-        {{
-          $t(
-            'We offer tailored corporate and commercial legal services, combining in-depth knowledge of Kuwait’s legal system with a global perspective to support your business at every stage.',
-          )
-        }}
+        {{ $t('servicesHeroParagraph') }}
       </p>
     </div>
   </section>

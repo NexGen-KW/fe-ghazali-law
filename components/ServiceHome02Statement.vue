@@ -2,15 +2,11 @@
   <section class="mt-8 flex w-full flex-col items-center">
     <div class="w-full max-w-[1042px] text-center">
       <h2 class="font-marcellus mb-4 text-center text-[#3a2e13]">
-        Services Presented
+        {{ $t('servicesStatement.heading') }}
       </h2>
       <hr class="mb-6 border-t border-[#e5e1d8]" />
       <p class="mb-6 text-[#3a2e13]">
-        We offer a range of corporate and commercial legal services for local
-        and international clients. Our team combines legal expertise with
-        strategic insight to deliver solutions that protect your interests and
-        support your business objectives. Whether launching a new venture or
-        navigating regulatory challenges, we are here to guide you.
+        {{ $t('servicesStatement.description') }}
       </p>
       <hr class="border-t border-[#e5e1d8]" />
     </div>

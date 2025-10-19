@@ -5,21 +5,23 @@
     >
       <div
         v-for="service in services"
-        :key="service.title"
+        :key="service.key"
         class="service-card relative flex min-h-[210px] min-w-[367px] flex-col justify-between overflow-hidden border-l border-[#e5e1d8] bg-[#f7f7f7] px-6 py-5 transition-colors duration-500"
       >
         <div>
-          <h3 class="mb-2 font-semibold text-[#3a2e13]">{{ service.title }}</h3>
+          <h3 class="mb-2 font-semibold text-[#3a2e13]">
+            {{ $t(service.titleKey) }}
+          </h3>
           <p class="text[16px] mb-4 text-[#3a2e13]">
-            {{ service.description }}
+            {{ $t(service.descriptionKey) }}
           </p>
         </div>
 
         <NuxtLink
-          :to="`/services/${slugify(service.title)}`"
+          :to="`/services/${service.slug}`"
           class="slide-overlay-btn relative mt-2 inline-block w-[116px] overflow-hidden px-[8px] py-2 font-semibold text-[#a08c5b] transition"
         >
-          <span>Read More</span>
+          <span>{{ $t('readMore') }}</span>
         </NuxtLink>
       </div>
     </div>
@@ -27,56 +29,60 @@
 </template>
 
 <script lang="ts" setup>
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)+/g, '');
-}
-
 const services = [
   {
-    title: 'Trade - Commercial Field',
-    description:
-      'Legal support for trade agreements and cross-border transactions.',
+    key: 'trade',
+    slug: 'trade-commercial-field',
+    titleKey: 'servicesList.trade.title',
+    descriptionKey: 'servicesList.trade.description',
   },
   {
-    title: 'Corprate Field',
-    description:
-      'We provide legal support for company formation and governance.',
+    key: 'corporate',
+    slug: 'corprate-field',
+    titleKey: 'servicesList.corporate.title',
+    descriptionKey: 'servicesList.corporate.description',
   },
   {
-    title: 'Banking Field',
-    description: 'Advising on banking regulations and compliance in Kuwait.',
+    key: 'banking',
+    slug: 'banking-field',
+    titleKey: 'servicesList.banking.title',
+    descriptionKey: 'servicesList.banking.description',
   },
   {
-    title: 'Investment Field',
-    description:
-      'Legal guidance for secure and strategic investments in Kuwait',
+    key: 'investment',
+    slug: 'investment-field',
+    titleKey: 'servicesList.investment.title',
+    descriptionKey: 'servicesList.investment.description',
   },
   {
-    title: 'Intellectual Property Field',
-    description:
-      'Safeguarding your trademarks and copyrights with legal expertise.',
+    key: 'intellectualProperty',
+    slug: 'intellectual-property-field',
+    titleKey: 'servicesList.intellectualProperty.title',
+    descriptionKey: 'servicesList.intellectualProperty.description',
   },
   {
-    title: 'Contracting & Real-Estate Field',
-    description:
-      'Legal support for real estate, construction, and development.',
+    key: 'contracting',
+    slug: 'contracting-real-estate-field',
+    titleKey: 'servicesList.contracting.title',
+    descriptionKey: 'servicesList.contracting.description',
   },
   {
-    title: 'Arbitration Field',
-    description:
-      'Resolving disputes efficiently through expert-led arbitration proceedings',
+    key: 'arbitration',
+    slug: 'arbitration-field',
+    titleKey: 'servicesList.arbitration.title',
+    descriptionKey: 'servicesList.arbitration.description',
   },
   {
-    title: 'Energy Field',
-    description:
-      "Support for energy projects and investment in Kuwait's energy sector.",
+    key: 'energy',
+    slug: 'energy-field',
+    titleKey: 'servicesList.energy.title',
+    descriptionKey: 'servicesList.energy.description',
   },
   {
-    title: 'Taxation',
-    description: 'Advising on tax compliance to optimize your operations.',
+    key: 'taxation',
+    slug: 'taxation',
+    titleKey: 'servicesList.taxation.title',
+    descriptionKey: 'servicesList.taxation.description',
   },
 ];
 </script>

@@ -6,7 +6,7 @@
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Senior Counselors
+          {{ $t('teamSections.senior') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>

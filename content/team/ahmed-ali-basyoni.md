@@ -21,5 +21,36 @@ academic: |
   LLB – Bachelor of Law – Cairo University, Ein-Shams – 1999
 academic_ar: |
   بكالوريوس في القانون –  جامعة القاهرة، 1999
-experience: null
+experience: |
+  Over two decades of legal advisory experience in Kuwait and Egypt
+
+  Senior legal advisor at Rawan Mishari Al-Ghazali Law Firm
+
+  Specializes in reviewing and drafting contracts in Arabic
+
+  Expertise in corporate, commercial, and investment legal matters
+
+  Former Legal Affairs Manager at International Leasing and Investment Company, Kuwait
+
+  Provided strategic legal counsel on investment operations and corporate transactions
+
+  Advisory positions at distinguished law firms in Egypt including Dr. Rida El Sayed Law Firm and Munzer El Shmely Lawyer Office
+
+  Licensed appellate-level lawyer and member of the Egyptian Bar Association
+experience_ar: |
+  أكثر من عقدين من الخبرة في تقديم الاستشارات القانونية في الكويت ومصر
+
+  مستشار قانوني أول لدى مكتب روان مشاري الغزالي للمحاماة
+
+  متخصص في مراجعة وصياغة العقود باللغة العربية
+
+  خبرة في مجالات الشركات والتجارة والاستثمار
+
+  مدير شؤون قانونية سابق في شركة «الدولية للتأجير والاستثمار» بالكويت
+
+  تقديم المشورة الإستراتيجية لعمليات الاستثمار والمعاملات المؤسسية
+
+  مناصب استشارية في مكاتب محاماة مرموقة بمصر، منها مكتب الدكتور رضا السيد ومكتب المحامي منذر الشملي
+
+  محامٍ مُقيَّد بدرجة الاستئناف وعضو في نقابة المحامين المصرية
 ---

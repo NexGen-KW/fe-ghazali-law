@@ -21,7 +21,7 @@
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
       >
         <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
-          {{ $t('Meet Our Team') }}
+          {{ $t('teamHeroHeading') }}
         </h1>
         <p class="text-shadow-custom text-white">
           {{ $t('carouselParagraph') }}

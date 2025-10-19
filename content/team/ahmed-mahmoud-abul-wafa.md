@@ -1,7 +1,7 @@
 ---
 name: Mr. Ahmed Mahmoud Abul-Wafa
 name_ar: أحمد محمود أبو الوفا
-image: ahmed-mahmoud-abul-wafa.jpg
+image: 14.png
 role: Admin
 role_ar: إداري
 department: administrative

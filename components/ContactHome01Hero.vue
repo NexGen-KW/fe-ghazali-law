@@ -5,10 +5,10 @@
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
       <h1 class="font-marcellusSC text-[32px]">
-        {{ $t('CONTACT US') }}
+        {{ $t('contactHeroHeading') }}
       </h1>
       <p class="text-shadow-custom text-white">
-        {{ $t('Our team looks forward to hearing from you!') }}
+        {{ $t('contactHeroParagraph') }}
       </p>
     </div>
   </section>

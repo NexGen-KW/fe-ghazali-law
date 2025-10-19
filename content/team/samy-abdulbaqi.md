@@ -39,4 +39,18 @@ experience: |
   Legal counsel for prestigious organizations in Egypt, including media, construction, finance, healthcare, and technology sectors
 
   Holds a Master's degree and multiple postgraduate diplomas from Cairo University
+experience_ar: |
+  أكثر من 40 عامًا من الخبرة في الممارسة القانونية
+
+  مرخص أمام محكمة النقض والمحكمة الدستورية العليا والمحكمة الإدارية العليا في مصر
+
+  خبرة في المرافعات على مستوى الاستئناف والنقض
+
+  سجل حافل في القضايا التجارية والمدنية والجنائية والإدارية وقضايا الأحوال الشخصية
+
+  أكثر من سبع سنوات من الخبرة في الاستشارات القانونية في الكويت
+
+  مستشار قانوني لمؤسسات مرموقة في مصر، بما في ذلك قطاعات الإعلام والبناء والتمويل والرعاية الصحية والتكنولوجيا
+
+  حاصل على درجة الماجستير وعدة دبلومات دراسات عليا من جامعة القاهرة
 ---

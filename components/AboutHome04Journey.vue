@@ -6,13 +6,11 @@
     </div>
     <!-- Heading -->
     <h2 class="mb-4 text-center text-3xl font-normal md:text-4xl">
-      Our Journey Through the Years
+      {{ $t('aboutJourney.heading') }}
     </h2>
     <!-- Subheading -->
     <p class="mx-auto mb-10 max-w-2xl text-base text-gray-700">
-      From our beginnings to becoming a trusted law firm, our timeline
-      highlights key milestones that shaped RMG’s legacy and reflects our
-      commitment to legal excellence.
+      {{ $t('aboutJourney.description') }}
     </p>
     <!-- Timeline image only -->
     <div class="mx-auto mb-10 flex max-w-3xl items-center justify-center">
@@ -29,11 +27,10 @@
       <div
         class="font-markazi mb-2 text-2xl font-medium text-[#3B371F] md:text-3xl md:text-[48px]"
       >
-        1992
+        {{ $t('aboutJourney.milestone.year') }}
       </div>
       <div class="text-base text-[#3B371F] md:text-lg">
-        Establishment of Mishari Mohammed Al-Ghazali Law Firm, in partnership
-        with US firm Graham &amp; James.
+        {{ $t('aboutJourney.milestone.text') }}
       </div>
     </div>
   </div>

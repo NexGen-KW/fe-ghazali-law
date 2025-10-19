@@ -3,13 +3,15 @@
     <div
       class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 text-center md:grid-cols-4"
     >
-      <div v-for="item in features" :key="item.title">
+      <div v-for="item in features" :key="item.key">
         <div
           class="font-marcellus mb-2 text-xl font-normal text-[#3B371F] md:text-2xl"
         >
-          {{ item.title }}
+          {{ $t(item.titleKey) }}
         </div>
-        <div class="text-base text-[#3B371F]">{{ item.description }}</div>
+        <div class="text-base text-[#3B371F]">
+          {{ $t(item.descriptionKey) }}
+        </div>
       </div>
     </div>
   </div>
@@ -18,21 +20,24 @@
 <script lang="ts" setup>
 const features = [
   {
-    title: 'Cross-Border Expertise',
-    description: 'Legal gateway for international companies entering Kuwait',
+    key: 'crossBorder',
+    titleKey: 'aboutFeatures.crossBorder.title',
+    descriptionKey: 'aboutFeatures.crossBorder.description',
   },
   {
-    title: 'Legal Coverage',
-    description:
-      'We offer legal coverage for finance, healthcare, and real estate.',
+    key: 'legalCoverage',
+    titleKey: 'aboutFeatures.legalCoverage.title',
+    descriptionKey: 'aboutFeatures.legalCoverage.description',
   },
   {
-    title: 'Litigation & Arbitration',
-    description: 'Strong advocacy in local courts and international forums',
+    key: 'litigation',
+    titleKey: 'aboutFeatures.litigation.title',
+    descriptionKey: 'aboutFeatures.litigation.description',
   },
   {
-    title: 'Established Client Trust',
-    description: 'Serving multinational corporations and government entities',
+    key: 'clientTrust',
+    titleKey: 'aboutFeatures.clientTrust.title',
+    descriptionKey: 'aboutFeatures.clientTrust.description',
   },
 ];
 </script>
