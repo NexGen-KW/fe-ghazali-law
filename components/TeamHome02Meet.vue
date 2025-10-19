@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center bg-white px-2 py-12" id="meet">
-    <HeaderScale t="Meet RMG Experts" class="mb-10" />
+    <HeaderScale :t="$t('teamMeet.header')" class="mb-10" />
     <div
       class="custom-card mx-auto flex w-full max-w-6xl flex-col items-center gap-8 p-8 md:flex-row"
     >
@@ -13,20 +13,16 @@
       </div>
       <div class="flex-1 text-center md:text-left">
         <h2 class="font-marcellus text-gold-900 mb-2 text-4xl">
-          Rawan Mishari Al-Ghazali
+          {{ $t('teamMeet.founder.name') }}
         </h2>
         <h3 class="font-500 mb-4 text-xl text-neutral-900">
-          Founder and Managing Director
+          {{ $t('teamMeet.founder.position') }}
         </h3>
         <p class="mb-8 text-lg text-neutral-700">
-          With nearly two decades of experience, Ms. Rawan Al-Ghazali is a
-          leading force in Kuwait’s legal sector, known for her work in
-          legislative reform, legal consultancy, and arbitration, and for
-          advising institutions such as the World Bank and IMF on key national
-          laws.
+          {{ $t('teamMeet.founder.bio') }}
         </p>
         <NuxtLink to="/team/rawan-mishari-al-ghazali">
-          <BaseButton>Know More</BaseButton>
+          <BaseButton>{{ $t('teamMeet.knowMore') }}</BaseButton>
         </NuxtLink>
       </div>
     </div>

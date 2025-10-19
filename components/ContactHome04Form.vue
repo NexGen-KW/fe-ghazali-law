@@ -39,7 +39,7 @@
         class="border-gold-100 focus:border-gold-500 text-gold-900 placeholder:text-gold-900/70 w-full border bg-white px-4 py-3 focus:ring-1 focus:outline-none"
       ></textarea>
       <div class="flex justify-center">
-        <BaseButton type="submit">{{ $t('Submit Now') }}</BaseButton>
+        <BaseButton type="submit">{{ $t('submitNow') }}</BaseButton>
       </div>
     </form>
   </section>

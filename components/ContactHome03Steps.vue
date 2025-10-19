@@ -6,7 +6,7 @@
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Follow The Following
+          {{ $t('contactSteps.heading') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
@@ -14,7 +14,7 @@
     <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
       <div
         v-for="step in steps"
-        :key="step.title"
+        :key="step.key"
         class="custom-card relative flex min-h-[180px] items-start bg-white p-8"
       >
         <div class="mr-6 flex h-full flex-col items-center justify-center">
@@ -22,12 +22,14 @@
         </div>
         <div class="flex-1 border-l pl-6">
           <div class="text-gold-700 mb-1 text-lg font-medium">
-            Step {{ step.number }}
+            {{ $t('contactSteps.stepLabel') }} {{ step.number }}
           </div>
           <div class="font-marcellus mb-1 text-2xl text-[#3A3321]">
-            {{ step.title }}
+            {{ $t(step.titleKey) }}
           </div>
-          <div class="text-base text-neutral-700">{{ step.description }}</div>
+          <div class="text-base text-neutral-700">
+            {{ $t(step.descriptionKey) }}
+          </div>
         </div>
       </div>
     </div>
@@ -37,30 +39,32 @@
 <script lang="ts" setup>
 const steps = [
   {
+    key: 'step1',
     number: 1,
     icon: 'mdi:calendar-outline',
-    title: 'Schedule an Appointment',
-    description: 'Choose a convenient time to meet with our legal team',
+    titleKey: 'contactSteps.step1.title',
+    descriptionKey: 'contactSteps.step1.description',
   },
   {
+    key: 'step2',
     number: 2,
     icon: 'mdi:account-question-outline',
-    title: 'Initial Consultation',
-    description:
-      'Discuss your case and get a clear understanding of your options',
+    titleKey: 'contactSteps.step2.title',
+    descriptionKey: 'contactSteps.step2.description',
   },
   {
+    key: 'step3',
     number: 3,
     icon: 'mdi:gavel',
-    title: 'Legal Strategy',
-    description: 'We develop a tailored plan to address your legal needs',
+    titleKey: 'contactSteps.step3.title',
+    descriptionKey: 'contactSteps.step3.description',
   },
   {
+    key: 'step4',
     number: 4,
     icon: 'mdi:check-circle-outline',
-    title: 'Case Resolution',
-    description:
-      'Our team works to resolve your case efficiently and effectively',
+    titleKey: 'contactSteps.step4.title',
+    descriptionKey: 'contactSteps.step4.description',
   },
 ];
 </script>

@@ -6,7 +6,7 @@
         <h2
           class="font-marcellus px-8 text-center text-3xl whitespace-nowrap text-neutral-900"
         >
-          Administrative Team
+          {{ $t('teamSections.admin') }}
         </h2>
         <div class="border-gold-200 flex-1 border-t"></div>
       </div>
@@ -70,13 +70,13 @@ const members = [
   {
     name: 'Mr. Ahmed  Al Tanahi',
     name_ar: 'أحمد الطناحي',
-    img: '11.jpg',
+    img: '15.png',
     slug: 'ahmed-al-tanahi',
   },
   {
     name: 'Mr. Ahmed Abul-Wafa',
     name_ar: 'أحمد محمود أبو الوفا',
-    img: '12.jpg',
+    img: '14.png',
     slug: 'ahmed-mahmoud-abul-wafa',
   },
 ];

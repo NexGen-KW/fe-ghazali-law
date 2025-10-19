@@ -25,13 +25,13 @@
         <div
           class="absolute bottom-0 left-0 w-full bg-black/35 p-4 text-center text-lg font-medium text-white"
         >
-          {{ member.name }}
+          {{ locale === 'ar' ? member.name_ar : member.name }}
         </div>
       </div>
     </div>
     <BaseButton>
       <NuxtLink to="/team">
-        {{ $t('Meet All The Team') }}
+        {{ $t('team.meetAllTeam') }}
       </NuxtLink></BaseButton
     >
   </section>
@@ -40,6 +40,9 @@
 <script setup lang="ts">
 import HeaderScale from './ui/HeaderScale.vue';
 import BaseButton from './ui/BaseButton.vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
 
 function slugify(text: string) {
   return text
@@ -51,21 +54,25 @@ function slugify(text: string) {
 const members = [
   {
     name: 'Rawan Mishari Al-Ghazali',
+    name_ar: 'روان مشاري الغزالي',
     img: 'member1.jpg',
     slug: slugify('Rawan Mishari Al-Ghazali'),
   },
   {
     name: 'Bader Mishari Al-Ghazali',
+    name_ar: 'بدر مشاري الغزالي',
     img: '5.jpg',
     slug: slugify('Bader Mishari Al-Ghazali'),
   },
   {
     name: 'Nada Bourahmah',
+    name_ar: 'ندى بورحمة',
     img: '4.jpg',
     slug: slugify('Nada Bourahmah'),
   },
   {
     name: 'Saoud Al Jasem',
+    name_ar: 'سعود الجاسم',
     img: '9.jpg',
     slug: slugify('Saoud Al Jasem'),
   },
