@@ -42,6 +42,10 @@ services:
 team:
   title: Our Members
   subtitle: Meet Our Experts
+  biography: Biography
+  academicQualifications: Academic Qualifications
+  professionalExperience: Professional Experience
+  participations: Legislative and Academic Participations
 
 # Global
 heroCTA: Know more about us

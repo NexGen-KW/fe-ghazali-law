@@ -14,6 +14,12 @@ export default defineContentConfig({
         experience: z.array(z.string()),
         participations: z.array(z.string()),
         department: z.string(),
+        name_ar: z.string().optional(),
+        role_ar: z.string().optional(),
+        biography_ar: z.string().optional(),
+        academic_ar: z.string().optional(),
+        experience_ar: z.string().optional(),
+        participations_ar: z.string().optional(),
       }),
     }),
     services: defineCollection({

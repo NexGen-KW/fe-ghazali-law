@@ -49,6 +49,10 @@ services:
 team:
   title: أعضاءنا
   subtitle: المتخصصون في القانون
+  biography: نبذة
+  academicQualifications: المؤهلات الأكاديمية
+  professionalExperience: أبرز الخبرات المهنية
+  participations: المشاركات التشريعية والأكاديمية
 
 # Global
 heroCTA: 'اعرف المزيد عنا'
