@@ -4,6 +4,8 @@ title_ar: المجال التجاري
 slug: trade-commercial-field
 description: Reviewing and drafting commercial contracts of both local and international nature
 description_ar: مراجعة وصياغة العقود التجارية المحلية والدولية
+keywords: commercial lawyer Kuwait, trade law, commercial contracts, international trade, franchise agreements, distribution agreements, commercial agency, commercial disputes, business contracts, commercial litigation, debt collection, agency agreements
+keywords_ar: محامي تجاري الكويت، قانون التجارة، عقود تجارية، تجارة دولية، عقود امتياز تجاري، عقود توزيع، وكالة تجارية، نزاعات تجارية، عقود أعمال، دعاوى تجارية، تحصيل ديون، عقود وكالة
 details:
   - Reviewing and drafting commercial contracts of both local and international nature
   - Negotiating on behalf of the office's clients regarding commercial deals and contracts of both local and international nature, giving advice and advice, and auditing all local and international transactions, deals and commercial contracts

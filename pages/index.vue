@@ -1,4 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t, locale } = useI18n();
+
+useHead({
+  title: () => t('siteTitle'),
+  meta: [
+    {
+      name: 'description',
+      content: () => t('carouselParagraph'),
+    },
+    {
+      name: 'keywords',
+      content: () => t('siteKeywords'),
+    },
+    {
+      property: 'og:title',
+      content: () => t('carouselHeading'),
+    },
+    {
+      property: 'og:description',
+      content: () => t('carouselParagraph'),
+    },
+  ],
+});
+</script>
 
 <template>
   <LayoutMain>

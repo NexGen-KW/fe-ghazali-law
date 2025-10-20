@@ -4,6 +4,8 @@ title_ar: مجال الشركات
 slug: corprate-field
 description: Legal support for company formation, governance, and corporate transactions
 description_ar: دعم قانوني لتأسيس الشركات والحوكمة والمعاملات المؤسسية
+keywords: corporate lawyer Kuwait, company formation, business lawyer, corporate governance, mergers and acquisitions, corporate law, company liquidation, corporate restructuring, shareholders agreements, joint stock companies, LLC formation, foreign company registration, KDIPA lawyer
+keywords_ar: محامي شركات الكويت، تأسيس شركات، محامي أعمال، حوكمة الشركات، عمليات الدمج والاستحواذ، قانون الشركات، تصفية شركات، إعادة هيكلة الشركات، اتفاقيات المساهمين، شركات مساهمة، تأسيس شركات ذات مسؤولية محدودة، تسجيل شركات أجنبية، محامي هيئة الاستثمار
 details:
   - Establishing, listing, transferring, acquiring, merging and liquidating companies of all kinds
   - Legal and administrative auditing and restructuring of all types of companies

@@ -4,6 +4,8 @@ title_ar: مجال التحكيم
 slug: arbitration-field
 description: Extensive experience in local and international arbitration
 description_ar: خبرة واسعة في التحكيم المحلي والدولي
+keywords: arbitration lawyer Kuwait, international arbitration, commercial arbitration, dispute resolution, arbitrator, mediation services, arbitration center, GCC arbitration, arbitration agreements, arbitration proceedings
+keywords_ar: محامي تحكيم الكويت، تحكيم دولي، تحكيم تجاري، تسوية نزاعات، محكم، خدمات وساطة، مركز التحكيم، تحكيم مجلس التعاون، اتفاقيات تحكيم، إجراءات التحكيم
 details:
   - The office has a long experience in the field of arbitration at the local and international levels, and works either as an arbitrator or as an agent for the litigants (the claimant or against him) in all arbitration cases
   - Preparing local and international arbitration agreements and related procedures in accordance with the arbitration organizations and rules to which they are subject
