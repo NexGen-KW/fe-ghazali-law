@@ -4,6 +4,8 @@ title_ar: المجال المصرفي
 slug: banking-field
 description: Providing comprehensive banking legal services and consultations
 description_ar: تقديم خدمات واستشارات قانونية مصرفية شاملة
+keywords: banking lawyer Kuwait, bank legal services, financial law, Central Bank of Kuwait, banking contracts, loan agreements, bank guarantees, documentary credits, debt collection, banking regulations, Islamic banking law, banking compliance
+keywords_ar: محامي بنوك الكويت، خدمات قانونية مصرفية، قانون مالي، بنك الكويت المركزي، عقود مصرفية، عقود قروض، ضمانات مصرفية، اعتمادات مستندية، تحصيل ديون، أنظمة مصرفية، قانون البنوك الإسلامية، الامتثال المصرفي
 details:
   - Preparing the full documentary cycle for Kuwaiti banks and developing some of the old ones
   - Preparing programs and work policies for banks with regard to their internal system, as well as for the way they deal with their customers

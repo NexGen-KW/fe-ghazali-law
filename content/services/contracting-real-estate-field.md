@@ -4,6 +4,8 @@ title_ar: مجال المقاولات والعقارات
 slug: contracting-real-estate-field
 description: Comprehensive legal services for contracting and real estate matters
 description_ar: خدمات قانونية شاملة للمقاولات والعقارات
+keywords: real estate lawyer Kuwait, construction lawyer, contracting law, property law, BOT contracts, construction contracts, real estate disputes, property transactions, tenders and bids, construction litigation, real estate development, subcontracting agreements
+keywords_ar: محامي عقارات الكويت، محامي مقاولات، قانون المقاولات، قانون العقارات، عقود البناء والتشغيل والتحويل، عقود إنشاءات، نزاعات عقارية، معاملات عقارية، مناقصات وعطاءات، دعاوى مقاولات، تطوير عقاري، عقود مقاولات من الباطن
 details:
   - Representing all companies in submitting bids and tenders for local and international contracting works and subcontracting and providing advice on bids and auctions
   - Drafting and reviewing all contracting and real estate contracts and providing advice on them

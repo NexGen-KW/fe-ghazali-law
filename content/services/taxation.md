@@ -4,6 +4,8 @@ title_ar: الضرائب
 slug: taxation
 description: Comprehensive tax advisory services for foreign and local companies
 description_ar: خدمات استشارية ضريبية شاملة للشركات الأجنبية والمحلية
+keywords: tax lawyer Kuwait, tax advisory, tax compliance, corporate tax, foreign company tax, tax disputes, Ministry of Finance Kuwait, tax law, tax obligations, tax planning, international tax, tax representation
+keywords_ar: محامي ضرائب الكويت، استشارات ضريبية، امتثال ضريبي، ضرائب الشركات، ضرائب الشركات الأجنبية، نزاعات ضريبية، وزارة المالية الكويت، قانون الضرائب، التزامات ضريبية، تخطيط ضريبي، ضرائب دولية، تمثيل ضريبي
 details:
   - Providing legal advice to foreign and local companies as agents or partners of foreign companies in all matters relating to tax law
   - Review contracts of foreign and local companies associated with a foreign party that may result in tax obligation, and provide legal advice related thereto

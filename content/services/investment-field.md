@@ -4,6 +4,8 @@ title_ar: مجال الاستثمار
 slug: investment-field
 description: Pioneer in investment portfolio management and investment fund establishment
 description_ar: رائد في إدارة المحافظ الاستثمارية وتأسيس الصناديق الاستثمارية
+keywords: investment lawyer Kuwait, foreign investment, KDIPA, direct investment, investment funds, portfolio management, investment contracts, Kuwait Stock Exchange, securities law, private equity, capital markets, investment advisory, foreign capital investment law
+keywords_ar: محامي استثمار الكويت، استثمار أجنبي، هيئة تشجيع الاستثمار المباشر، استثمار مباشر، صناديق استثمارية، إدارة محافظ، عقود استثمارية، بورصة الكويت، قانون الأوراق المالية، استثمار خاص، أسواق المال، استشارات استثمارية، قانون استثمار رأس المال الأجنبي
 details:
   - The office is a pioneer in the areas of investment and management of investment portfolios of all kinds, as well as the establishment and management of investment funds of both local and international bodies
   - Preparing investment contracts of an international nature and contracts for financing various investments, as well as investment funds for public and private subscription at the local and international levels
