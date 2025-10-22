@@ -10,6 +10,26 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static', // THIS enables SSG
   },
+  app: {
+    baseURL: '/fe-ghazali-law/',
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/fe-ghazali-law/favicon.ico',
+        },
+        {
+          rel: 'shortcut icon',
+          href: '/fe-ghazali-law/favicon.ico',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/fe-ghazali-law/favicon.ico',
+        },
+      ],
+    },
+  },
   modules: [
     '@nuxt/content',
     [

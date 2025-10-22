@@ -43,6 +43,10 @@ useHead({
       content: 'website',
     },
     {
+      property: 'og:image',
+      content: '/fe-ghazali-law/favicon.ico',
+    },
+    {
       property: 'og:locale',
       content: () => (locale.value === 'ar' ? 'ar_KW' : 'en_US'),
     },
@@ -62,8 +66,16 @@ useHead({
   link: [
     {
       rel: 'icon',
-      type: 'image/svg+xml',
-      href: '/fe-ghazali-law/logo.svg',
+      type: 'image/x-icon',
+      href: '/fe-ghazali-law/favicon.ico',
+    },
+    {
+      rel: 'shortcut icon',
+      href: '/fe-ghazali-law/favicon.ico',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/fe-ghazali-law/favicon.ico',
     },
   ],
 });
