@@ -15,26 +15,24 @@
     <div
       class="grid w-full max-w-6xl gap-6"
       style="
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         justify-items: center;
       "
     >
       <div
         v-for="member in members"
         :key="member.name"
-        class="relative flex w-full max-w-[300px] flex-col items-center"
+        class="relative flex w-full max-w-[220px] flex-col items-center"
       >
-        <NuxtLink :to="`/team/${member.slug}`">
-          <img
-            :src="member.img"
-            :alt="member.name"
-            class="h-[420px] w-full object-cover shadow"
-          />
-        </NuxtLink>
+        <img
+          :src="member.img"
+          :alt="member.name"
+          class="h-[280px] w-full object-cover shadow"
+        />
         <div
-          class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-4 text-center"
+          class="absolute bottom-0 left-0 w-full bg-black/40 px-2 py-3 text-center"
         >
-          <span class="text-xl font-medium text-white">{{
+          <span class="text-lg font-medium text-white">{{
             locale === 'ar' ? member.name_ar : member.name
           }}</span>
         </div>
@@ -53,31 +51,26 @@ const members = [
     name: 'Mr. Mahmoud Mansour',
     name_ar: 'محمود منصور',
     img: '3.jpg',
-    slug: 'mahmoud-mansour',
   },
   {
     name: 'Ms. Zahida Hassan',
     name_ar: 'زاهدة حسن',
     img: '2.jpg',
-    slug: 'zahida-hassan',
   },
   {
     name: 'Mr. Amir Elmadboli',
     name_ar: 'أمير حمدي أحمد المدبولي',
     img: '8.jpg',
-    slug: 'amir-hamdy-ahmed-elmadboli',
   },
   {
     name: 'Mr. Ahmed  Al Tanahi',
     name_ar: 'أحمد الطناحي',
     img: '15.png',
-    slug: 'ahmed-al-tanahi',
   },
   {
     name: 'Mr. Ahmed Abul-Wafa',
     name_ar: 'أحمد محمود أبو الوفا',
     img: '14.png',
-    slug: 'ahmed-mahmoud-abul-wafa',
   },
 ];
 </script>

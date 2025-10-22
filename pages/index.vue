@@ -29,7 +29,8 @@ useHead({
     <Home01Carousel />
     <Home02Statement />
     <Home03Difference />
-    <Home04Testmonial />
+    <!-- <Home04Testmonial /> -->
+
     <!-- <Home05News /> -->
     <Home06Discover />
     <Home07Team />
