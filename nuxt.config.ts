@@ -16,16 +16,17 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/fe-ghazali-law/favicon.ico',
+          href: '/favicon.ico',
         },
         {
           rel: 'shortcut icon',
-          href: '/fe-ghazali-law/favicon.ico',
+          href: '/favicon.ico',
         },
         {
           rel: 'apple-touch-icon',
-          href: '/fe-ghazali-law/favicon.ico',
+          href: '/favicon.ico',
         },
+        { rel: 'icon', type: 'image/svg', href: '/favicon.ico' },
       ],
     },
   },
