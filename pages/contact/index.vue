@@ -4,10 +4,7 @@ const { t, locale } = useI18n();
 useHead({
   title: () => `${t('contactHeroHeading')} | ${t('siteTitle')}`,
   meta: [
-    {
-      name: 'description',
-      content: () => t('contactHeroParagraph'),
-    },
+
     {
       name: 'keywords',
       content: () =>
@@ -19,10 +16,7 @@ useHead({
       property: 'og:title',
       content: () => `${t('contactHeroHeading')} | ${t('siteTitle')}`,
     },
-    {
-      property: 'og:description',
-      content: () => t('contactHeroParagraph'),
-    },
+
   ],
 });
 </script>

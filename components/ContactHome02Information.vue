@@ -35,7 +35,7 @@ const contactInfo = [
     key: 'email',
     icon: 'mdi:email-outline',
     labelKey: 'contactInformation.email.label',
-    value: 'Al-Ghazaly@gmail.com',
+    value: 'Mail@alghazali-law.com',
   },
   {
     key: 'phone',
