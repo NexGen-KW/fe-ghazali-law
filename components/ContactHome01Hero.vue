@@ -7,9 +7,10 @@
       <h1 class="font-marcellusSC text-[32px]">
         {{ $t('contactHeroHeading') }}
       </h1>
-      <p class="text-shadow-custom text-white">
+      <!-- <p class="text-shadow-custom text-white">
         {{ $t('contactHeroParagraph') }}
-      </p>
+      </p> -->
+   
     </div>
   </section>
 </template>
