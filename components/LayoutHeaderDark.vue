@@ -1,6 +1,6 @@
 <template>
   <header
-    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-transparent px-4 px-[81px] lg:px-[81px]"
+    class="relative z-20 flex h-[111px] items-center justify-between border-b bg-white px-4 px-[81px] lg:px-[81px]"
     style="border-bottom: 1px solid #bebebe"
   >
     <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
@@ -11,7 +11,7 @@
         <li>
           <NuxtLink
             :to="item.url"
-            class="hover:text-gold-900 font-medium capitalize transition-colors"
+            class="hover:text-gold-500 font-medium capitalize transition-all hover:drop-shadow-lg"
             :style="{
               color: route.path === item.url ? 'var(--color-gold-500)' : '',
             }"
@@ -22,21 +22,19 @@
       </template>
     </ul>
 
-    <!-- Desktop Language Switcher -->
     <button
       type="button"
       @click="handleLocaleChange"
-      class="text-gold-900 hidden items-center gap-2 lg:flex"
+      class="text-gold-900 hidden items-center gap-2 transition-all hover:drop-shadow-lg lg:flex"
     >
       <span>{{ alternateLocale.symbol }}</span>
       <Icon name="ic:outline-language" size="24px" />
     </button>
 
-    <!-- Mobile Burger Menu Button -->
     <button
       type="button"
       @click="toggleMobileMenu"
-      class="flex items-center gap-2 text-white lg:hidden"
+      class="text-gold-900 flex items-center gap-2 lg:hidden"
     >
       <Icon
         :name="isMobileMenuOpen ? 'ic:outline-close' : 'ic:outline-menu'"
