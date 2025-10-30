@@ -6,6 +6,9 @@
       <!-- Left: Logo, Description, Social -->
       <div class="flex min-w-[260px] flex-1 flex-col items-start gap-6">
         <img src="/logo.svg" alt="RMG Law Logo" class="mb-2 h-24 w-auto" />
+        <h3 class="text-gold-50 font-marcellusSC text-xl font-bold">
+          {{ $t('firmName') }}
+        </h3>
         <p
           class="text-gold-50 mb-6 max-w-xs text-lg"
           v-html="

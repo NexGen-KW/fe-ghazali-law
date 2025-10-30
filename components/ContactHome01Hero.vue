@@ -4,13 +4,15 @@
     class="relative mt-[-111px] flex h-[35vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[170px]"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
+      <p class="text-shadow-custom mb-2 text-lg font-medium text-white">
+        {{ $t('firmName') }}
+      </p>
       <h1 class="font-marcellusSC text-[32px]">
         {{ $t('contactHeroHeading') }}
       </h1>
       <!-- <p class="text-shadow-custom text-white">
         {{ $t('contactHeroParagraph') }}
       </p> -->
-   
     </div>
   </section>
 </template>

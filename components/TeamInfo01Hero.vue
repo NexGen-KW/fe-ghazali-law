@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ScrollDownButton from '~/components/ui/ScrollDownButton.vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
@@ -18,16 +17,16 @@ defineProps<{
 
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-cover bg-center bg-no-repeat"
+    class="relative flex h-[100vh] items-end justify-center bg-cover bg-top bg-no-repeat pb-32"
     :style="{ backgroundImage: `url(/${member?.image})` }"
   >
-    <!-- Overlay text container near the bottom, above the button -->
-    <div
-      class="absolute bottom-40 left-1/2 z-10 flex -translate-x-1/2 justify-center"
-    >
+    <div class="z-10 flex justify-center">
       <div
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
       >
+        <p class="text-shadow-custom mb-2 text-lg font-medium text-white">
+          {{ $t('firmName') }}
+        </p>
         <h1 class="font-marcellusSC mb-4 text-[32px] text-white">
           {{
             (locale === 'ar' ? member?.name_ar : member?.name) ||
@@ -43,10 +42,6 @@ defineProps<{
           }}
         </p>
       </div>
-    </div>
-    <!-- Reusable Scroll Down Button -->
-    <div class="absolute bottom-20 left-1/2 z-20 -translate-x-1/2">
-      <ScrollDownButton target="bio" />
     </div>
   </section>
 </template>
