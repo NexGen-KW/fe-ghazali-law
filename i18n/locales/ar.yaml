@@ -11,8 +11,11 @@ breadcrumb:
   contact: اتصال
   switchLanguage: ع
 
-# Page -> Home
-carouselHeading: Al-Ghazaly Law Firm
+# Page -> HomefirmName: مكتب الغزالي للمحاماة
+
+carouselHeading: مكتب الغزالي للمحاماة
+
+
 carouselParagraph: >
   نقدم إرشادًا قانونيًا موثوقًا به قائمًا على النزاهة والتفاني. 
   سواء كنت تواجه نزاعًا، تخطط للمستقبل، أو تبحث عن استشارة قانونية—
