@@ -23,6 +23,7 @@
   --font-ar-ibm: 'IBM Plex Sans Arabic';
   --font-marcellusSC: 'Marcellus SC', serif;
   --font-marcellus: 'Marcellus', serif;
+  --font-arabic: 'Lateef', 'Aref Ruqaa', 'Scheherazade New', 'Amiri', serif;
 
   --paragraphColor: var(--slate-700, #314158);
 }
@@ -97,5 +98,12 @@
 
   html[dir='rtl'] {
     @apply font-ar-ibm;
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.4;
   }
 }

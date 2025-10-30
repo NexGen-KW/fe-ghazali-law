@@ -1,14 +1,17 @@
 <template>
-  <footer class="text-gold-50 bg-[#181507] py-12">
+  <footer class="text-gold-50 bg-[#717171] py-12">
     <div
       class="container mx-auto flex flex-col gap-12 md:flex-row md:justify-between md:gap-0"
     >
       <!-- Left: Logo, Description, Social -->
       <div class="flex min-w-[260px] flex-1 flex-col items-start gap-6">
-        <img src="/logo.svg" alt="RMG Law Logo" class="mb-2 h-24 w-auto" />
-        <h3 class="text-gold-50 font-marcellusSC text-xl font-bold">
-          {{ $t('firmName') }}
-        </h3>
+        <div class="mb-2 rounded bg-[#717171] p-4">
+          <img
+            :src="locale === 'ar' ? '/RMGAR.svg' : '/RMGEN.svg'"
+            alt="RMG Law Logo"
+            class="h-48 w-auto"
+          />
+        </div>
         <p
           class="text-gold-50 mb-6 max-w-xs text-lg"
           v-html="

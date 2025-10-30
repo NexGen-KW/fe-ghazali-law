@@ -25,7 +25,7 @@ defineProps<{
         class="overlay-blur mx-4 w-full max-w-[1200px] rounded px-8 py-8 text-center"
       >
         <p
-          class="text-shadow-custom font-marcellusSC mb-2 text-lg font-medium text-white"
+          class="text-shadow-custom font-arabic text-gold-500 mb-2 text-[56px] font-medium"
         >
           {{ $t('firmName') }}
         </p>
