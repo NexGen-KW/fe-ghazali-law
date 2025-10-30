@@ -4,8 +4,10 @@
   >
     <div class="hero-text pt-20">
       <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
+       
         <h1 class="font-marcellusSC text-[32px]">
-          {{ $t('carouselHeading') }}
+          {{ $t('firmName') }}
+
         </h1>
         <p class="text-shadow-custom text-white">
           {{ $t('carouselParagraph') }}
