@@ -3,7 +3,11 @@
     class="relative z-20 flex h-[111px] items-center justify-between border-b bg-white px-4 px-[81px] lg:px-[81px]"
     style="border-bottom: 1px solid #bebebe"
   >
-    <img src="/logo.svg" alt="Logo" class="h-[85px] w-auto object-contain" />
+    <img
+      :src="locale === 'ar' ? '/RMGAR.svg' : '/RMGEN.svg'"
+      alt="Logo"
+      class="h-[120px] w-auto object-contain"
+    />
 
     <ul class="hidden space-x-4 lg:flex">
       <template v-for="(item, index) in navigation" :key="index">
@@ -63,7 +67,7 @@
           class="flex items-center justify-between border-b border-gray-200 p-6"
         >
           <img
-            src="/logo.svg"
+            :src="locale === 'ar' ? '/RMGAR.svg' : '/RMGEN.svg'"
             alt="Logo"
             class="h-12 w-auto cursor-pointer object-contain transition-transform duration-200 hover:scale-105"
           />

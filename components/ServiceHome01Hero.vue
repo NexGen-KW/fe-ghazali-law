@@ -1,14 +1,12 @@
 <template>
   <section
     id="services"
-    class="relative mt-[-111px] flex h-[35vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[170px]"
+    class="relative mt-[-111px] flex h-[45vh] items-center justify-center bg-[url(/background.jpg)] bg-cover bg-center bg-no-repeat pt-[170px] lg:h-[50vh] lg:pt-[200px]"
   >
     <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
-          
-      <h1 class="font-marcellusSC text-[32px]">
-          {{ $t('firmName') }}
-
-        </h1>
+      <h1 class="font-arabic text-gold-500 text-[56px]">
+        {{ $t('firmName') }}
+      </h1>
       <h1 class="font-marcellusSC text-[32px]">
         {{ $t('servicesHeroHeading') }}
       </h1>

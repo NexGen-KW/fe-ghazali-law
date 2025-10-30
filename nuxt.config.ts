@@ -27,6 +27,10 @@ export default defineNuxtConfig({
           href: '/favicon.ico',
         },
         { rel: 'icon', type: 'image/svg', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Scheherazade+New:wght@400;700&family=Lateef:wght@400;600;700;800&display=swap',
+        },
       ],
     },
   },

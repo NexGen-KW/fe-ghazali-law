@@ -1,13 +1,11 @@
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat pt-20 lg:pt-[200px]"
   >
     <div class="hero-text pt-20">
       <div class="hero-msg mx-auto max-w-[977px] text-center text-white">
-       
-        <h1 class="font-marcellusSC text-[32px]">
+        <h1 class="font-arabic text-gold-500 text-[56px]">
           {{ $t('firmName') }}
-
         </h1>
         <p class="text-shadow-custom text-white">
           {{ $t('carouselParagraph') }}

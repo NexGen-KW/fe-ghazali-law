@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat"
+    class="relative mt-[-111px] flex h-[100vh] items-center justify-center bg-[url(/Big-Group-Photo-2.jpg)] bg-cover bg-center bg-no-repeat pt-20 lg:pt-[200px]"
   >
     <div
       class="absolute bottom-40 left-1/2 z-10 flex w-full -translate-x-1/2 justify-center"
